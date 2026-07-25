@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Optimization -->
+  <title>Nexora — Birth of the Next Era | Cinematic Intro</title>
+  <meta name="description" content="Embark on a cinematic interactive web journey discovering the next era. Experience scene-based particle simulations, dimensional camera travel, and sound design.">
+  <meta name="keywords" content="Nexora, Web Design, HTML5 Canvas, Web Audio API, Interactive Cinema, Next Era, Tech Innovation">
+  <meta name="author" content="Nexora Lab">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Reticle Cursor -->
+  <div id="custom-cursor"></div>
+
+  <!-- Cinematic Loader Screen -->
+  <div id="loader-overlay">
+    <div class="loader-chamber">
+      <h1 class="loader-title">NEXORA</h1>
+      <button id="btn-enter" class="btn-enter" aria-label="Enter the cinematic experience">
+        ENTER THE NEXT ERA
+      </button>
+    </div>
+  </div>
+
+  <!-- Canvas Graphic Engine Wrapper -->
+  <div id="canvas-container">
+    <canvas id="cinematic-canvas"></canvas>
+    
+    <!-- Atmospheric lighting filters -->
+    <div class="overlay-vignette"></div>
+    <div class="overlay-scanlines"></div>
+  </div>
+
+  <!-- Typographic HUD Layer -->
+  <div class="title-overlay">
+    <div id="txt-awakening-1" class="cinematic-text">THE FUTURE</div>
+    <div id="txt-awakening-2" class="cinematic-text">IS NOT WAITING.</div>
+    <div id="txt-build" class="cinematic-text">BUILD.</div>
+    <div id="txt-break" class="cinematic-text">BREAK.</div>
+    <div id="txt-rebuild" class="cinematic-text">REBUILD.</div>
+    <div id="txt-next-era" class="cinematic-text">THE NEXT ERA.</div>
+    <div id="txt-theme-ai" class="cinematic-text">AI WORLD</div>
+    <div id="txt-theme-health" class="cinematic-text">HEALTH TECH</div>
+    <div id="txt-theme-cyber" class="cinematic-text">CYBER VAULT</div>
+    <div id="txt-theme-robotics" class="cinematic-text">ROBOTICS</div>
+    <div id="txt-theme-climate" class="cinematic-text">CLIMATE</div>
+    <div id="txt-the-signal" class="cinematic-text">THE SIGNAL</div>
+    <div id="txt-ready-build" class="cinematic-text">READY TO BUILD?</div>
+  </div>
+
+  <!-- Theme Sidebar Overlay (Scenes 7 & 8) -->
+  <aside id="theme-sidebar" class="theme-sidebar">
+    <div class="sidebar-header">ACTIVE MODULES</div>
+    <div class="sidebar-item" id="sb-ai">
+      <div class="item-visual" id="visual-ai"></div>
+      <div class="item-info">
+        <span class="item-title">NEURAL COGNITION</span>
+        <span class="item-status">MODULE 01 // ACTIVE</span>
+      </div>
+    </div>
+    <div class="sidebar-item" id="sb-health">
+      <div class="item-visual" id="visual-health"></div>
+      <div class="item-info">
+        <span class="item-title">BIO-SYNTHESIS</span>
+        <span class="item-status">MODULE 02 // STANDBY</span>
+      </div>
+    </div>
+    <div class="sidebar-item" id="sb-cyber">
+      <div class="item-visual" id="visual-cyber"></div>
+      <div class="item-info">
+        <span class="item-title">CYBER SECURITY</span>
+        <span class="item-status">MODULE 03 // SECURED</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Registration Page (Scene 10) -->
+  <main id="registration-section" aria-label="Registration Portal">
+    <div class="registration-card">
+      <div id="form-chamber">
+        <h2 class="card-title">JOIN THE ERA</h2>
+        <p class="card-subtitle">Secure your access token for the Nexora 2026 Innovation Summit.</p>
+        
+        <form id="register-form" novalidate>
+          <div class="form-group">
+            <label for="reg-name" class="form-label">Full Name</label>
+            <input type="text" id="reg-name" class="form-input" placeholder="e.g. Jean Doe" required autocomplete="name">
+          </div>
+          
+          <div class="form-group">
+            <label for="reg-email" class="form-label">Email Address</label>
+            <input type="email" id="reg-email" class="form-input" placeholder="name@domain.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="reg-role" class="form-label">Sector of Influence</label>
+            <input type="text" id="reg-role" class="form-input" placeholder="e.g. AI Engineer, Bio-Hacker" required>
+          </div>
+          
+          <button type="submit" id="btn-submit" class="btn-submit">
+            INITIALIZE ACCESS
+          </button>
+        </form>
+      </div>
+      
+      <!-- Success panel -->
+      <div id="form-success" class="form-success">
+        <h3>ACCESS INITIALIZED</h3>
+        <p style="margin-top: 15px; font-size: 0.85rem; color: var(--text-secondary);">
+          Your credentials have been uploaded to the Nexora blockchain vault. Keep monitoring the channels.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Controls & Metadata Overlay -->
+  <div class="hud-layer">
+    <!-- Header -->
+    <header class="hud-header">
+      <div class="brand-title">NEXORA</div>
+      <div class="hud-controls">
+        <button id="btn-mode-toggle" class="glass-btn" aria-label="Toggle scrolling vs movie mode">SWITCH TO SCROLL CONTROL</button>
+        <button id="btn-play-pause" class="glass-btn" aria-label="Play or pause sequence">PAUSE</button>
+      </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="hud-footer">
+      <div id="scroll-indicator" class="scroll-indicator" style="display: none;">
+        <span>SCROLL DOWN TO TRAVEL</span>
+        <svg viewBox="0 0 24 24">
+          <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+        </svg>
+      </div>
+      
+      <div class="timeline-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="timeline-progress" class="timeline-progress"></div>
+      </div>
+      
+      <div class="footer-meta">
+        <span class="meta-section">SYSTEM INITIALIZATION [OK]</span>
+        <span class="meta-timer">
+          <span id="time-current">00:00</span> / <span id="time-total">00:54</span>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scroll containers for Scroll-driven timeline control -->
+  <div class="scroll-container">
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+    <div class="scroll-section"></div>
+  </div>
+
+  <!-- Script Modules -->
+  <script src="canvasRender.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

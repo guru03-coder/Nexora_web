@@ -1,0 +1,668 @@
+/* Nexora Cinematic Experience Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Outfit:wght@200;400;700&family=Syne:wght@700;800&display=swap');
+
+:root {
+  --bg-color: #050816;
+  --neon-blue: #0057FF;
+  --neon-purple: #7B2FF7;
+  --neon-cyan: #00F5FF;
+  --glass-bg: rgba(5, 8, 22, 0.4);
+  --glass-border: rgba(0, 245, 255, 0.15);
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-ui: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none; /* Hide default cursor to use cyber-cursor */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  user-select: none;
+}
+
+/* Scroll mode helper (when body overflows for scroll timeline) */
+body.scroll-mode {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+}
+
+body.scroll-mode #canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+/* Main Cinematic Elements */
+#canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Vignette / Atmospheric overlays */
+.overlay-vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 30%, rgba(5, 8, 22, 0.75) 100%);
+  z-index: 2;
+}
+
+.overlay-scanlines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 4px, 6px 100%;
+  z-index: 3;
+  opacity: 0.75;
+}
+
+/* Custom Reticle Cursor */
+#custom-cursor {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 245, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+  mix-blend-mode: difference;
+}
+
+#custom-cursor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--neon-cyan);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hovering #custom-cursor {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 245, 255, 0.1);
+  border-color: var(--neon-cyan);
+}
+
+/* Title sequence overlay (dynamic words mirroring the animations) */
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  text-align: center;
+  pointer-events: none;
+  font-family: var(--font-display);
+}
+
+.cinematic-text {
+  font-size: 6vw;
+  font-weight: 800;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  opacity: 0;
+  filter: blur(10px);
+  transform: scale(0.9);
+  transition: opacity 0.8s, filter 0.8s, transform 0.8s;
+  text-shadow: 0 0 20px rgba(0, 245, 255, 0.6);
+}
+
+.cinematic-text.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1.0);
+}
+
+/* HUD & Interface Panels */
+.hud-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.hud-layer * {
+  pointer-events: auto;
+}
+
+/* Header */
+.hud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.25em;
+  background: linear-gradient(90deg, #ffffff, var(--neon-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Settings Controls */
+.hud-controls {
+  display: flex;
+  gap: 15px;
+}
+
+.glass-btn {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 10px 20px;
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.glass-btn:hover {
+  border-color: var(--neon-cyan);
+  background: rgba(0, 245, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
+}
+
+.glass-btn.active {
+  background: var(--neon-cyan);
+  color: #050816;
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+}
+
+/* Timeline/Controls footer */
+.hud-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timeline-container {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  position: relative;
+}
+
+.timeline-progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-cyan));
+  border-radius: 2px;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.8);
+}
+
+.footer-meta {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--text-secondary);
+}
+
+/* Scroll mode details */
+.scroll-indicator {
+  align-self: center;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: var(--neon-cyan);
+  animation: pulse-scroll 2s infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.scroll-indicator svg {
+  width: 18px;
+  fill: var(--neon-cyan);
+}
+
+/* Cinematic Load Overlay */
+#loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1.2s ease, visibility 1.2s;
+}
+
+.loader-chamber {
+  text-align: center;
+  max-width: 500px;
+}
+
+.loader-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px rgba(123, 47, 247, 0.6);
+}
+
+.btn-enter {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--neon-purple);
+  padding: 16px 40px;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+  box-shadow: 0 0 15px rgba(123, 47, 247, 0.2);
+}
+
+.btn-enter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(123, 47, 247, 0.35), transparent);
+  transition: left 0.6s;
+}
+
+.btn-enter:hover::before {
+  left: 100%;
+}
+
+.btn-enter:hover {
+  background: var(--neon-purple);
+  box-shadow: 0 0 35px rgba(123, 47, 247, 0.85);
+  border-color: var(--neon-cyan);
+}
+
+/* Scene 10: Registration Section */
+#registration-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.5s ease;
+  padding: 20px;
+}
+
+#registration-section.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.registration-card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 40px;
+  border-radius: 8px;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 0 45px rgba(0, 245, 255, 0.15), inset 0 0 20px rgba(255,255,255,0.02);
+  text-align: center;
+  transform: translateY(30px);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#registration-section.active .registration-card {
+  transform: translateY(0);
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--neon-cyan);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.form-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  background: rgba(0, 245, 255, 0.03);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
+}
+
+.btn-submit {
+  width: 100%;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: all 0.3s;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-submit:hover {
+  box-shadow: 0 0 30px rgba(123, 47, 247, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+/* Scroll mode spacers (provides actual scroll length to window) */
+.scroll-container {
+  display: none;
+  width: 100%;
+}
+
+body.scroll-mode .scroll-container {
+  display: block;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes pulse-scroll {
+  0% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(5px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.5; }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-3px, 3px); }
+  40% { transform: translate(-3px, -3px); }
+  60% { transform: translate(3px, 3px); }
+  80% { transform: translate(3px, -3px); }
+  100% { transform: translate(0); }
+}
+
+.glitching {
+  animation: glitch 0.15s infinite;
+}
+
+/* Form success message */
+.form-success {
+  display: none;
+  font-family: var(--font-ui);
+  color: var(--neon-cyan);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  animation: pulse-scroll 2s infinite;
+}
+
+/* Storyboard modifications: theme-sidebar and text adjustments */
+
+#txt-the-signal {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 15px var(--neon-cyan), 0 0 30px rgba(0, 245, 255, 0.4);
+}
+
+/* Scene 6 text modifications (dark charcoal text on light grey-blue misty background) */
+#txt-build, #txt-break, #txt-rebuild, #txt-next-era {
+  color: #121620;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Sidebar overlay for Scene 7 & 8 */
+.theme-sidebar {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%) translateX(50px);
+  width: 320px;
+  background: rgba(5, 8, 22, 0.65);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 25px;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.05);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.theme-sidebar.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) translateX(0);
+}
+
+.sidebar-header {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.4s ease;
+}
+
+.sidebar-item.active {
+  background: rgba(0, 245, 255, 0.08);
+  border-color: rgba(0, 245, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.1);
+}
+
+.item-visual {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.4s;
+}
+
+.sidebar-item.active .item-visual {
+  border-color: var(--neon-cyan);
+}
+
+/* Custom CSS Animations inside visual items representing active components */
+#visual-ai {
+  background: radial-gradient(circle, var(--neon-blue) 0%, transparent 70%);
+  background-size: 200% 200%;
+  animation: pulse-ai 3s infinite alternate;
+}
+
+#visual-health {
+  background: linear-gradient(135deg, var(--neon-purple) 0%, transparent 100%);
+}
+#visual-health::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  background: var(--neon-cyan);
+  top: 50%;
+  left: 10%;
+  border-radius: 2px;
+  animation: rotate-dna 4s infinite linear;
+}
+
+#visual-cyber {
+  background: rgba(0, 245, 255, 0.02);
+}
+#visual-cyber::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--neon-cyan);
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 8px var(--neon-cyan);
+  animation: scan-cyber 2s infinite linear;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-title {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-primary);
+  transition: color 0.4s;
+}
+
+.sidebar-item.active .item-title {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
+}
+
+.item-status {
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+/* Animations for visuals */
+@keyframes pulse-ai {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+@keyframes rotate-dna {
+  0% { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+@keyframes scan-cyber {
+  0% { top: 0; }
+  50% { top: 100%; }
+  100% { top: 0; }
+}
