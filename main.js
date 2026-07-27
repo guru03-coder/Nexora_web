@@ -1,6 +1,6 @@
 /**
  * NEXORA — Master Orchestrator & User Interface Controller
- * Zero-gap transition from intro video to infinitely looping Home page.mp4 background.
+ * Zero-gap transition from intro video to infinitely looping video.mp4 background in ultra slow motion.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,15 +42,39 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
   });
 
-  // 2. Zero-Gap Transition Function (Intro Video -> Infinitely Looping Home page.mp4)
+  // 2. Setup Ultra Slow Motion Playback Rate (0.35x speed)
+  const SLOW_MOTION_SPEED = 0.35;
+
+  function applySlowMotion() {
+    if (homeHeroVideo) {
+      homeHeroVideo.playbackRate = SLOW_MOTION_SPEED;
+    }
+  }
+  
+  if (homeHeroVideo) {
+    applySlowMotion();
+    homeHeroVideo.addEventListener('play', applySlowMotion);
+    homeHeroVideo.addEventListener('loadeddata', applySlowMotion);
+    homeHeroVideo.addEventListener('canplay', applySlowMotion);
+    homeHeroVideo.addEventListener('ratechange', () => {
+      if (homeHeroVideo.playbackRate !== SLOW_MOTION_SPEED) {
+        homeHeroVideo.playbackRate = SLOW_MOTION_SPEED;
+      }
+    });
+  }
+
+  // 3. Zero-Gap Transition Function (Intro Video -> Infinitely Looping Ultra Slow-Mo video.mp4)
   function transitionToWebsite() {
     if (hasTransitioned) return;
     hasTransitioned = true;
 
-    // Start home hero video playing in infinity loop
+    // Start home hero video playing in infinity loop at ultra slow motion
     if (homeHeroVideo) {
       homeHeroVideo.currentTime = 0;
-      homeHeroVideo.play().catch(e => console.log("Home hero video play:", e));
+      applySlowMotion();
+      homeHeroVideo.play().then(() => {
+        applySlowMotion();
+      }).catch(e => console.log("Home hero video play:", e));
     }
 
     // Instant/Smooth crossfade out loader overlay so there is ZERO flash or gap
@@ -69,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 450);
   }
 
-  // 3. Monitor Loader Video Playback for Zero-Gap Transition
+  // 4. Monitor Loader Video Playback for Zero-Gap Transition
   if (loaderVideo) {
     loaderVideo.play().catch(err => console.log("Video play request:", err));
 
@@ -92,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Hero Video Scroll Fading
+  // 5. Hero Video Scroll Fading
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     const heroHeight = window.innerHeight;
@@ -103,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 5. FAQ Accordion Handler
+  // 6. FAQ Accordion Handler
   const faqQuestions = document.querySelectorAll('.faq-question');
   faqQuestions.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -118,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Registration Form Submission
+  // 7. Registration Form Submission
   if (registerForm) {
     registerForm.addEventListener('submit', (e) => {
       e.preventDefault();
