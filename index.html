@@ -5,170 +5,471 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Optimization -->
-  <title>Nexora — Birth of the Next Era | Cinematic Intro</title>
-  <meta name="description" content="Embark on a cinematic interactive web journey discovering the next era. Experience scene-based particle simulations, dimensional camera travel, and sound design.">
-  <meta name="keywords" content="Nexora, Web Design, HTML5 Canvas, Web Audio API, Interactive Cinema, Next Era, Tech Innovation">
-  <meta name="author" content="Nexora Lab">
+  <title>NEXORA — Global AI Hackathon | Code the Next Era</title>
+  <meta name="description" content="NEXORA is a premier cinematic AI hackathon bringing together 5,000+ builders, $100k+ in prizes, autonomous agent challenges, and VC incubation.">
+  <meta name="keywords" content="Nexora, AI Hackathon, Autonomous Agents, Neural Networks, Machine Learning, Robotics, Cyber Security, Deep Tech">
+  <meta name="author" content="Nexora AI Foundation">
   
-  <!-- Stylesheets -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&family=Outfit:wght@200;300;400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="loading-state">
 
-  <!-- Custom Reticle Cursor -->
+  <!-- Custom Sci-Fi Reticle Cursor -->
   <div id="custom-cursor"></div>
 
-  <!-- Cinematic Loader Screen -->
-  <div id="loader-overlay">
-    <div class="loader-chamber">
-      <h1 class="loader-title">NEXORA</h1>
-      <button id="btn-enter" class="btn-enter" aria-label="Enter the cinematic experience">
-        ENTER THE NEXT ERA
-      </button>
-    </div>
+  <!-- FULL SCREEN INTRO VIDEO OVERLAY (SEAMLESS 0-GAP TRANSITION TO HOME PAGE) -->
+  <div id="loader-overlay" class="loader-overlay">
+    <video id="loader-video" autoplay muted playsinline preload="auto">
+      <source src="transition video.mp4" type="video/mp4">
+    </video>
   </div>
 
-  <!-- Canvas Graphic Engine Wrapper -->
-  <div id="canvas-container">
-    <canvas id="cinematic-canvas"></canvas>
+  <!-- HOME PAGE HERO SECTION: Featuring Looping Home page.mp4 Video -->
+  <section id="hero-section" class="hero-section">
     
-    <!-- Atmospheric lighting filters -->
-    <div class="overlay-vignette"></div>
-    <div class="overlay-scanlines"></div>
-  </div>
-
-  <!-- Typographic HUD Layer -->
-  <div class="title-overlay">
-    <div id="txt-awakening-1" class="cinematic-text">THE FUTURE</div>
-    <div id="txt-awakening-2" class="cinematic-text">IS NOT WAITING.</div>
-    <div id="txt-build" class="cinematic-text">BUILD.</div>
-    <div id="txt-break" class="cinematic-text">BREAK.</div>
-    <div id="txt-rebuild" class="cinematic-text">REBUILD.</div>
-    <div id="txt-next-era" class="cinematic-text">THE NEXT ERA.</div>
-    <div id="txt-theme-ai" class="cinematic-text">AI WORLD</div>
-    <div id="txt-theme-health" class="cinematic-text">HEALTH TECH</div>
-    <div id="txt-theme-cyber" class="cinematic-text">CYBER VAULT</div>
-    <div id="txt-theme-robotics" class="cinematic-text">ROBOTICS</div>
-    <div id="txt-theme-climate" class="cinematic-text">CLIMATE</div>
-    <div id="txt-the-signal" class="cinematic-text">THE SIGNAL</div>
-    <div id="txt-ready-build" class="cinematic-text">READY TO BUILD?</div>
-  </div>
-
-  <!-- Theme Sidebar Overlay (Scenes 7 & 8) -->
-  <aside id="theme-sidebar" class="theme-sidebar">
-    <div class="sidebar-header">ACTIVE MODULES</div>
-    <div class="sidebar-item" id="sb-ai">
-      <div class="item-visual" id="visual-ai"></div>
-      <div class="item-info">
-        <span class="item-title">NEURAL COGNITION</span>
-        <span class="item-status">MODULE 01 // ACTIVE</span>
-      </div>
-    </div>
-    <div class="sidebar-item" id="sb-health">
-      <div class="item-visual" id="visual-health"></div>
-      <div class="item-info">
-        <span class="item-title">BIO-SYNTHESIS</span>
-        <span class="item-status">MODULE 02 // STANDBY</span>
-      </div>
-    </div>
-    <div class="sidebar-item" id="sb-cyber">
-      <div class="item-visual" id="visual-cyber"></div>
-      <div class="item-info">
-        <span class="item-title">CYBER SECURITY</span>
-        <span class="item-status">MODULE 03 // SECURED</span>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Registration Page (Scene 10) -->
-  <main id="registration-section" aria-label="Registration Portal">
-    <div class="registration-card">
-      <div id="form-chamber">
-        <h2 class="card-title">JOIN THE ERA</h2>
-        <p class="card-subtitle">Secure your access token for the Nexora 2026 Innovation Summit.</p>
-        
-        <form id="register-form" novalidate>
-          <div class="form-group">
-            <label for="reg-name" class="form-label">Full Name</label>
-            <input type="text" id="reg-name" class="form-input" placeholder="e.g. Jean Doe" required autocomplete="name">
-          </div>
-          
-          <div class="form-group">
-            <label for="reg-email" class="form-label">Email Address</label>
-            <input type="email" id="reg-email" class="form-input" placeholder="name@domain.com" required autocomplete="email">
-          </div>
-
-          <div class="form-group">
-            <label for="reg-role" class="form-label">Sector of Influence</label>
-            <input type="text" id="reg-role" class="form-input" placeholder="e.g. AI Engineer, Bio-Hacker" required>
-          </div>
-          
-          <button type="submit" id="btn-submit" class="btn-submit">
-            INITIALIZE ACCESS
-          </button>
-        </form>
-      </div>
+    <!-- Home Page Hero Visual Container -->
+    <div id="hero-media-container" class="hero-media-container">
       
-      <!-- Success panel -->
-      <div id="form-success" class="form-success">
-        <h3>ACCESS INITIALIZED</h3>
-        <p style="margin-top: 15px; font-size: 0.85rem; color: var(--text-secondary);">
-          Your credentials have been uploaded to the Nexora blockchain vault. Keep monitoring the channels.
-        </p>
-      </div>
-    </div>
-  </main>
+      <!-- Infinite Looping Home Page Video: Home page.mp4 -->
+      <video id="home-hero-video" class="home-hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="Home page.mp4" type="video/mp4">
+      </video>
 
-  <!-- Interactive Controls & Metadata Overlay -->
-  <div class="hud-layer">
-    <!-- Header -->
-    <header class="hud-header">
-      <div class="brand-title">NEXORA</div>
-      <div class="hud-controls">
-        <button id="btn-mode-toggle" class="glass-btn" aria-label="Toggle scrolling vs movie mode">SWITCH TO SCROLL CONTROL</button>
-        <button id="btn-play-pause" class="glass-btn" aria-label="Play or pause sequence">PAUSE</button>
+    </div>
+
+    <!-- HUD Action Layer & Interactive CTA Buttons -->
+    <div class="hud-fin-layer">
+      
+      <!-- Corner Reticles -->
+      <div class="reticle-corner top-left">+ NEXORA INTERFACE</div>
+      <div class="reticle-corner top-right">SYSTEM ONLINE ⦿</div>
+      <div class="reticle-corner bot-left">L</div>
+      <div class="reticle-corner bot-right">⅃</div>
+
+      <!-- Central Hero Interactive Action Buttons -->
+      <div class="hero-center-chamber">
+        <div class="hero-title-spacer"></div>
+        
+        <div class="hero-cta-group">
+          <a href="#registration-section" class="btn-primary-glowing">
+            <span>REGISTER NOW</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#tracks-section" class="btn-secondary-glass">
+            <span>EXPLORE TRACKS</span>
+          </a>
+        </div>
       </div>
-    </header>
+
+      <!-- Bottom Center HUD Scroll Indicator -->
+      <div class="callout-bot-center">
+        <div class="callout-sub">CONNECTION ESTABLISHED</div>
+        <div class="callout-label">NEXORA NETWORK</div>
+        
+        <div class="scroll-indicator">
+          <span>SCROLL TO EXPLORE</span>
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Website Content Container -->
+  <div class="site-wrapper">
+
+    <!-- Stats Bar -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">$100,000+</div>
+          <div class="stat-label">TOTAL PRIZE POOL</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">48 HOURS</div>
+          <div class="stat-label">NON-STOP HACKING</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5,000+</div>
+          <div class="stat-label">GLOBAL BUILDERS</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">100+</div>
+          <div class="stat-label">AI MENTORS & VCS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="mission-section" class="section mission-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[01 // MISSION]</div>
+          <h2 class="section-title">THE BIRTH OF THE NEXT ERA</h2>
+          <p class="section-desc">
+            NEXORA is not just a hackathon. It is a high-bandwidth crucible where human ingenuity merges with next-generation artificial intelligence to construct autonomous systems, biomorphic neural networks, and self-evolving code.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3 class="feature-title">Agentic Autonomy</h3>
+            <p class="feature-text">Build multi-agent frameworks capable of complex reasoning, autonomous decision loops, and tool orchestration.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3 class="feature-title">Neural Frontiers</h3>
+            <p class="feature-text">Explore multimodal models, synthetic biology interfaces, and brain-computer intelligence abstractions.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3 class="feature-title">Zero-Knowledge AI</h3>
+            <p class="feature-text">Architect privacy-preserving, verifiable AI models powered by cryptographic proofs and confidential enclaves.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Quantum & Compute</h3>
+            <p class="feature-text">Optimize algorithmic throughput with quantum-inspired evolutionary algorithms and distributed GPU clusters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hackathon Tracks Section -->
+    <section id="tracks-section" class="section tracks-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[02 // CHALLENGE DOMAINS]</div>
+          <h2 class="section-title">HACKATHON TRACKS</h2>
+          <p class="section-desc">Compete across five frontier domains. Choose your track and deploy breakthrough solutions.</p>
+        </div>
+
+        <div class="tracks-grid">
+          
+          <!-- Track 1 -->
+          <div class="track-card" data-track="agents">
+            <div class="track-header">
+              <span class="track-num">01</span>
+              <span class="track-prize">$25,000 PRIZE</span>
+            </div>
+            <h3 class="track-name">Autonomous AI Agents</h3>
+            <p class="track-desc">Self-improving code agents, autonomous workflow swarms, and natural language operating systems.</p>
+            <div class="track-tags">
+              <span class="tag">LLM Agents</span>
+              <span class="tag">Swarm Intelligence</span>
+              <span class="tag">Auto-Debugger</span>
+            </div>
+          </div>
+
+          <!-- Track 2 -->
+          <div class="track-card" data-track="neural">
+            <div class="track-header">
+              <span class="track-num">02</span>
+              <span class="track-prize">$20,000 PRIZE</span>
+            </div>
+            <h3 class="track-name">Neural & Bio-Synthesis</h3>
+            <p class="track-desc">AI for drug discovery, genomic sequence modeling, brain-computer interface signal decoding.</p>
+            <div class="track-tags">
+              <span class="tag">Bio-AI</span>
+              <span class="tag">BCI Signal</span>
+              <span class="tag">Proteomics</span>
+            </div>
+          </div>
+
+          <!-- Track 3 -->
+          <div class="track-card" data-track="cyber">
+            <div class="track-header">
+              <span class="track-num">03</span>
+              <span class="track-prize">$20,000 PRIZE</span>
+            </div>
+            <h3 class="track-name">Cyber Vault & ZK-AI</h3>
+            <p class="track-desc">Zero-knowledge ML proofs, automated smart contract auditing, and decentralized model security.</p>
+            <div class="track-tags">
+              <span class="tag">zkML</span>
+              <span class="tag">Confidential AI</span>
+              <span class="tag">Threat Matrix</span>
+            </div>
+          </div>
+
+          <!-- Track 4 -->
+          <div class="track-card" data-track="robotics">
+            <div class="track-header">
+              <span class="track-num">04</span>
+              <span class="track-prize">$20,000 PRIZE</span>
+            </div>
+            <h3 class="track-name">Robotics & Spatial AI</h3>
+            <p class="track-desc">Vision-language-action (VLA) models for humanoid robotics, drone swarms, and 3D spatial intelligence.</p>
+            <div class="track-tags">
+              <span class="tag">Embodied AI</span>
+              <span class="tag">Robotics VLA</span>
+              <span class="tag">Spatial Perception</span>
+            </div>
+          </div>
+
+          <!-- Track 5 -->
+          <div class="track-card" data-track="climate">
+            <div class="track-header">
+              <span class="track-num">05</span>
+              <span class="track-prize">$15,000 PRIZE</span>
+            </div>
+            <h3 class="track-name">Climate & Planetary Engine</h3>
+            <p class="track-desc">Smart grid energy distribution, atmospheric carbon forecasting, and nuclear fusion plasma containment AI.</p>
+            <div class="track-tags">
+              <span class="tag">Energy AI</span>
+              <span class="tag">Earth System</span>
+              <span class="tag">Grid Sync</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule & Timeline Section -->
+    <section id="timeline-section" class="section timeline-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[03 // EVENT CHRONOLOGY]</div>
+          <h2 class="section-title">HACKATHON SCHEDULE</h2>
+          <p class="section-desc">48 intense hours from team assembly to global demo day.</p>
+        </div>
+
+        <div class="schedule-timeline">
+          <div class="timeline-day-card">
+            <div class="day-badge">DAY 01 // APRIL 17</div>
+            <h3 class="day-title">INITIALIZATION & KICKOFF</h3>
+            <ul class="day-events">
+              <li><span class="time">16:00 UTC</span> Opening Ceremony & Keynote: "Agentic Frontiers"</li>
+              <li><span class="time">18:00 UTC</span> Team Formation & Mentor Speed-Dating</li>
+              <li><span class="time">20:00 UTC</span> Hacking Begins — API Keys & Compute Grants Distributed</li>
+            </ul>
+          </div>
+
+          <div class="timeline-day-card">
+            <div class="day-badge">DAY 02 // APRIL 18</div>
+            <h3 class="day-title">THE SPRINT & VC OFFICE HOURS</h3>
+            <ul class="day-events">
+              <li><span class="time">10:00 UTC</span> Technical Workshop: "Deploying Autonomous Swarms"</li>
+              <li><span class="time">15:00 UTC</span> 1-on-1 VC & Engineering Office Hours</li>
+              <li><span class="time">00:00 UTC</span> Midnight AI Agent Battle Arena</li>
+            </ul>
+          </div>
+
+          <div class="timeline-day-card">
+            <div class="day-badge">DAY 03 // APRIL 19</div>
+            <h3 class="day-title">DEMO DAY & AWARDS</h3>
+            <ul class="day-events">
+              <li><span class="time">16:00 UTC</span> HARD CODE FREEZE & Pitch Submissions</li>
+              <li><span class="time">18:00 UTC</span> Top 10 Finalist Live Streamed Demos</li>
+              <li><span class="time">21:00 UTC</span> Winner Ceremony & $250k Seed Launchpad Awards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prizes & Incubation Section -->
+    <section id="prizes-section" class="section prizes-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[04 // REWARDS & INCUBATION]</div>
+          <h2 class="section-title">PRIZES & INCUBATION</h2>
+          <p class="section-desc">Over $100,000 in cash awards plus direct seed funding for top teams.</p>
+        </div>
+
+        <div class="prizes-grid">
+          <div class="prize-card grand-prize">
+            <div class="prize-trophy">🏆</div>
+            <div class="prize-title">GRAND CHAMPION</div>
+            <div class="prize-amount">$50,000</div>
+            <p class="prize-details">+ $250,000 VC Seed Investment Option, GPU Compute Credits, and Direct Accelerator Entry.</p>
+          </div>
+
+          <div class="prize-card">
+            <div class="prize-trophy">🥇</div>
+            <div class="prize-title">TRACK WINNERS (5X)</div>
+            <div class="prize-amount">$10,000</div>
+            <p class="prize-details">Awarded to the top project in each of the 5 hackathon tracks.</p>
+          </div>
+
+          <div class="prize-card">
+            <div class="prize-trophy">⚡</div>
+            <div class="prize-title">BEST SOLO HACKER</div>
+            <div class="prize-amount">$5,000</div>
+            <p class="prize-details">Recognizing outstanding technical execution by an individual engineer.</p>
+          </div>
+
+          <div class="prize-card">
+            <div class="prize-trophy">🛠️</div>
+            <div class="prize-title">ROBOTICS BOUNTY</div>
+            <div class="prize-amount">$5,000</div>
+            <p class="prize-details">Special prize for hardware-integrated or spatial simulation hacks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Judges & Speakers Section -->
+    <section id="judges-section" class="section judges-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[05 // EVALUATION PANEL]</div>
+          <h2 class="section-title">JUDGES & MENTORS</h2>
+          <p class="section-desc">Evaluated by visionary leaders from AI research and venture capital.</p>
+        </div>
+
+        <div class="judges-grid">
+          <div class="judge-card">
+            <div class="judge-avatar" style="background-image: linear-gradient(135deg, #00f3ff 0%, #0066ff 100%);">
+              <span class="avatar-text">DR</span>
+            </div>
+            <h3 class="judge-name">Dr. Elena Vance</h3>
+            <div class="judge-role">VP of Autonomous Research</div>
+            <div class="judge-org">DeepMind Labs</div>
+          </div>
+
+          <div class="judge-card">
+            <div class="judge-avatar" style="background-image: linear-gradient(135deg, #7b2ff7 0%, #00f3ff 100%);">
+              <span class="avatar-text">KA</span>
+            </div>
+            <h3 class="judge-name">Kenji Arai</h3>
+            <div class="judge-role">General Partner</div>
+            <div class="judge-org">Cybernetic Ventures</div>
+          </div>
+
+          <div class="judge-card">
+            <div class="judge-avatar" style="background-image: linear-gradient(135deg, #ff6b00 0%, #7b2ff7 100%);">
+              <span class="avatar-text">SK</span>
+            </div>
+            <h3 class="judge-name">Dr. Sophia Chen</h3>
+            <div class="judge-role">Head of Agentic Frameworks</div>
+            <div class="judge-org">Neural Systems Inc</div>
+          </div>
+
+          <div class="judge-card">
+            <div class="judge-avatar" style="background-image: linear-gradient(135deg, #0066ff 0%, #ff6b00 100%);">
+              <span class="avatar-text">MA</span>
+            </div>
+            <h3 class="judge-name">Marcus Alexov</h3>
+            <div class="judge-role">Chief Architect</div>
+            <div class="judge-org">Quantum Scale Labs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq-section" class="section faq-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[06 // SYSTEM INQUIRIES]</div>
+          <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">Who is eligible to participate in NEXORA? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">NEXORA is open to developers, researchers, designers, and students globally. Whether you are building solo or in a team of up to 4 people, all backgrounds are welcome.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Is the hackathon free to enter? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Yes! Participation is 100% free. All accepted hackers receive free API credits, cloud GPU compute grants, and mentor support.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Can I build remotely or in-person? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">NEXORA is a hybrid event. You can participate virtually from anywhere in the world or join us live at our Tokyo Innovation Hub.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What are the IP rights for submitted projects? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">You retain 100% ownership of all IP and software you create during the hackathon.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration-section" class="section registration-section">
+      <div class="container">
+        <div class="registration-card">
+          <div id="form-chamber">
+            <div class="section-tag">[07 // REGISTER]</div>
+            <h2 class="card-title">JOIN THE ERA</h2>
+            <p class="card-subtitle">Secure your access token for the Nexora Global AI Summit.</p>
+
+            <form id="register-form" novalidate>
+              <div class="form-group">
+                <label for="reg-name" class="form-label">Full Name</label>
+                <input type="text" id="reg-name" class="form-input" placeholder="e.g. Jean Doe" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="reg-email" class="form-label">Email Address</label>
+                <input type="email" id="reg-email" class="form-input" placeholder="name@domain.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="reg-role" class="form-label">Primary Specialization</label>
+                <select id="reg-role" class="form-input" required>
+                  <option value="" disabled selected>Select specialization...</option>
+                  <option value="AI / LLM Engineer">AI / LLM Engineer</option>
+                  <option value="Agentic Systems Architect">Agentic Systems Architect</option>
+                  <option value="Robotics & Spatial AI">Robotics & Spatial AI</option>
+                  <option value="Full-Stack Developer">Full-Stack Developer</option>
+                  <option value="Research Scientist">Research Scientist</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="reg-github" class="form-label">GitHub / Portfolio URL</label>
+                <input type="url" id="reg-github" class="form-input" placeholder="https://github.com/username">
+              </div>
+
+              <button type="submit" id="btn-submit" class="btn-submit">
+                <span>INITIALIZE ACCESS</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Form Success Panel -->
+          <div id="form-success" class="form-success">
+            <div class="success-icon">✓</div>
+            <h3>ACCESS INITIALIZED</h3>
+            <p>Your access token has been generated and broadcast to the NEXORA network. Check your inbox for confirmation details and Discord access.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="hud-footer">
-      <div id="scroll-indicator" class="scroll-indicator" style="display: none;">
-        <span>SCROLL DOWN TO TRAVEL</span>
-        <svg viewBox="0 0 24 24">
-          <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-        </svg>
-      </div>
-      
-      <div class="timeline-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-        <div id="timeline-progress" class="timeline-progress"></div>
-      </div>
-      
-      <div class="footer-meta">
-        <span class="meta-section">SYSTEM INITIALIZATION [OK]</span>
-        <span class="meta-timer">
-          <span id="time-current">00:00</span> / <span id="time-total">00:54</span>
-        </span>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <span class="brand-name">NEXORA</span>
+          <span class="brand-copy">© 2026 NEXORA AI FOUNDATION. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">PRIVACY MATRIX</a>
+          <a href="#">SYSTEM STATUS</a>
+          <a href="#">CODE OF CONDUCT</a>
+        </div>
       </div>
     </footer>
+
   </div>
 
-  <!-- Scroll containers for Scroll-driven timeline control -->
-  <div class="scroll-container">
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-    <div class="scroll-section"></div>
-  </div>
-
-  <!-- Script Modules -->
-  <script src="canvasRender.js"></script>
+  <!-- Scripts -->
   <script src="main.js"></script>
 </body>
 </html>
