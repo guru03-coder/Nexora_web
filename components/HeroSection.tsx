@@ -11,14 +11,6 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  // Set slow-motion playback rate on hero video
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.45;
-    }
-  }, []);
 
   // Ambient Canvas Circuit-Line Particle Effect
   useEffect(() => {
@@ -40,7 +32,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
     window.addEventListener("resize", handleResize);
 
     // Particle nodes for circuit network
-    const particleCount = 45;
+    const particleCount = 50;
     const particles = Array.from({ length: particleCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -64,7 +56,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
         // Draw particle node
         ctx.beginPath();
         ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(255, 30, 60, 0.6)";
+        ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
         ctx.fill();
 
         for (let j = i + 1; j < particleCount; j++) {
@@ -77,8 +69,8 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(200, 16, 46, ${0.35 * (1 - dist / 130)})`;
-            ctx.lineWidth = 0.8;
+            ctx.strokeStyle = `rgba(255, 30, 60, ${0.45 * (1 - dist / 130)})`;
+            ctx.lineWidth = 0.9;
             ctx.stroke();
           }
         }
@@ -96,28 +88,17 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
   }, []);
 
   return (
-    <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-ink">
-      {/* Background Video Loop */}
-      <video
-        ref={videoRef}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0 pointer-events-none"
-      >
-        <source src="/hero/nexora-loop.mp4" type="video/mp4" />
-        <source src="/video.mp4" type="video/mp4" />
-      </video>
+    <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-ink bg-white-checked">
+      {/* Radial Ambient Backlight */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-crimson/15 rounded-full blur-[160px] pointer-events-none z-0" />
 
-      {/* Dark Vignette Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/70 z-0 pointer-events-none" />
+      {/* Dark Radial Vignette for legibility */}
+      <div className="absolute inset-0 bg-radial from-transparent via-ink/60 to-ink z-0 pointer-events-none" />
 
       {/* Canvas Circuit Particle Layer */}
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 z-10 pointer-events-none opacity-80"
+        className="absolute inset-0 z-10 pointer-events-none opacity-90"
       />
 
       {/* Main Hero Content */}
@@ -128,10 +109,10 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-crimson/30 backdrop-blur-md mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/80 border border-crimson/40 backdrop-blur-md mb-6"
         >
           <span className="w-2 h-2 rounded-full bg-crimson-glow animate-ping" />
-          <span className="text-xs font-mono tracking-widest text-gray-300 uppercase">
+          <span className="text-xs font-mono tracking-widest text-gray-200 uppercase">
             {event.presentedBy} PRESENTS
           </span>
         </motion.div>
@@ -172,7 +153,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
           
           <a
             href="#tracks"
-            className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 border border-white/20 hover:border-crimson/50 text-white font-display text-sm font-semibold uppercase tracking-widest backdrop-blur-md hover:bg-white/10 transition-all duration-300"
+            className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 border border-white/20 hover:border-crimson/50 text-white font-display text-sm font-semibold uppercase tracking-widest backdrop-blur-md hover:bg-white/20 transition-all duration-300"
           >
             Explore Tracks
           </a>
