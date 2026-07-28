@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">
-              Presented by <strong className="text-white">{event.presentedBy}</strong>. Building the next era of artificial intelligence, autonomous agents, and deep tech.
+              Presented by <strong className="text-white">{event.presentedBy}</strong>. 24-Hour hackathon building the next era of artificial intelligence, autonomous agents, and deep tech.
             </p>
             <div className="flex items-center space-x-3 text-gray-400">
               <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
@@ -59,12 +59,12 @@ export default function Footer() {
                 <span className="text-gray-300 font-semibold">{event.dateRange}, 2026</span>
               </li>
               <li>
-                <span className="text-gray-500">Format:</span>{" "}
-                <span className="text-gray-300 font-semibold">In-Person & Hybrid Global</span>
+                <span className="text-gray-500">Duration:</span>{" "}
+                <span className="text-gray-300 font-semibold">24-Hour Non-Stop Hackathon</span>
               </li>
               <li>
-                <span className="text-gray-500">Hacker Count:</span>{" "}
-                <span className="text-gray-300 font-semibold">5,000+ Builders</span>
+                <span className="text-gray-500">Prizes & Perks:</span>{" "}
+                <span className="text-gray-300 font-semibold">₹30K Pool, Internships & Compute Credits</span>
               </li>
             </ul>
           </div>

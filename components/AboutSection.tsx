@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { event } from "@/data/event";
-import { Zap, Target, Cpu, ShieldCheck } from "lucide-react";
+import { Zap, Trophy, Briefcase, Gift } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -36,7 +36,7 @@ export default function AboutSection() {
             >
               {event.venue}, {event.city} ↗
             </a>
-            , NEXORA is a 48-hour global hackathon crucible. We unite 5,000+ engineers, researchers, and creators to build self-evolving AI systems, decentralized protocols, and biomorphic models that redefine what is possible.
+            , NEXORA is a 24-hour hackathon crucible. Build self-evolving AI systems, decentralized protocols, and biomorphic models that redefine what is possible.
           </p>
         </motion.div>
 
@@ -45,23 +45,23 @@ export default function AboutSection() {
           {[
             {
               icon: Zap,
-              title: "48H Non-Stop Sprint",
-              desc: "Pure uninterrupted hack time with high-speed compute infrastructure and technical mentors.",
+              title: "24H Non-Stop Sprint",
+              desc: "Pure uninterrupted 24-hour hack time with compute infrastructure and technical mentors.",
             },
             {
-              icon: Target,
-              title: "5 Frontier Tracks",
-              desc: "Compete in AI, Web3, Sustainability, Spatial Robotics, and Open Innovation.",
+              icon: Trophy,
+              title: "₹30K Prize Pool",
+              desc: "Cash awards and track bounties distributed to top-performing teams.",
             },
             {
-              icon: Cpu,
-              title: "$100K+ Prize Pool",
-              desc: "Cash prizes, GPU compute grants, and direct VC seed launchpad incubation opportunities.",
+              icon: Briefcase,
+              title: "Internship Opportunities",
+              desc: "Direct internship offers and recruitment pathways from partner companies.",
             },
             {
-              icon: ShieldCheck,
-              title: "Full IP Ownership",
-              desc: "You retain 100% of all intellectual property, source code, and assets created.",
+              icon: Gift,
+              title: "Compute & Credit Offers",
+              desc: "Exclusive cloud GPU compute grants and premium developer API credit offers.",
             },
           ].map((item, idx) => (
             <motion.div
