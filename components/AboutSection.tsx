@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { event } from "@/data/event";
-import { Zap, Globe, Trophy, ShieldCheck } from "lucide-react";
+import { Zap, Globe, Trophy, Layers } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -59,9 +59,9 @@ export default function AboutSection() {
               desc: "Cash prizes, direct internship offers from partners, and cloud/GPU compute credit grants.",
             },
             {
-              icon: ShieldCheck,
-              title: "Full IP Ownership",
-              desc: "You retain 100% of all intellectual property, source code, and assets created.",
+              icon: Layers,
+              title: "2-Stage Format",
+              desc: "Round 1 online idea submission followed by Round 2 offline 24-hour sprint at SNS IHUB.",
             },
           ].map((item, idx) => (
             <motion.div
