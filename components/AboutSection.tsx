@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { event } from "@/data/event";
-import { Zap, Target, Trophy, ShieldCheck } from "lucide-react";
+import { Zap, Globe, Trophy, ShieldCheck } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -49,9 +49,9 @@ export default function AboutSection() {
               desc: "Pure uninterrupted 24-hour hack time with high-speed compute infrastructure and technical mentors.",
             },
             {
-              icon: Target,
-              title: "5 Frontier Tracks",
-              desc: "Compete in AI, Web3, Sustainability, Spatial Robotics, and Open Innovation.",
+              icon: Globe,
+              title: "Hybrid Mode",
+              desc: "Join in-person at SNS IHUB, Coimbatore or compete online from anywhere worldwide.",
             },
             {
               icon: Trophy,
