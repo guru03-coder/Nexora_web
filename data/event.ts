@@ -4,6 +4,7 @@ export interface EventInfo {
   tagline: string;
   city: string;
   venue: string;
+  venueUrl: string;
   dateRange: string;
   registerUrl: string;
 }
@@ -43,9 +44,10 @@ export const event: EventInfo = {
   presentedBy: "HackHere",
   tagline: "Beyond Limits. Beyond Imagination",
   city: "Coimbatore",
-  venue: "Avinashi Road",
-  dateRange: "August 29–30",
-  registerUrl: "#register", // TODO: paste your actual registration form / link here
+  venue: "SNS IHUB",
+  venueUrl: "https://share.google/liE6KCTvmAmmcnOBK",
+  dateRange: "August 22–23",
+  registerUrl: "#register",
 };
 
 export const sponsors: Sponsor[] = [
@@ -100,7 +102,7 @@ export const tracks: Track[] = [
 export const schedule: ScheduleDay[] = [
   {
     day: "Day 1",
-    date: "August 29",
+    date: "August 22",
     items: [
       { time: "09:00 AM", title: "Registration & Check-in", description: "Collect hacker badges, welcome kits, and compute credentials." },
       { time: "10:00 AM", title: "Opening Ceremony", description: "Kickoff, rules briefing, sponsor challenges & track reveal." },
@@ -111,7 +113,7 @@ export const schedule: ScheduleDay[] = [
   },
   {
     day: "Day 2",
-    date: "August 30",
+    date: "August 23",
     items: [
       { time: "09:00 AM", title: "Breakfast & Pitch Prep", description: "Refine slide decks, live demos, and project submissions." },
       { time: "10:00 AM", title: "Submissions Close", description: "Hard code freeze on GitHub & Devpost repositories." },
