@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { tracks } from "@/data/event";
-import { Bot, ShieldCheck, Link as LinkIcon, Settings, Sparkles, Award } from "lucide-react";
+import { Bot, ShieldCheck, Link as LinkIcon, Settings, Sparkles } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   bot: Bot,
@@ -50,14 +50,10 @@ export default function TracksSection() {
                 className="group relative glass-panel rounded-2xl p-6 hover:border-crimson hover:shadow-[0_0_30px_rgba(0,229,255,0.3)] transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  {/* Domain Badge & Prize */}
-                  <div className="flex items-center justify-between mb-6">
+                  {/* Domain Icon */}
+                  <div className="mb-6">
                     <div className="w-12 h-12 rounded-xl bg-crimson/10 border border-crimson/30 flex items-center justify-center text-crimson-glow group-hover:scale-110 group-hover:bg-crimson group-hover:text-black transition-all">
                       <IconComponent className="w-6 h-6" />
-                    </div>
-                    <div className="flex items-center gap-1 text-[11px] font-mono font-bold text-crimson-glow bg-crimson/10 px-2.5 py-1 rounded-full border border-crimson/30">
-                      <Award className="w-3.5 h-3.5" />
-                      <span>{track.prize}</span>
                     </div>
                   </div>
 
