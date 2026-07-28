@@ -11,6 +11,14 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  // Set slow-motion playback rate on hero video
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5;
+    }
+  }, []);
 
   // Ambient Canvas Circuit-Line Particle Effect
   useEffect(() => {
@@ -32,7 +40,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
     window.addEventListener("resize", handleResize);
 
     // Particle nodes for circuit network
-    const particleCount = 50;
+    const particleCount = 45;
     const particles = Array.from({ length: particleCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -88,17 +96,31 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
   }, []);
 
   return (
-    <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-ink bg-white-checked">
+    <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-ink">
+      {/* Background Video Loop (infi final.mp4) */}
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0 pointer-events-none"
+      >
+        <source src="/infi-final.mp4" type="video/mp4" />
+        <source src="/infi final.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark Vignette Overlay for Contrast */}
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/70 z-0 pointer-events-none" />
+
       {/* Radial Ambient Backlight */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-crimson/15 rounded-full blur-[160px] pointer-events-none z-0" />
-
-      {/* Dark Radial Vignette for legibility */}
-      <div className="absolute inset-0 bg-radial from-transparent via-ink/60 to-ink z-0 pointer-events-none" />
 
       {/* Canvas Circuit Particle Layer */}
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 z-10 pointer-events-none opacity-90"
+        className="absolute inset-0 z-10 pointer-events-none opacity-80"
       />
 
       {/* Main Hero Content */}
