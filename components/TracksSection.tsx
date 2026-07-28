@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import { tracks } from "@/data/event";
-import { Brain, Link, Leaf, Bot, Sparkles, Award } from "lucide-react";
+import { Bot, ShieldCheck, Link as LinkIcon, Settings, Sparkles, Award } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
-  brain: Brain,
-  link: Link,
-  leaf: Leaf,
   bot: Bot,
+  shield: ShieldCheck,
+  link: LinkIcon,
+  settings: Settings,
   sparkles: Sparkles,
 };
 
@@ -29,15 +29,15 @@ export default function TracksSection() {
             [ 02 // CHALLENGE DOMAINS ]
           </span>
           <h2 className="text-3xl sm:text-5xl font-display font-bold mt-2 mb-4">
-            HACKATHON <span className="metal-gradient">TRACKS</span>
+            HACKATHON <span className="metal-gradient">DOMAINS</span>
           </h2>
-          <p className="text-gray-400 font-sans">
-            Choose your specialization and engineer high-impact solutions across five frontier tech domains.
+          <p className="text-gray-400 font-sans text-base sm:text-lg">
+            Choose your frontier. Shape the future.
           </p>
         </motion.div>
 
-        {/* Tracks Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Domains 4-Column Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {tracks.map((track, idx) => {
             const IconComponent = iconMap[track.icon] || Sparkles;
             return (
@@ -47,26 +47,26 @@ export default function TracksSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group relative glass-panel rounded-2xl p-6 hover:border-crimson hover:shadow-[0_0_30px_rgba(200,16,46,0.3)] transition-all duration-300 flex flex-col justify-between"
+                className="group relative glass-panel rounded-2xl p-6 hover:border-crimson hover:shadow-[0_0_30px_rgba(0,229,255,0.3)] transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  {/* Track Badge & Prize */}
+                  {/* Domain Badge & Prize */}
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-crimson/10 border border-crimson/30 flex items-center justify-center text-crimson-glow group-hover:scale-110 group-hover:bg-crimson group-hover:text-white transition-all">
+                    <div className="w-12 h-12 rounded-xl bg-crimson/10 border border-crimson/30 flex items-center justify-center text-crimson-glow group-hover:scale-110 group-hover:bg-crimson group-hover:text-black transition-all">
                       <IconComponent className="w-6 h-6" />
                     </div>
-                    <div className="flex items-center gap-1 text-xs font-mono font-bold text-crimson-glow bg-crimson/10 px-3 py-1 rounded-full border border-crimson/30">
+                    <div className="flex items-center gap-1 text-[11px] font-mono font-bold text-crimson-glow bg-crimson/10 px-2.5 py-1 rounded-full border border-crimson/30">
                       <Award className="w-3.5 h-3.5" />
                       <span>{track.prize}</span>
                     </div>
                   </div>
 
-                  {/* Track Title */}
+                  {/* Domain Title */}
                   <h3 className="text-xl font-display font-bold text-white mb-3 group-hover:text-crimson-glow transition-colors">
                     {track.title}
                   </h3>
 
-                  {/* Track Description */}
+                  {/* Domain Description */}
                   <p className="text-sm text-gray-400 leading-relaxed font-sans mb-6">
                     {track.description}
                   </p>
@@ -74,7 +74,7 @@ export default function TracksSection() {
 
                 {/* Footer Link */}
                 <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-gray-400 group-hover:text-white transition-colors">
-                  <span>Track ID: #{track.id}</span>
+                  <span>Domain ID: #{track.id}</span>
                   <span className="group-hover:translate-x-1 transition-transform text-crimson-glow font-bold">
                     Learn More →
                   </span>

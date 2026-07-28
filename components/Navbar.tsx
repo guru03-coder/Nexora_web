@@ -51,7 +51,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             About
           </a>
           <a href="#tracks" className="hover:text-crimson-glow transition-colors">
-            Tracks
+            Domains
           </a>
           <a href="#schedule" className="hover:text-crimson-glow transition-colors">
             Schedule
@@ -67,7 +67,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
         {/* CTA Register Button */}
         <button
           onClick={onRegisterClick}
-          className="relative group overflow-hidden px-5 py-2.5 rounded-full bg-crimson text-white font-display text-xs font-semibold uppercase tracking-wider shadow-[0_0_20px_rgba(200,16,46,0.5)] hover:shadow-[0_0_30px_rgba(255,30,60,0.8)] transition-all duration-300"
+          className="relative group overflow-hidden px-5 py-2.5 rounded-full bg-crimson text-black font-display text-xs font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(0,229,255,0.5)] hover:shadow-[0_0_30px_rgba(0,240,255,0.8)] transition-all duration-300"
         >
           <span className="relative z-10">Register Now</span>
           <div className="absolute inset-0 bg-gradient-to-r from-crimson-glow to-crimson opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

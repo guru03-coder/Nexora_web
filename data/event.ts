@@ -63,38 +63,31 @@ export const sponsors: Sponsor[] = [
 
 export const tracks: Track[] = [
   { 
-    id: "ai-ml", 
-    title: "AI / ML & Autonomous Agents", 
-    description: "Build intelligent systems that push the limits of automation, multi-agent frameworks, and self-improving neural models.", 
-    icon: "brain",
+    id: "ai", 
+    title: "Artificial Intelligence", 
+    description: "Build intelligent systems that learn, adapt, and transform industries", 
+    icon: "bot",
     prize: "₹30K Pool + Bounties"
   },
   { 
-    id: "web3", 
-    title: "Web3 & Zero-Knowledge AI", 
-    description: "Decentralized ideas for a trustless future, cryptographic zkML proofs, and confidential enclave security.", 
-    icon: "link",
+    id: "cyber", 
+    title: "Cyber Security", 
+    description: "Defend digital frontiers with innovative security solutions and threat detection", 
+    icon: "shield",
     prize: "Internship & Bounties"
   },
   { 
-    id: "sustain", 
-    title: "Sustainability & GreenTech", 
-    description: "Tech solving real-world environmental challenges, energy distribution algorithms, and smart grid systems.", 
-    icon: "leaf",
+    id: "blockchain", 
+    title: "BlockChain", 
+    description: "Build decentralized applications and trustless systems for the future", 
+    icon: "link",
     prize: "Credits & Perks"
   },
   { 
-    id: "robotics", 
-    title: "Robotics & Spatial AI", 
-    description: "Vision-language-action (VLA) models for humanoid robotics, drone swarms, and spatial intelligence.", 
-    icon: "bot",
-    prize: "Hardware & Bounties"
-  },
-  { 
-    id: "open", 
-    title: "Open Innovation", 
-    description: "Anything goes — surprise us with high-impact, disruptive solutions.", 
-    icon: "sparkles",
+    id: "devops", 
+    title: "DevOps", 
+    description: "Automate, integrate, and deploy — streamline the software lifecycle", 
+    icon: "settings",
     prize: "Special Bounties"
   },
 ];
@@ -105,9 +98,9 @@ export const schedule: ScheduleDay[] = [
     date: "August 22",
     items: [
       { time: "09:00 AM", title: "Registration & Check-in", description: "Collect hacker badges, welcome kits, and compute credentials at SNS IHUB." },
-      { time: "10:00 AM", title: "Opening Ceremony", description: "Kickoff, rules briefing, sponsor challenges & track reveal." },
+      { time: "10:00 AM", title: "Opening Ceremony", description: "Kickoff, rules briefing, sponsor challenges & domain reveal." },
       { time: "11:00 AM", title: "24-Hour Hacking Begins", description: "API keys & GPU compute grants distributed. Hacking officially unlocked!" },
-      { time: "03:00 PM", title: "Technical Workshop", description: "Building Autonomous Swarms with Next-Gen Agentic Tools." },
+      { time: "03:00 PM", title: "Technical Workshop", description: "Building Autonomous Swarms & Next-Gen Infrastructure." },
       { time: "08:00 PM", title: "Dinner & Mentor Speed-Dating", description: "Connect with 1-on-1 industry and AI engineering mentors." },
     ],
   },
