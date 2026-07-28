@@ -110,21 +110,21 @@ export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProp
               </div>
             </div>
 
-            {/* Right Side: Venue with Google Maps Redirect, Date & Register Button */}
+            {/* Right Side: Venue (Clickable Google Maps link), Date & Register Button */}
             <div className="flex items-center gap-3 sm:gap-6">
-              {/* Clickable Location Link */}
+              {/* Location Link */}
               <a
-                href={event.venueUrl}
+                href={event.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Open Venue Location in Google Maps"
-                className="hidden lg:flex items-center gap-2 border-l border-white/10 pl-4 hover:text-crimson-glow transition-colors group cursor-pointer"
+                title="Open SNS IHUB Location in Google Maps"
+                className="hidden lg:flex items-center gap-2 border-l border-white/10 pl-4 text-gray-200 hover:text-crimson-glow transition-colors group"
               >
-                <MapPin className="w-4 h-4 text-crimson-glow shrink-0 group-hover:scale-110 transition-transform" />
-                <span>
-                  <strong className="text-white font-sans group-hover:underline">{event.city}</strong> • {event.venue}
+                <MapPin className="w-4 h-4 text-crimson-glow group-hover:scale-110 transition-transform shrink-0" />
+                <span className="group-hover:underline underline-offset-4 flex items-center gap-1">
+                  <strong className="text-white font-sans">{event.venue}</strong> • {event.city}
+                  <ExternalLink className="w-3 h-3 text-gray-400 group-hover:text-crimson-glow" />
                 </span>
-                <ExternalLink className="w-3 h-3 opacity-60 group-hover:opacity-100 text-crimson-glow" />
               </a>
 
               {/* Dates */}

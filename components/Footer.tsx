@@ -1,6 +1,6 @@
 import { event, sponsors } from "@/data/event";
 import Image from "next/image";
-import { Github, Twitter, Disc as Discord, Mail, ExternalLink } from "lucide-react";
+import { Github, Twitter, Disc as Discord, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -46,13 +46,12 @@ export default function Footer() {
               <li>
                 <span className="text-gray-500">Location:</span>{" "}
                 <a
-                  href={event.venueUrl}
+                  href={event.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 font-semibold hover:text-crimson-glow hover:underline inline-flex items-center gap-1 transition-colors"
+                  className="text-gray-300 font-semibold hover:text-crimson-glow transition-colors underline underline-offset-2"
                 >
-                  {event.city}, {event.venue}
-                  <ExternalLink className="w-3 h-3 text-crimson-glow inline" />
+                  {event.venue}, {event.city} ↗
                 </a>
               </li>
               <li>

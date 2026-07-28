@@ -4,7 +4,7 @@ export interface EventInfo {
   tagline: string;
   city: string;
   venue: string;
-  venueUrl: string;
+  mapUrl: string;
   dateRange: string;
   registerUrl: string;
 }
@@ -45,7 +45,7 @@ export const event: EventInfo = {
   tagline: "Beyond Limits. Beyond Imagination",
   city: "Coimbatore",
   venue: "SNS IHUB",
-  venueUrl: "https://share.google/liE6KCTvmAmmcnOBK",
+  mapUrl: "https://maps.app.goo.gl/5Qv5T9LsVeL58uxd8",
   dateRange: "August 22–23",
   registerUrl: "#register",
 };
@@ -104,7 +104,7 @@ export const schedule: ScheduleDay[] = [
     day: "Day 1",
     date: "August 22",
     items: [
-      { time: "09:00 AM", title: "Registration & Check-in", description: "Collect hacker badges, welcome kits, and compute credentials." },
+      { time: "09:00 AM", title: "Registration & Check-in", description: "Collect hacker badges, welcome kits, and compute credentials at SNS IHUB." },
       { time: "10:00 AM", title: "Opening Ceremony", description: "Kickoff, rules briefing, sponsor challenges & track reveal." },
       { time: "11:00 AM", title: "Hacking Begins", description: "API keys & GPU compute grants distributed. Hacking officially unlocked!" },
       { time: "03:00 PM", title: "Technical Workshop", description: "Building Autonomous Swarms with Next-Gen Agentic Tools." },
@@ -128,6 +128,7 @@ export const faqs: FAQItem[] = [
   { question: "Who can participate?", answer: "NEXORA is open to all developers, designers, students, and AI researchers worldwide. Both beginners and experienced hackers are welcome!" },
   { question: "What is the team size?", answer: "Teams can range from 1 to 4 participants. You can form teams prior to the event or connect with teammates during Day 1 networking." },
   { question: "Is there a registration fee?", answer: "No! Participation in NEXORA is 100% free. All accepted hackers receive free meals, swag, and cloud GPU compute credits." },
+  { question: "Where is NEXORA held?", answer: "NEXORA takes place in person at SNS IHUB, Coimbatore (August 22–23)." },
   { question: "What should I bring?", answer: "Bring your laptop, charger, valid government ID, enthusiasm, and any hardware components if you are competing in the Robotics track." },
   { question: "Are there prizes?", answer: "Yes! Over $100,000 in cash prizes, sponsor bounties, VC investment opportunities, and incubation support are up for grabs." },
 ];

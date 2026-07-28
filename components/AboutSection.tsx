@@ -27,8 +27,16 @@ export default function AboutSection() {
             WELCOME TO <span className="metal-gradient">{event.name}</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed font-sans">
-            Hosted by <strong className="text-white">{event.presentedBy}</strong> in{" "}
-            <strong className="text-white">{event.city}</strong>, NEXORA is a 48-hour global hackathon crucible. We unite 5,000+ engineers, researchers, and creators to build self-evolving AI systems, decentralized protocols, and biomorphic models that redefine what is possible.
+            Hosted by <strong className="text-white">{event.presentedBy}</strong> at{" "}
+            <a
+              href={event.mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-crimson-glow hover:underline underline-offset-4 font-semibold"
+            >
+              {event.venue}, {event.city} ↗
+            </a>
+            , NEXORA is a 48-hour global hackathon crucible. We unite 5,000+ engineers, researchers, and creators to build self-evolving AI systems, decentralized protocols, and biomorphic models that redefine what is possible.
           </p>
         </motion.div>
 
