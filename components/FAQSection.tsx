@@ -24,7 +24,7 @@ export default function FAQSection() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow">
+          <span className="text-xs font-mono uppercase tracking-widest text-neonblue">
             [ 05 // SYSTEM INQUIRIES ]
           </span>
           <h2 className="text-3xl sm:text-5xl font-display font-bold mt-2 mb-4">
@@ -46,14 +46,14 @@ export default function FAQSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="glass-panel rounded-2xl overflow-hidden border border-white/10 hover:border-crimson/40 transition-colors"
+                className="glass-panel rounded-2xl overflow-hidden border border-white/10 hover:border-neonblue/50 transition-colors"
               >
                 <button
                   onClick={() => toggleIndex(idx)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-display font-semibold text-lg text-white hover:text-crimson-glow transition-colors focus:outline-none"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-display font-semibold text-lg text-white hover:text-neonblue transition-colors focus:outline-none"
                 >
                   <span>{faq.question}</span>
-                  <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-crimson-glow">
+                  <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-neonblue">
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>
                 </button>

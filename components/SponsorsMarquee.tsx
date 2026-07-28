@@ -17,7 +17,7 @@ export default function SponsorsMarquee() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow">
+          <span className="text-xs font-mono uppercase tracking-widest text-neonblue">
             [ 04 // BACKED BY INDUSTRY LEADERS ]
           </span>
           <h2 className="text-2xl sm:text-4xl font-display font-bold mt-2 text-white">
@@ -39,7 +39,7 @@ export default function SponsorsMarquee() {
           {marqueeItems.map((sponsor, idx) => (
             <div
               key={idx}
-              className="glass-panel px-8 py-4 rounded-xl flex items-center justify-center min-w-[180px] h-20 hover:border-crimson/60 transition-all group shrink-0"
+              className="glass-panel px-8 py-4 rounded-xl flex items-center justify-center min-w-[180px] h-20 hover:border-neonblue/60 transition-all group shrink-0"
             >
               <div className="relative w-32 h-10 filter grayscale group-hover:grayscale-0 transition-all duration-300">
                 <Image

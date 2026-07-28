@@ -30,7 +30,7 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="relative w-full max-w-md bg-ink border border-crimson/30 rounded-2xl p-6 sm:p-8 shadow-2xl z-10 text-center glass-panel"
+            className="relative w-full max-w-md bg-ink border border-neonblue/40 rounded-2xl p-6 sm:p-8 shadow-2xl z-10 text-center glass-panel"
           >
             {/* Close Button */}
             <button
@@ -43,7 +43,7 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
 
             {/* Header */}
             <div className="mb-6">
-              <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow">
+              <span className="text-xs font-mono uppercase tracking-widest text-neonblue">
                 Access Token Gate
               </span>
               <h3 className="text-2xl font-display font-bold mt-1 metal-gradient">
@@ -55,7 +55,7 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
             </div>
 
             {/* QR Image */}
-            <div className="relative mx-auto w-64 h-64 bg-white p-3 rounded-xl shadow-inner border-2 border-crimson/50 mb-6 group">
+            <div className="relative mx-auto w-64 h-64 bg-white p-3 rounded-xl shadow-inner border-2 border-neonblue/60 mb-6 group">
               <div className="relative w-full h-full">
                 <Image
                   src="/qr/nexora-qr.png"
@@ -74,7 +74,7 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
               </div>
               <div className="text-right">
                 <span className="block text-gray-400">Presented By</span>
-                <span className="font-semibold text-crimson-glow">{event.presentedBy}</span>
+                <span className="font-semibold text-neonblue">{event.presentedBy}</span>
               </div>
             </div>
 
@@ -84,7 +84,7 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
               onClick={() => {
                 onClose();
               }}
-              className="inline-flex items-center justify-center gap-2 w-full py-3 px-6 rounded-xl bg-gradient-to-r from-crimson to-crimson-dark text-white font-display font-semibold hover:shadow-[0_0_25px_rgba(255,30,60,0.6)] transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 w-full py-3 px-6 rounded-xl bg-gradient-to-r from-neonblue via-[#00D2FF] to-[#0072FF] text-black font-display font-extrabold hover:shadow-[0_0_25px_rgba(0,240,255,0.7)] transition-all duration-300"
             >
               <span>Proceed to Portal</span>
               <ExternalLink className="w-4 h-4" />
