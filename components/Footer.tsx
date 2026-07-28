@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-neonblue/20 border border-neonblue/40 flex items-center justify-center font-display font-black text-neonblue text-xs">
+              <div className="w-8 h-8 rounded-lg bg-crimson/20 border border-crimson/40 flex items-center justify-center font-display font-black text-white text-xs">
                 H
               </div>
               <span className="text-2xl font-display font-extrabold metal-gradient">
@@ -22,16 +22,16 @@ export default function Footer() {
               Presented by <strong className="text-white">{event.presentedBy}</strong>. Building the next era of artificial intelligence, autonomous agents, and deep tech.
             </p>
             <div className="flex items-center space-x-3 text-gray-400">
-              <a href="#" className="hover:text-neonblue transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="hover:text-neonblue transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
                 <Discord className="w-4 h-4" />
               </a>
-              <a href="#" className="hover:text-neonblue transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
                 <Github className="w-4 h-4" />
               </a>
-              <a href="#" className="hover:text-neonblue transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
                 <Mail className="w-4 h-4" />
               </a>
             </div>
@@ -69,27 +69,27 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <a href="#about" className="hover:text-neonblue transition-colors">
+                <a href="#about" className="hover:text-crimson-glow transition-colors">
                   About Hackathon
                 </a>
               </li>
               <li>
-                <a href="#tracks" className="hover:text-neonblue transition-colors">
+                <a href="#tracks" className="hover:text-crimson-glow transition-colors">
                   Challenge Tracks
                 </a>
               </li>
               <li>
-                <a href="#schedule" className="hover:text-neonblue transition-colors">
+                <a href="#schedule" className="hover:text-crimson-glow transition-colors">
                   Run of Show Schedule
                 </a>
               </li>
               <li>
-                <a href="#sponsors" className="hover:text-neonblue transition-colors">
+                <a href="#sponsors" className="hover:text-crimson-glow transition-colors">
                   Sponsors & Partners
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-neonblue transition-colors">
+                <a href="#faq" className="hover:text-crimson-glow transition-colors">
                   FAQ & Support
                 </a>
               </li>
@@ -105,7 +105,7 @@ export default function Footer() {
               {sponsors.slice(0, 6).map((sponsor, idx) => (
                 <div
                   key={idx}
-                  className="bg-white/5 border border-white/10 rounded-lg p-2 flex items-center justify-center h-10 hover:border-neonblue/50 transition-colors"
+                  className="bg-white/5 border border-white/10 rounded-lg p-2 flex items-center justify-center h-10 hover:border-crimson/40 transition-colors"
                 >
                   <div className="relative w-full h-full grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all">
                     <Image

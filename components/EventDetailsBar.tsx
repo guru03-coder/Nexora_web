@@ -29,12 +29,12 @@ export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProp
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 50, opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-3xl glass-panel rounded-full px-6 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.8)] border border-neonblue/40"
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-3xl glass-panel rounded-full px-6 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.8)] border border-crimson/30"
         >
           <div className="flex items-center justify-between text-xs sm:text-sm font-mono text-gray-200">
             {/* Location */}
             <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-neonblue shrink-0" />
+              <MapPin className="w-4 h-4 text-crimson-glow shrink-0" />
               <span>
                 <strong className="text-white font-sans">{event.city}</strong> • {event.venue}
               </span>
@@ -42,14 +42,14 @@ export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProp
 
             {/* Dates */}
             <div className="hidden sm:flex items-center gap-2 border-x border-white/10 px-4">
-              <Calendar className="w-4 h-4 text-neonblue shrink-0" />
+              <Calendar className="w-4 h-4 text-crimson-glow shrink-0" />
               <span className="text-white font-sans font-semibold">{event.dateRange}</span>
             </div>
 
             {/* Pill Register Button */}
             <button
               onClick={onRegisterClick}
-              className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-neonblue hover:bg-[#00D2FF] text-black font-display text-xs font-extrabold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(0,240,255,0.6)]"
+              className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-crimson hover:bg-crimson-glow text-white font-display text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(200,16,46,0.5)]"
             >
               <QrCode className="w-3.5 h-3.5" />
               <span>Register Now</span>

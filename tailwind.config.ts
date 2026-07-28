@@ -10,15 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         crimson: {
-          DEFAULT: '#00F0FF',
-          dark: '#0052D4',
-          glow: '#00F0FF',
-        },
-        neonblue: {
-          DEFAULT: '#00F0FF',
-          dark: '#0052D4',
-          glow: '#00F0FF',
-          bright: '#00E5FF',
+          DEFAULT: '#00E5FF', // Electric Neon Cyan
+          dark: '#0088FF',    // Deep Cyber Blue
+          glow: '#00F0FF',    // Neon Cyan Glow
         },
         ink: '#0A0A0A',
       },

@@ -19,7 +19,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
     }
   }, []);
 
-  // Ambient Canvas Circuit-Line Particle Effect
+  // Ambient Canvas Circuit-Line Particle Effect (Neon Cyan / Blue Theme)
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -60,7 +60,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
         if (p1.x < 0 || p1.x > width) p1.vx *= -1;
         if (p1.y < 0 || p1.y > height) p1.vy *= -1;
 
-        // Draw particle node
+        // Draw particle node (Neon Cyan)
         ctx.beginPath();
         ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
         ctx.fillStyle = "rgba(0, 240, 255, 0.9)";
@@ -76,7 +76,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(0, 240, 255, ${0.45 * (1 - dist / 130)})`;
+            ctx.strokeStyle = `rgba(0, 229, 255, ${0.45 * (1 - dist / 130)})`;
             ctx.lineWidth = 0.9;
             ctx.stroke();
           }
@@ -113,10 +113,16 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
       {/* Top Header Shield Gradient */}
       <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-ink via-ink/60 to-transparent z-10 pointer-events-none" />
 
+      {/* Radial Ambient Backlight (Neon Blue Glow) */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-cyan-500/20 rounded-full blur-[160px] pointer-events-none z-0" />
+
+      {/* Dark Radial Vignette */}
+      <div className="absolute inset-0 bg-radial from-transparent via-ink/50 to-ink z-0 pointer-events-none" />
+
       {/* Canvas Circuit Particle Layer */}
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 z-10 pointer-events-none opacity-85"
+        className="absolute inset-0 z-10 pointer-events-none opacity-80"
       />
 
       {/* Interactive Clickable Hotspots overlay matching video's native buttons */}
@@ -126,7 +132,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
           <button
             onClick={onRegisterClick}
             aria-label="Claim Access Pass"
-            className="w-56 sm:w-60 h-14 rounded-full cursor-pointer bg-white/0 hover:bg-neonblue/20 border border-transparent hover:border-neonblue/60 transition-all duration-300 shadow-[0_0_20px_rgba(0,240,255,0)] hover:shadow-[0_0_30px_rgba(0,240,255,0.6)]"
+            className="w-56 sm:w-60 h-14 rounded-full cursor-pointer bg-white/0 hover:bg-cyan-500/20 border border-transparent hover:border-cyan-400/50 transition-all duration-300 shadow-[0_0_20px_rgba(0,229,255,0)] hover:shadow-[0_0_30px_rgba(0,229,255,0.6)]"
           />
 
           {/* Hotspot over EXPLORE TRACKS */}
@@ -144,7 +150,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center text-gray-300 hover:text-neonblue transition-colors cursor-pointer"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center text-gray-300 hover:text-crimson-glow transition-colors cursor-pointer"
       >
         <span className="text-[10px] font-mono tracking-widest uppercase mb-1">
           Scroll Down
@@ -153,7 +159,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
         >
-          <ChevronDown className="w-5 h-5 text-neonblue" />
+          <ChevronDown className="w-5 h-5 text-cyan-400" />
         </motion.div>
       </motion.a>
     </section>
