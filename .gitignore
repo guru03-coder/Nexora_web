@@ -1,6 +1,5 @@
-# Next.js build & dependencies
-node_modules
-.next
-out
 .DS_Store
 *.zip
+node_modules/
+.next/
+out/

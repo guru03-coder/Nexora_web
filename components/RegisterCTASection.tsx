@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { QrCode, Sparkles, ArrowRight } from "lucide-react";
 import { event } from "@/data/event";
 
 interface RegisterCTASectionProps {
@@ -11,69 +11,77 @@ interface RegisterCTASectionProps {
 
 export default function RegisterCTASection({ onRegisterClick }: RegisterCTASectionProps) {
   return (
-    <section id="register" className="relative py-28 bg-ink overflow-hidden">
-      {/* Radial Glow */}
+    <section id="register" className="py-28 relative bg-ink border-t border-white/5 overflow-hidden">
+      {/* Background glow effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-crimson/15 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="rounded-3xl bg-gradient-to-b from-white/[0.05] to-white/[0.02] border border-crimson/40 p-8 sm:p-14 text-center backdrop-blur-xl shadow-2xl shadow-crimson/20 space-y-8">
-          
-          {/* Urgency Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow text-xs font-mono font-bold uppercase tracking-widest"
-          >
-            <span className="w-2 h-2 rounded-full bg-crimson animate-ping" />
-            <span>SEATS FILLING FAST // LIMITED CAPACITY</span>
-          </motion.div>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-display text-4xl sm:text-6xl font-black uppercase tracking-tight text-white leading-tight"
-          >
-            READY TO BUILD BEYOND <span className="metal-gradient">LIMITS?</span>
-          </motion.h2>
-
-          <p className="text-gray-300 font-sans text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Join 5,000+ developers, researchers, and innovators in {event.city} on {event.dateRange}. Claim your access token now.
-          </p>
-
-          {/* CTA & QR Code Box */}
-          <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-8">
-            {/* Button */}
-            <button
-              onClick={onRegisterClick}
-              className="px-10 py-5 rounded-2xl font-display text-sm font-bold tracking-widest text-white bg-crimson hover:bg-crimson-glow shadow-2xl shadow-crimson/50 hover:shadow-crimson/80 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-3 uppercase"
-            >
-              <span>REGISTER NOW</span>
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </button>
-
-            {/* QR Code Container */}
-            <div className="flex items-center gap-4 bg-ink/80 p-3 rounded-2xl border border-white/10">
-              <div className="relative w-20 h-20 bg-white rounded-xl p-1.5 overflow-hidden">
-                <Image
-                  src="/qr/nexora-qr.png"
-                  alt="NEXORA Registration QR Code"
-                  width={80}
-                  height={80}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="text-left font-mono text-xs text-gray-400">
-                <span className="text-white font-bold block">SCAN TO REGISTER</span>
-                <span>Mobile Fast-Pass</span>
-              </div>
-            </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="glass-panel rounded-3xl p-8 sm:p-14 border border-crimson/40 shadow-[0_0_50px_rgba(200,16,46,0.3)] relative overflow-hidden"
+        >
+          {/* Top urgency tag */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-crimson/20 border border-crimson/40 text-crimson-glow text-xs font-mono font-bold tracking-widest uppercase mb-6">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>SEATS FILLING FAST • LIMITED SPOTS</span>
           </div>
 
-        </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            {/* Left Content */}
+            <div className="lg:col-span-7">
+              <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white leading-tight mb-4">
+                READY TO SHAPE THE <span className="metal-gradient">NEXT ERA?</span>
+              </h2>
+              <p className="text-gray-300 font-sans text-base sm:text-lg mb-8 leading-relaxed">
+                Join 5,000+ top builders, engineers, and researchers at {event.city} on {event.dateRange}. Claim your access pass before registration closes.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                <button
+                  onClick={onRegisterClick}
+                  className="px-8 py-4 rounded-full bg-gradient-to-r from-crimson to-crimson-glow text-white font-display text-sm font-bold uppercase tracking-wider shadow-[0_0_30px_rgba(255,30,60,0.7)] hover:shadow-[0_0_50px_rgba(255,30,60,1)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
+                >
+                  <QrCode className="w-5 h-5" />
+                  <span>Register Now</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+
+                <div className="text-center sm:text-left text-xs font-mono text-gray-400 py-2">
+                  <span>100% Free Entry</span> • <span>Free Compute Grants</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right QR Visual */}
+            <div className="lg:col-span-5 flex flex-col items-center justify-center">
+              <div
+                onClick={onRegisterClick}
+                className="group relative cursor-pointer bg-white p-4 rounded-2xl border-2 border-crimson/50 shadow-[0_0_30px_rgba(255,30,60,0.4)] hover:scale-105 transition-all duration-300"
+              >
+                <div className="relative w-48 h-48">
+                  <Image
+                    src="/qr/nexora-qr.png"
+                    alt="Registration QR Code"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-crimson/80 backdrop-blur-xs rounded-xl opacity-0 group-hover:opacity-100 flex items-center justify-center text-white font-display text-xs font-bold uppercase tracking-wider transition-opacity duration-300">
+                  Click to Expand
+                </div>
+              </div>
+              <span className="text-xs font-mono text-gray-400 mt-3">
+                Scan with phone camera to register
+              </span>
+            </div>
+
+          </div>
+
+        </motion.div>
       </div>
     </section>
   );

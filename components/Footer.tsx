@@ -1,81 +1,142 @@
-"use client";
-
-import React from "react";
 import { event, sponsors } from "@/data/event";
+import Image from "next/image";
+import { Github, Twitter, Disc as Discord, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-ink border-t border-white/10 pt-16 pb-12 text-gray-400 font-sans text-xs">
+    <footer className="bg-ink border-t border-white/10 pt-16 pb-12 text-gray-400 font-sans text-sm relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded border border-crimson/50 bg-crimson/10 flex items-center justify-center font-display font-bold text-crimson">
+              <div className="w-8 h-8 rounded-lg bg-crimson/20 border border-crimson/40 flex items-center justify-center font-display font-black text-white text-xs">
                 H
               </div>
-              <span className="font-display text-2xl font-black tracking-widest metal-gradient">
+              <span className="text-2xl font-display font-extrabold metal-gradient">
                 {event.name}
               </span>
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              Presented by <strong className="text-white">{event.presentedBy}</strong>. Architectural hackathon designed for high-bandwidth engineering and deep-tech innovation.
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Presented by <strong className="text-white">{event.presentedBy}</strong>. Building the next era of artificial intelligence, autonomous agents, and deep tech.
             </p>
-            <p className="font-serif italic text-sm text-gray-300">
-              &ldquo;{event.tagline}&rdquo;
-            </p>
-          </div>
-
-          {/* Event Info Column */}
-          <div className="space-y-3 font-mono">
-            <h4 className="font-display text-xs font-bold text-white uppercase tracking-widest mb-2">
-              EVENT SPECS
-            </h4>
-            <p>📍 {event.city}, {event.venue}</p>
-            <p>📅 {event.dateRange}, 2026</p>
-            <p>⚡ 48 Hours Non-Stop</p>
-            <p>🏆 $100k+ Prize Pool</p>
-          </div>
-
-          {/* Key Partners */}
-          <div className="space-y-3 font-mono">
-            <h4 className="font-display text-xs font-bold text-white uppercase tracking-widest mb-2">
-              KEY PARTNERS
-            </h4>
-            <div className="flex flex-wrap gap-2 text-[11px]">
-              {sponsors.map((s, i) => (
-                <span
-                  key={i}
-                  className="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-gray-300"
-                >
-                  {s.name}
-                </span>
-              ))}
+            <div className="flex items-center space-x-3 text-gray-400">
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+                <Discord className="w-4 h-4" />
+              </a>
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+                <Github className="w-4 h-4" />
+              </a>
+              <a href="#" className="hover:text-crimson-glow transition-colors p-2 bg-white/5 rounded-full hover:bg-white/10">
+                <Mail className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
-          {/* Socials / Support */}
-          <div className="space-y-3 font-mono">
-            <h4 className="font-display text-xs font-bold text-white uppercase tracking-widest mb-2">
-              CONNECT
+          {/* Event Info Column */}
+          <div>
+            <h4 className="text-xs font-mono uppercase tracking-widest text-white mb-4">
+              EVENT DETAILS
             </h4>
-            <p>Discord: <a href="#" className="hover:text-crimson">discord.gg/hackhere</a></p>
-            <p>Twitter: <a href="#" className="hover:text-crimson">@hackhere_org</a></p>
-            <p>Contact: <a href="mailto:hello@hackhere.org" className="hover:text-crimson">hello@hackhere.org</a></p>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <span className="text-gray-500">Location:</span>{" "}
+                <span className="text-gray-300 font-semibold">{event.city}, {event.venue}</span>
+              </li>
+              <li>
+                <span className="text-gray-500">Dates:</span>{" "}
+                <span className="text-gray-300 font-semibold">{event.dateRange}, 2026</span>
+              </li>
+              <li>
+                <span className="text-gray-500">Format:</span>{" "}
+                <span className="text-gray-300 font-semibold">In-Person & Hybrid Global</span>
+              </li>
+              <li>
+                <span className="text-gray-500">Hacker Count:</span>{" "}
+                <span className="text-gray-300 font-semibold">5,000+ Builders</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Key Links */}
+          <div>
+            <h4 className="text-xs font-mono uppercase tracking-widest text-white mb-4">
+              QUICK NAVIGATION
+            </h4>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <a href="#about" className="hover:text-crimson-glow transition-colors">
+                  About Hackathon
+                </a>
+              </li>
+              <li>
+                <a href="#tracks" className="hover:text-crimson-glow transition-colors">
+                  Challenge Tracks
+                </a>
+              </li>
+              <li>
+                <a href="#schedule" className="hover:text-crimson-glow transition-colors">
+                  Run of Show Schedule
+                </a>
+              </li>
+              <li>
+                <a href="#sponsors" className="hover:text-crimson-glow transition-colors">
+                  Sponsors & Partners
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-crimson-glow transition-colors">
+                  FAQ & Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Partners Mini Grid */}
+          <div>
+            <h4 className="text-xs font-mono uppercase tracking-widest text-white mb-4">
+              PARTNERS
+            </h4>
+            <div className="grid grid-cols-3 gap-2">
+              {sponsors.slice(0, 6).map((sponsor, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white/5 border border-white/10 rounded-lg p-2 flex items-center justify-center h-10 hover:border-crimson/40 transition-colors"
+                >
+                  <div className="relative w-full h-full grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all">
+                    <Image
+                      src={sponsor.logoPath}
+                      alt={sponsor.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px]">
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
           <div>
-            © 2026 {event.presentedBy} & {event.name}. ALL RIGHTS RESERVED.
+            © 2026 {event.name} by {event.presentedBy}. All rights reserved.
           </div>
-          <div className="flex items-center gap-6 text-gray-400">
-            <a href="#" className="hover:text-white">PRIVACY POLICY</a>
-            <a href="#" className="hover:text-white">CODE OF CONDUCT</a>
-            <a href="#" className="hover:text-white">TERMS & CONDITIONS</a>
+          <div className="flex items-center space-x-6">
+            <a href="#" className="hover:text-gray-400 transition-colors">
+              Privacy Matrix
+            </a>
+            <a href="#" className="hover:text-gray-400 transition-colors">
+              Code of Conduct
+            </a>
+            <a href="#" className="hover:text-gray-400 transition-colors">
+              Terms of Service
+            </a>
           </div>
         </div>
 

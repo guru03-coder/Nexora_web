@@ -1,66 +1,58 @@
 "use client";
 
-import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { sponsors } from "@/data/event";
 
 export default function SponsorsMarquee() {
-  // Duplicate array to ensure seamless infinite loop
-  const marqueeSponsors = [...sponsors, ...sponsors, ...sponsors];
+  // Duplicate array 3x to guarantee seamless infinite loop scrolling
+  const marqueeItems = [...sponsors, ...sponsors, ...sponsors];
 
   return (
-    <section id="sponsors" className="relative py-24 bg-ink/90 border-b border-white/5 overflow-hidden">
-      
+    <section id="sponsors" className="py-20 relative bg-ink/95 border-t border-white/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-crimson/10 border border-crimson/30 font-mono text-xs text-crimson-glow uppercase tracking-widest mb-4">
-          [ 04 // SPONSORS & PARTNERS ]
-        </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white">
-          POWERED BY INDUSTRY <span className="metal-gradient">LEADERS</span>
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow">
+            [ 04 // BACKED BY INDUSTRY LEADERS ]
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-display font-bold mt-2 text-white">
+            SPONSORS & PARTNERS
+          </h2>
+        </motion.div>
       </div>
 
-      {/* Marquee Wrapper */}
-      <div className="relative w-full overflow-hidden py-4 flex items-center">
-        {/* Left/Right Gradient Fades */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-ink to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-ink to-transparent z-10 pointer-events-none" />
+      {/* Marquee Track Container */}
+      <div className="relative w-full overflow-hidden py-4">
+        {/* Left Gradient Fade */}
+        <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-ink to-transparent pointer-events-none" />
+        
+        {/* Right Gradient Fade */}
+        <div className="absolute top-0 bottom-0 right-0 w-24 z-10 bg-gradient-to-l from-ink to-transparent pointer-events-none" />
 
-        {/* Scrolling Track */}
-        <div className="flex animate-marquee space-x-12 items-center whitespace-nowrap">
-          {marqueeSponsors.map((sponsor, idx) => (
+        {/* Marquee Loop */}
+        <div className="animate-marquee flex items-center gap-8 sm:gap-12">
+          {marqueeItems.map((sponsor, idx) => (
             <div
-              key={`${sponsor.name}-${idx}`}
-              className="flex items-center gap-4 px-6 py-4 rounded-xl bg-white/[0.03] border border-white/10 hover:border-crimson/50 transition-all duration-300 min-w-[200px] justify-center group"
+              key={idx}
+              className="glass-panel px-8 py-4 rounded-xl flex items-center justify-center min-w-[180px] h-20 hover:border-crimson/60 transition-all group shrink-0"
             >
-              <div className="relative w-10 h-10 rounded-lg overflow-hidden bg-white/5 flex items-center justify-center">
+              <div className="relative w-32 h-10 filter grayscale group-hover:grayscale-0 transition-all duration-300">
                 <Image
                   src={sponsor.logoPath}
                   alt={sponsor.name}
-                  width={40}
-                  height={40}
-                  className="object-contain p-1 filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                  onError={(e) => {
-                    // Fallback avatar if logo fails
-                    (e.target as HTMLElement).style.display = 'none';
-                  }}
+                  fill
+                  className="object-contain"
                 />
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="font-display text-sm font-bold text-gray-200 group-hover:text-white transition-colors">
-                  {sponsor.name}
-                </span>
-                {sponsor.tier && (
-                  <span className="font-mono text-[10px] text-gray-400">
-                    {sponsor.tier}
-                  </span>
-                )}
               </div>
             </div>
           ))}
         </div>
       </div>
-
     </section>
   );
 }

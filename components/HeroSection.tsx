@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import { event } from "@/data/event";
 
 interface HeroSectionProps {
@@ -9,128 +10,193 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
-  return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
-      {/* Background Hero Video Loop */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover scale-105 filter brightness-75 contrast-125 opacity-80"
-        >
-          <source src="/hero/nexora-loop.mp4" type="video/mp4" />
-          <source src="/hero/video.mp4" type="video/mp4" />
-        </video>
-        
-        {/* Dark Vignette & Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/70" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-crimson/10 via-transparent to-ink/90 pointer-events-none" />
-      </div>
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
-      {/* Hero Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center flex flex-col items-center justify-center space-y-8">
+  // Set slow-motion playback rate on hero video
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.45;
+    }
+  }, []);
+
+  // Ambient Canvas Circuit-Line Particle Effect
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    const handleResize = () => {
+      if (!canvas) return;
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+    window.addEventListener("resize", handleResize);
+
+    // Particle nodes for circuit network
+    const particleCount = 45;
+    const particles = Array.from({ length: particleCount }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.4,
+      vy: (Math.random() - 0.5) * 0.4,
+      radius: Math.random() * 2 + 1,
+    }));
+
+    const draw = () => {
+      ctx.clearRect(0, 0, width, height);
+
+      // Draw circuit lines between close particles
+      for (let i = 0; i < particleCount; i++) {
+        const p1 = particles[i];
+        p1.x += p1.vx;
+        p1.y += p1.vy;
+
+        if (p1.x < 0 || p1.x > width) p1.vx *= -1;
+        if (p1.y < 0 || p1.y > height) p1.vy *= -1;
+
+        // Draw particle node
+        ctx.beginPath();
+        ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(255, 30, 60, 0.6)";
+        ctx.fill();
+
+        for (let j = i + 1; j < particleCount; j++) {
+          const p2 = particles[j];
+          const dx = p1.x - p2.x;
+          const dy = p1.y - p2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 130) {
+            ctx.beginPath();
+            ctx.moveTo(p1.x, p1.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.strokeStyle = `rgba(200, 16, 46, ${0.35 * (1 - dist / 130)})`;
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+          }
+        }
+      }
+
+      animationFrameId = requestAnimationFrame(draw);
+    };
+
+    draw();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
+  return (
+    <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-ink">
+      {/* Background Video Loop */}
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0 pointer-events-none"
+      >
+        <source src="/hero/nexora-loop.mp4" type="video/mp4" />
+        <source src="/video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark Vignette Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/70 z-0 pointer-events-none" />
+
+      {/* Canvas Circuit Particle Layer */}
+      <canvas
+        ref={canvasRef}
+        className="absolute inset-0 z-10 pointer-events-none opacity-80"
+      />
+
+      {/* Main Hero Content */}
+      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center flex flex-col items-center justify-center pt-16">
         
         {/* Presented By Tag */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-crimson/40 bg-ink/70 backdrop-blur-md shadow-lg shadow-crimson/10"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-crimson/30 backdrop-blur-md mb-6"
         >
-          <span className="w-2 h-2 rounded-full bg-crimson animate-ping" />
+          <span className="w-2 h-2 rounded-full bg-crimson-glow animate-ping" />
           <span className="text-xs font-mono tracking-widest text-gray-300 uppercase">
             {event.presentedBy} PRESENTS
           </span>
         </motion.div>
 
-        {/* Wordmark Headline */}
-        <motion.div
+        {/* Wordmark Title */}
+        <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="relative"
+          className="text-6xl sm:text-8xl md:text-9xl font-display font-black tracking-tight metal-gradient text-glow mb-4"
         >
-          <h1 className="font-display text-6xl sm:text-8xl md:text-9xl font-black tracking-tighter uppercase metal-gradient leading-none drop-shadow-2xl">
-            {event.name}
-          </h1>
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-48 sm:w-80 h-1 bg-gradient-to-r from-transparent via-crimson to-transparent blur-sm" />
-        </motion.div>
+          {event.name}
+        </motion.h1>
 
-        {/* Tagline: Elegant Italic Serif */}
+        {/* Tagline in Italic Serif */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.8 }}
-          className="font-serif italic text-2xl sm:text-4xl text-gray-200 tracking-wide font-light max-w-2xl text-glow-white"
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="text-2xl sm:text-4xl font-serif italic text-gray-200 tracking-wide max-w-2xl mb-10"
         >
           &ldquo;{event.tagline}&rdquo;
         </motion.p>
 
-        {/* Event Quick Meta Badges */}
+        {/* Hero CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-gray-300 pt-2"
-        >
-          <div className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 backdrop-blur-md flex items-center gap-2">
-            <span className="text-crimson">📍</span>
-            <span>{event.city}, {event.venue}</span>
-          </div>
-          <div className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 backdrop-blur-md flex items-center gap-2">
-            <span className="text-crimson">📅</span>
-            <span>{event.dateRange}, 2026</span>
-          </div>
-          <div className="px-4 py-2 rounded-lg bg-crimson/20 border border-crimson/40 text-crimson-glow font-bold backdrop-blur-md">
-            ⚡ $100K+ PRIZE POOL
-          </div>
-        </motion.div>
-
-        {/* Hero CTA Group */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-6"
+          className="flex flex-col sm:flex-row items-center gap-4"
         >
           <button
             onClick={onRegisterClick}
-            className="w-full sm:w-auto px-8 py-4 rounded-xl font-display text-sm font-bold tracking-widest text-white bg-crimson hover:bg-crimson-glow shadow-xl shadow-crimson/40 hover:shadow-crimson/70 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 uppercase"
+            className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-crimson to-crimson-dark text-white font-display text-sm font-bold uppercase tracking-widest shadow-[0_0_30px_rgba(255,30,60,0.6)] hover:shadow-[0_0_45px_rgba(255,30,60,0.9)] hover:scale-105 transition-all duration-300"
           >
-            <span>REGISTER NOW</span>
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
+            Claim Access Pass
           </button>
           
           <a
             href="#tracks"
-            className="w-full sm:w-auto px-8 py-4 rounded-xl font-display text-sm font-bold tracking-widest text-gray-200 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-crimson/50 backdrop-blur-md transition-all duration-300 flex items-center justify-center gap-2 uppercase"
+            className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 border border-white/20 hover:border-crimson/50 text-white font-display text-sm font-semibold uppercase tracking-widest backdrop-blur-md hover:bg-white/10 transition-all duration-300"
           >
-            EXPLORE TRACKS
+            Explore Tracks
           </a>
         </motion.div>
-
       </div>
 
-      {/* Scroll Down Chevron */}
-      <motion.div
+      {/* Scroll Down Indicator */}
+      <motion.a
+        href="#about"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 1 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 text-gray-400 font-mono text-[10px] tracking-widest pointer-events-none"
+        transition={{ delay: 1.4 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center text-gray-400 hover:text-crimson-glow transition-colors"
       >
-        <span>SCROLL TO EXPLORE</span>
-        <div className="w-5 h-8 rounded-full border border-gray-500/50 flex items-start justify-center p-1">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-            className="w-1 h-2 rounded-full bg-crimson"
-          />
-        </div>
-      </motion.div>
+        <span className="text-[10px] font-mono tracking-widest uppercase mb-1">
+          Scroll Down
+        </span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
+        >
+          <ChevronDown className="w-5 h-5" />
+        </motion.div>
+      </motion.a>
     </section>
   );
 }

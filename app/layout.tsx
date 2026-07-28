@@ -6,36 +6,31 @@ const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-orbitron",
   display: "swap",
+  fallback: ["sans-serif"],
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  style: ["italic"],
+  style: ["normal", "italic"],
   variable: "--font-playfair",
   display: "swap",
+  fallback: ["serif"],
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+  fallback: ["sans-serif"],
 });
 
 export const metadata: Metadata = {
   title: "NEXORA 2026 | Beyond Limits. Beyond Imagination — by HackHere",
-  description: "NEXORA is a premier high-bandwidth AI & Deep-Tech Hackathon presented by HackHere in Coimbatore. Aug 29–30. $100k+ Prize Pool.",
-  keywords: ["NEXORA", "HackHere", "Hackathon", "Coimbatore", "AI", "Web3", "GreenTech", "DeepTech", "DeepMind"],
+  description: "NEXORA is a premier hackathon presented by HackHere in Coimbatore. Join 5,000+ builders, compete across frontier tracks, and solve real-world challenges.",
   openGraph: {
-    title: "NEXORA 2026 | Beyond Limits. Beyond Imagination — by HackHere",
-    description: "Build beyond boundaries in Coimbatore. 48-hour global hackathon.",
-    images: [
-      {
-        url: "/qr/nexora-qr.png",
-        width: 1200,
-        height: 630,
-        alt: "NEXORA Hackathon Poster",
-      },
-    ],
+    title: "NEXORA 2026 | Beyond Limits. Beyond Imagination",
+    description: "Presented by HackHere. August 29–30 in Coimbatore.",
+    images: ["/fin.png"],
   },
 };
 
@@ -46,9 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${orbitron.variable} ${playfair.variable} ${inter.variable} font-sans bg-ink text-gray-100 antialiased selection:bg-crimson selection:text-white`}
-      >
+      <body className={`${orbitron.variable} ${playfair.variable} ${inter.variable} bg-ink text-white antialiased selection:bg-crimson selection:text-white`}>
         {children}
       </body>
     </html>

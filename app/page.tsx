@@ -1,7 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
-import CircuitCanvas from "@/components/CircuitCanvas";
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+// Components
+import IntroLoader from "@/components/IntroLoader";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import EventDetailsBar from "@/components/EventDetailsBar";
@@ -12,51 +15,104 @@ import SponsorsMarquee from "@/components/SponsorsMarquee";
 import FAQSection from "@/components/FAQSection";
 import RegisterCTASection from "@/components/RegisterCTASection";
 import Footer from "@/components/Footer";
-import RegisterModal from "@/components/RegisterModal";
+import QRModal from "@/components/QRModal";
 
 export default function Home() {
-  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const [loaderComplete, setLoaderComplete] = useState(false);
+  const [isQRModalOpen, setIsQRModalOpen] = useState(false);
 
-  const handleOpenRegister = () => setIsRegisterOpen(true);
-  const handleCloseRegister = () => setIsRegisterOpen(false);
+  const handleOpenQRModal = () => {
+    setIsQRModalOpen(true);
+  };
+
+  const handleCloseQRModal = () => {
+    setIsQRModalOpen(false);
+  };
 
   return (
-    <main className="relative min-h-screen bg-ink text-white selection:bg-crimson selection:text-white">
-      {/* Ambient Tech Circuit Canvas */}
-      <CircuitCanvas />
+    <main className="min-h-screen bg-ink text-white selection:bg-crimson selection:text-white">
+      {/* Pre-loader video overlay */}
+      {!loaderComplete && (
+        <IntroLoader onComplete={() => setLoaderComplete(true)} />
+      )}
 
-      {/* Navigation Bar */}
-      <Navbar onRegisterClick={handleOpenRegister} />
+      {/* Main Website Flow */}
+      <div className={!loaderComplete ? "opacity-0 pointer-events-none" : "opacity-100 transition-opacity duration-700"}>
+        {/* Fixed Navbar */}
+        <Navbar onRegisterClick={handleOpenQRModal} />
 
-      {/* Hero Section */}
-      <HeroSection onRegisterClick={handleOpenRegister} />
+        {/* Hero Section */}
+        <HeroSection onRegisterClick={handleOpenQRModal} />
 
-      {/* Sticky Event Details Bar */}
-      <EventDetailsBar onRegisterClick={handleOpenRegister} />
+        {/* Sticky Details Bar */}
+        <EventDetailsBar onRegisterClick={handleOpenQRModal} />
 
-      {/* About Section */}
-      <AboutSection />
+        {/* About Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <AboutSection />
+        </motion.div>
 
-      {/* Hackathon Tracks */}
-      <TracksSection />
+        {/* Tracks Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <TracksSection />
+        </motion.div>
 
-      {/* Run of Show / Schedule */}
-      <ScheduleSection />
+        {/* Schedule Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <ScheduleSection />
+        </motion.div>
 
-      {/* Sponsors Infinite Marquee */}
-      <SponsorsMarquee />
+        {/* Sponsors Marquee */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <SponsorsMarquee />
+        </motion.div>
 
-      {/* FAQ Accordion */}
-      <FAQSection />
+        {/* FAQ Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <FAQSection />
+        </motion.div>
 
-      {/* Register CTA Section */}
-      <RegisterCTASection onRegisterClick={handleOpenRegister} />
+        {/* Register CTA Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <RegisterCTASection onRegisterClick={handleOpenQRModal} />
+        </motion.div>
 
-      {/* Footer */}
-      <Footer />
+        {/* Footer */}
+        <Footer />
 
-      {/* Registration Modal Dialog */}
-      <RegisterModal isOpen={isRegisterOpen} onClose={handleCloseRegister} />
+        {/* Registration QR Modal */}
+        <QRModal isOpen={isQRModalOpen} onClose={handleCloseQRModal} />
+      </div>
     </main>
   );
 }

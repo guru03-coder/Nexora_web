@@ -13,7 +13,7 @@ export interface Track {
   title: string;
   description: string;
   icon: string;
-  prize?: string;
+  prize: string;
 }
 
 export interface ScheduleItem {
@@ -31,7 +31,6 @@ export interface ScheduleDay {
 export interface Sponsor {
   name: string;
   logoPath: string;
-  tier?: string;
 }
 
 export interface FAQItem {
@@ -46,48 +45,55 @@ export const event: EventInfo = {
   city: "Coimbatore",
   venue: "Avinashi Road",
   dateRange: "August 29–30",
-  registerUrl: "https://nexora.hackhere.org/register", // TODO: paste your registration form / link here
+  registerUrl: "#register", // TODO: paste your actual registration form / link here
 };
 
 export const sponsors: Sponsor[] = [
-  { name: "Journi", logoPath: "/sponsors/journi.jpeg", tier: "Title Sponsor" },
-  { name: "Cristel", logoPath: "/sponsors/startuptn.jpeg", tier: "Platinum Sponsor" },
-  { name: "Elyon", logoPath: "/sponsors/elyon.jpeg", tier: "Gold Sponsor" },
-  { name: "Mindora", logoPath: "/sponsors/maestrominds.png", tier: "Gold Sponsor" },
-  { name: "Featherless AI", logoPath: "/sponsors/featherlessai.jpeg", tier: "AI Partner" },
-  { name: "PwC", logoPath: "/sponsors/logo_pwc.png", tier: "Enterprise Partner" },
-  { name: "Wyntrix", logoPath: "/sponsors/wyntrix.jpeg", tier: "Innovation Partner" },
-  { name: "Medo", logoPath: "/sponsors/medo.png", tier: "Healthcare Partner" }
+  { name: "Journi", logoPath: "/sponsors/journi.jpeg" },
+  { name: "Elyon", logoPath: "/sponsors/elyon.jpeg" },
+  { name: "Featherless AI", logoPath: "/sponsors/featherlessai.jpeg" },
+  { name: "PwC", logoPath: "/sponsors/logo_pwc.png" },
+  { name: "StartupTN", logoPath: "/sponsors/startuptn.jpeg" },
+  { name: "Wyntrix", logoPath: "/sponsors/wyntrix.jpeg" },
+  { name: "MaestroMinds", logoPath: "/sponsors/maestrominds.png" },
+  { name: "Medo", logoPath: "/sponsors/medo.png" },
 ];
 
 export const tracks: Track[] = [
   { 
     id: "ai-ml", 
     title: "AI / ML & Autonomous Agents", 
-    description: "Build intelligent systems, self-improving agents, and multi-modal neural frameworks that push the limits of automation.", 
+    description: "Build intelligent systems that push the limits of automation, multi-agent frameworks, and self-improving neural models.", 
     icon: "brain",
-    prize: "$25,000 Prize"
+    prize: "$25,000"
   },
   { 
     id: "web3", 
-    title: "Web3 & Blockchain Vault", 
-    description: "Decentralized ideas, zero-knowledge proofs, and cryptographic architectures for a trustless autonomous future.", 
+    title: "Web3 & Zero-Knowledge AI", 
+    description: "Decentralized ideas for a trustless future, cryptographic zkML proofs, and confidential enclave security.", 
     icon: "link",
-    prize: "$20,000 Prize"
+    prize: "$20,000"
   },
   { 
     id: "sustain", 
     title: "Sustainability & GreenTech", 
-    description: "Tech solving real-world environmental problems, grid optimization, carbon tracking, and planetary AI.", 
+    description: "Tech solving real-world environmental challenges, energy distribution algorithms, and smart grid systems.", 
     icon: "leaf",
-    prize: "$20,000 Prize"
+    prize: "$15,000"
+  },
+  { 
+    id: "robotics", 
+    title: "Robotics & Spatial AI", 
+    description: "Vision-language-action (VLA) models for humanoid robotics, drone swarms, and spatial intelligence.", 
+    icon: "bot",
+    prize: "$20,000"
   },
   { 
     id: "open", 
     title: "Open Innovation", 
-    description: "Anything goes — surprise us with unconventional hardware-software hacks, synthetic interfaces, or spatial intelligence.", 
-    icon: "spark",
-    prize: "$15,000 Prize"
+    description: "Anything goes — surprise us with high-impact, disruptive solutions.", 
+    icon: "sparkles",
+    prize: "$20,000"
   },
 ];
 
@@ -96,44 +102,30 @@ export const schedule: ScheduleDay[] = [
     day: "Day 1",
     date: "August 29",
     items: [
-      { time: "9:00 AM", title: "Registration & Check-in", description: "Collect your hacker pass, badge, and NEXORA swag bag." },
-      { time: "10:00 AM", title: "Opening Ceremony", description: "Kickoff, rules briefing, sponsor API reveals, and keynote." },
-      { time: "11:00 AM", title: "Hacking Begins", description: "Doors open, compute grants distributed, mentor support live." },
-      { time: "4:00 PM", title: "Technical Workshop", description: "Deploying Agentic Frameworks & High-Performance GPUs." },
-      { time: "9:00 PM", title: "Midnight Hacker Lounge", description: "Gaming room, live DJ set, and late-night pizza sprint." }
+      { time: "09:00 AM", title: "Registration & Check-in", description: "Collect hacker badges, welcome kits, and compute credentials." },
+      { time: "10:00 AM", title: "Opening Ceremony", description: "Kickoff, rules briefing, sponsor challenges & track reveal." },
+      { time: "11:00 AM", title: "Hacking Begins", description: "API keys & GPU compute grants distributed. Hacking officially unlocked!" },
+      { time: "03:00 PM", title: "Technical Workshop", description: "Building Autonomous Swarms with Next-Gen Agentic Tools." },
+      { time: "08:00 PM", title: "Dinner & Mentor Speed-Dating", description: "Connect with 1-on-1 VC and AI engineering mentors." },
     ],
   },
   {
     day: "Day 2",
     date: "August 30",
     items: [
-      { time: "10:00 AM", title: "Submissions Close", description: "Final code freeze on Devpost/GitHub. Project locks." },
-      { time: "11:00 AM", title: "Judging Round 1", description: "Booth judging and technical verification by panel." },
-      { time: "2:00 PM", title: "Grand Finalist Pitches", description: "Top 10 teams pitch live on main stage." },
-      { time: "4:00 PM", title: "Closing & Awards Ceremony", description: "$100k Prize Distribution & VC Seed Investment Announcement." },
+      { time: "09:00 AM", title: "Breakfast & Pitch Prep", description: "Refine slide decks, live demos, and project submissions." },
+      { time: "10:00 AM", title: "Submissions Close", description: "Hard code freeze on GitHub & Devpost repositories." },
+      { time: "11:00 AM", title: "Judging Round 1", description: "Expo-style booth reviews by expert jury panel." },
+      { time: "02:30 PM", title: "Top 10 Finalist Demos", description: "Live main stage pitches to venture capital partners." },
+      { time: "04:00 PM", title: "Closing & Awards Ceremony", description: "$100,000+ prize pool distribution & seed launchpad announcements." },
     ],
   },
 ];
 
 export const faqs: FAQItem[] = [
-  { 
-    question: "Who can participate in NEXORA?", 
-    answer: "NEXORA is open to developers, university students, researchers, designers, and tech enthusiasts worldwide. Both beginners and experienced hackers are welcome." 
-  },
-  { 
-    question: "What is the team size?", 
-    answer: "Teams can range from 1 (solo hacker) up to 4 members. You can form your team beforehand or meet team members during the Day 1 team matching session." 
-  },
-  { 
-    question: "Is there a registration fee?", 
-    answer: "No! NEXORA is 100% free of charge thanks to HackHere and our sponsors. Food, drinks, swag, compute credits, and workspace are provided." 
-  },
-  { 
-    question: "What should I bring?", 
-    answer: "Bring your laptop, charger, valid government photo ID, personal toiletries if staying overnight, and your relentless passion to build." 
-  },
-  { 
-    question: "Are there prizes and investment opportunities?", 
-    answer: "Yes! We have $100,000+ in total prizes across track categories, plus direct VC seed investment funding for winning teams." 
-  },
+  { question: "Who can participate?", answer: "NEXORA is open to all developers, designers, students, and AI researchers worldwide. Both beginners and experienced hackers are welcome!" },
+  { question: "What is the team size?", answer: "Teams can range from 1 to 4 participants. You can form teams prior to the event or connect with teammates during Day 1 networking." },
+  { question: "Is there a registration fee?", answer: "No! Participation in NEXORA is 100% free. All accepted hackers receive free meals, swag, and cloud GPU compute credits." },
+  { question: "What should I bring?", answer: "Bring your laptop, charger, valid government ID, enthusiasm, and any hardware components if you are competing in the Robotics track." },
+  { question: "Are there prizes?", answer: "Yes! Over $100,000 in cash prizes, sponsor bounties, VC investment opportunities, and incubation support are up for grabs." },
 ];

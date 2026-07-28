@@ -3,73 +3,79 @@
 @tailwind utilities;
 
 :root {
-  --font-orbitron: 'Orbitron', sans-serif;
-  --font-playfair: 'Playfair Display', serif;
-  --font-inter: 'Inter', sans-serif;
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
 }
 
-@layer base {
-  body {
-    background-color: #0A0A0A;
-    color: #F3F4F6;
-    font-family: var(--font-inter), sans-serif;
-    overflow-x: hidden;
-  }
-
-  ::selection {
-    background-color: #C8102E;
-    color: #FFFFFF;
-  }
-
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #0A0A0A;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #C8102E;
-    border-radius: 3px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #FF1E3C;
-  }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-glow {
-    text-shadow: 0 0 20px rgba(255, 30, 60, 0.6), 0 0 40px rgba(200, 16, 46, 0.4);
-  }
+::selection {
+  background-color: #C8102E;
+  color: #FFFFFF;
+}
 
-  .text-glow-white {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-  }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #7A0C1E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF1E3C;
+}
 
-  /* Reusable metallic gradient for NEXORA wordmark */
-  .metal-gradient {
-    background: linear-gradient(135deg, #FFFFFF 0%, #FF4D6D 40%, #C8102E 70%, #7A0C1E 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+/* Utilities */
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 30, 60, 0.7), 0 0 40px rgba(200, 16, 46, 0.5);
+}
 
-  .metal-gradient-silver {
-    background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 50%, #94A3B8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+.metal-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FF1E3C 50%, #C8102E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-  .light-section {
-    background-color: #FAFAFA;
-    color: #0A0A0A;
-  }
+.light-section {
+  background-color: #F8F9FA;
+  color: #0A0A0A;
+}
 
-  .border-crimson-glow {
-    box-shadow: 0 0 15px rgba(200, 16, 46, 0.3);
-  }
-  .border-crimson-glow:hover {
-    box-shadow: 0 0 25px rgba(255, 30, 60, 0.6);
-  }
+.glass-panel {
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 30, 60, 0.2);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 16, 46, 0.2);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

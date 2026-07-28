@@ -1,91 +1,97 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { schedule } from "@/data/event";
+import { Clock, Calendar } from "lucide-react";
 
 export default function ScheduleSection() {
-  const [activeDay, setActiveDay] = useState(0);
+  const [activeDayIdx, setActiveDayIdx] = useState(0);
 
   return (
-    <section id="schedule" className="relative py-28 bg-ink border-b border-white/5">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="schedule" className="py-24 relative bg-ink border-t border-white/5">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-crimson/10 border border-crimson/30 font-mono text-xs text-crimson-glow uppercase tracking-widest"
-          >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="text-center max-w-3xl mx-auto mb-12"
+        >
+          <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow">
             [ 03 // RUN OF SHOW ]
-          </motion.div>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold uppercase tracking-tight text-white"
-          >
-            HACKATHON <span className="metal-gradient">TIMELINE</span>
-          </motion.h2>
-
-          <p className="text-gray-400 font-sans text-sm sm:text-base">
-            48 continuous hours of innovation, workshops, keynotes, and prizes.
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-display font-bold mt-2 mb-4">
+            EVENT <span className="metal-gradient">SCHEDULE</span>
+          </h2>
+          <p className="text-gray-400 font-sans">
+            48 intensive hours of hacking, workshops, mentoring, and live pitch showcases.
           </p>
-        </div>
+        </motion.div>
 
         {/* Day Selector Tabs */}
         <div className="flex justify-center gap-4 mb-12">
           {schedule.map((dayData, idx) => (
             <button
-              key={dayData.day}
-              onClick={() => setActiveDay(idx)}
-              className={`px-8 py-3.5 rounded-xl font-display text-xs font-bold tracking-widest uppercase transition-all duration-300 border ${
-                activeDay === idx
-                  ? "bg-crimson text-white border-crimson shadow-lg shadow-crimson/30"
-                  : "bg-white/5 text-gray-400 border-white/10 hover:border-white/20 hover:text-white"
+              key={idx}
+              onClick={() => setActiveDayIdx(idx)}
+              className={`flex items-center gap-3 px-6 py-3 rounded-full font-display text-sm font-semibold transition-all duration-300 ${
+                activeDayIdx === idx
+                  ? "bg-crimson text-white shadow-[0_0_20px_rgba(200,16,46,0.6)]"
+                  : "bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10"
               }`}
             >
-              {dayData.day} — {dayData.date}
+              <Calendar className="w-4 h-4" />
+              <span>{dayData.day}</span>
+              <span className="text-xs opacity-75 font-mono">({dayData.date})</span>
             </button>
           ))}
         </div>
 
-        {/* Timeline Items */}
-        <div className="relative border-l-2 border-crimson/30 ml-4 sm:ml-32 space-y-8 pl-6 sm:pl-10">
-          {schedule[activeDay].items.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative group"
-            >
-              {/* Timeline Dot */}
-              <div className="absolute -left-[31px] sm:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-ink border-2 border-crimson group-hover:border-crimson-glow group-hover:scale-125 transition-transform" />
+        {/* Vertical Timeline */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeDayIdx}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.4 }}
+            className="relative border-l-2 border-crimson/40 ml-4 sm:ml-32 space-y-8 py-4"
+          >
+            {schedule[activeDayIdx].items.map((item, itemIdx) => (
+              <motion.div
+                key={itemIdx}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: itemIdx * 0.1 }}
+                className="relative pl-8 group"
+              >
+                {/* Timeline Dot */}
+                <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-ink border-2 border-crimson group-hover:bg-crimson-glow group-hover:scale-125 transition-all shadow-[0_0_10px_rgba(255,30,60,0.8)]" />
 
-              {/* Time Label (Desktop Absolute Left) */}
-              <div className="sm:absolute sm:-left-36 sm:top-1 font-mono text-xs font-bold text-crimson-glow uppercase mb-1 sm:mb-0">
-                {item.time}
-              </div>
+                {/* Time Badge (Desktop Left) */}
+                <div className="sm:absolute sm:-left-36 sm:top-1 font-mono text-xs font-bold text-crimson-glow flex items-center gap-1.5 mb-2 sm:mb-0">
+                  <Clock className="w-3.5 h-3.5" />
+                  <span>{item.time}</span>
+                </div>
 
-              {/* Card Container */}
-              <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-crimson/40 transition-colors backdrop-blur-sm">
-                <h3 className="font-display text-lg font-bold text-white uppercase tracking-wider mb-2">
-                  {item.title}
-                </h3>
-                {item.description && (
-                  <p className="text-gray-300 font-sans text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                )}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+                {/* Event Details Card */}
+                <div className="glass-panel p-5 rounded-2xl border border-white/10 hover:border-crimson/40 transition-all">
+                  <h4 className="text-lg font-display font-semibold text-white mb-1 group-hover:text-crimson-glow transition-colors">
+                    {item.title}
+                  </h4>
+                  {item.description && (
+                    <p className="text-sm text-gray-400 font-sans leading-relaxed">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </AnimatePresence>
 
       </div>
     </section>
