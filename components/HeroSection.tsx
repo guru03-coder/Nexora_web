@@ -96,7 +96,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
   }, []);
 
   return (
-    <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-ink bg-white-checked">
+    <section className="relative w-full h-screen min-h-[750px] flex items-center justify-center overflow-hidden bg-ink bg-white-checked pt-20">
       {/* Glowing Video Background Loop */}
       <video
         ref={videoRef}
@@ -105,11 +105,14 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
         loop
         playsInline
         preload="auto"
-        className="absolute inset-0 w-full h-full object-cover opacity-75 z-0 pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover opacity-70 z-0 pointer-events-none"
       >
         <source src="/glowing video.mp4" type="video/mp4" />
         <source src="/hero/glowing-video.mp4" type="video/mp4" />
       </video>
+
+      {/* Top Header Shield Gradient */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-ink via-ink/80 to-transparent z-10 pointer-events-none" />
 
       {/* Radial Ambient Backlight */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-crimson/15 rounded-full blur-[160px] pointer-events-none z-0" />
@@ -124,7 +127,7 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
       />
 
       {/* Main Hero Content */}
-      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center flex flex-col items-center justify-center pt-16">
+      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center flex flex-col items-center justify-center pt-12">
         
         {/* Presented By Tag */}
         <motion.div
