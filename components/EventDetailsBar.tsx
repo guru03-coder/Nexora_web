@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, Calendar, QrCode } from "lucide-react";
+import { MapPin, Calendar, QrCode, Timer } from "lucide-react";
 import { event } from "@/data/event";
 
 interface EventDetailsBarProps {
@@ -11,11 +11,46 @@ interface EventDetailsBarProps {
 
 export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProps) {
   const [showBar, setShowBar] = useState(false);
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  // Calculate live countdown to hackathon launch (August 29, 2026)
+  useEffect(() => {
+    const targetDate = new Date("2026-08-29T09:00:00+05:30").getTime();
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (difference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show sticky bar once scrolled past 400px
-      setShowBar(window.scrollY > 400);
+      // Show sticky bar once scrolled past 300px
+      setShowBar(window.scrollY > 300);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -25,35 +60,81 @@ export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProp
     <AnimatePresence>
       {showBar && (
         <motion.div
-          initial={{ y: 50, opacity: 0 }}
+          initial={{ y: 60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 50, opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-3xl glass-panel rounded-full px-6 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.8)] border border-crimson/30"
+          exit={{ y: 60, opacity: 0 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-[95%] max-w-5xl glass-panel rounded-full px-5 sm:px-8 py-3 shadow-[0_10px_35px_rgba(0,0,0,0.9)] border border-crimson/40"
         >
-          <div className="flex items-center justify-between text-xs sm:text-sm font-mono text-gray-200">
-            {/* Location */}
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-crimson-glow shrink-0" />
-              <span>
-                <strong className="text-white font-sans">{event.city}</strong> • {event.venue}
-              </span>
+          <div className="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm font-mono text-gray-200">
+            {/* Left Side: Animated Event Launch Countdown Timer */}
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-crimson-glow animate-ping shrink-0" />
+                <Timer className="w-4 h-4 text-crimson-glow shrink-0" />
+                <span className="hidden sm:inline-block text-[11px] font-mono uppercase tracking-widest text-gray-400">
+                  LAUNCH IN
+                </span>
+              </div>
+
+              {/* Ticking Digit Counters */}
+              <div className="flex items-center gap-1 font-mono font-bold text-xs sm:text-sm">
+                <div className="bg-black/80 border border-crimson/50 px-2 py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
+                  {String(timeLeft.days).padStart(2, "0")}
+                  <span className="text-[9px] text-gray-400 ml-0.5">d</span>
+                </div>
+                <span className="text-crimson-glow animate-pulse font-extrabold">:</span>
+
+                <div className="bg-black/80 border border-crimson/50 px-2 py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
+                  {String(timeLeft.hours).padStart(2, "0")}
+                  <span className="text-[9px] text-gray-400 ml-0.5">h</span>
+                </div>
+                <span className="text-crimson-glow animate-pulse font-extrabold">:</span>
+
+                <div className="bg-black/80 border border-crimson/50 px-2 py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
+                  {String(timeLeft.minutes).padStart(2, "0")}
+                  <span className="text-[9px] text-gray-400 ml-0.5">m</span>
+                </div>
+                <span className="text-crimson-glow animate-pulse font-extrabold">:</span>
+
+                <motion.div
+                  key={timeLeft.seconds}
+                  initial={{ scale: 1.15, opacity: 0.8 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                  className="bg-black/80 border border-crimson/60 px-2 py-1 rounded-md text-white bg-gradient-to-r from-crimson/30 to-crimson/10 shadow-[0_0_15px_rgba(0,240,255,0.7)]"
+                >
+                  {String(timeLeft.seconds).padStart(2, "0")}
+                  <span className="text-[9px] text-gray-300 ml-0.5">s</span>
+                </motion.div>
+              </div>
             </div>
 
-            {/* Dates */}
-            <div className="hidden sm:flex items-center gap-2 border-x border-white/10 px-4">
-              <Calendar className="w-4 h-4 text-crimson-glow shrink-0" />
-              <span className="text-white font-sans font-semibold">{event.dateRange}</span>
-            </div>
+            {/* Right Side: Venue, Date & Register Button */}
+            <div className="flex items-center gap-3 sm:gap-6">
+              {/* Location */}
+              <div className="hidden lg:flex items-center gap-2 border-l border-white/10 pl-4">
+                <MapPin className="w-4 h-4 text-crimson-glow shrink-0" />
+                <span>
+                  <strong className="text-white font-sans">{event.city}</strong> • {event.venue}
+                </span>
+              </div>
 
-            {/* Pill Register Button */}
-            <button
-              onClick={onRegisterClick}
-              className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-crimson hover:bg-crimson-glow text-white font-display text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_15px_rgba(200,16,46,0.5)]"
-            >
-              <QrCode className="w-3.5 h-3.5" />
-              <span>Register Now</span>
-            </button>
+              {/* Dates */}
+              <div className="hidden sm:flex items-center gap-2 border-l border-white/10 pl-4">
+                <Calendar className="w-4 h-4 text-crimson-glow shrink-0" />
+                <span className="text-white font-sans font-semibold">{event.dateRange}</span>
+              </div>
+
+              {/* Pill Register Button */}
+              <button
+                onClick={onRegisterClick}
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-crimson hover:bg-crimson-glow text-black font-display text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,229,255,0.6)] hover:shadow-[0_0_30px_rgba(0,240,255,0.9)] hover:scale-105"
+              >
+                <QrCode className="w-3.5 h-3.5" />
+                <span>Register</span>
+              </button>
+            </div>
           </div>
         </motion.div>
       )}
