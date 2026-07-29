@@ -64,7 +64,7 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-gray-500">Prizes & Perks:</span>{" "}
-                <span className="text-gray-300 font-semibold">₹30K Pool, Internships & Compute Credits</span>
+                <span className="text-gray-300 font-semibold">₹30K Pool, Internships & Hedera Certification & Mentoring</span>
               </li>
             </ul>
           </div>

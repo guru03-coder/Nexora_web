@@ -53,7 +53,7 @@ export default function RegisterCTASection({ onRegisterClick }: RegisterCTASecti
                 </a>
 
                 <div className="text-center sm:text-left text-xs font-mono text-gray-400 py-2">
-                  <span>₹1,000/Team (Only if Shortlisted for Round 2)</span> • <span>₹30K Prize Pool</span> • <span>Internships & Credits</span>
+                  <span>₹1,000/Team (Only if Shortlisted for Round 2)</span> • <span>₹30K Prize Pool</span> • <span>Hedera Certification & Mentoring</span>
                 </div>
               </div>
             </div>

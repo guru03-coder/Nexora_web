@@ -56,7 +56,7 @@ export default function AboutSection() {
             {
               icon: Trophy,
               title: "₹30K Prize Pool & Perks",
-              desc: "Cash prizes, direct internship offers from partners, and cloud/GPU compute credit grants.",
+              desc: "Cash prizes, direct internship offers from partners, and exclusive access to Hedera Blockchain Certification and mentoring.",
             },
             {
               icon: Layers,

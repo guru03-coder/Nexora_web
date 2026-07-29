@@ -86,7 +86,7 @@ export const tracks: Track[] = [
     title: "BlockChain", 
     description: "Build decentralized applications and trustless systems for the future", 
     icon: "link",
-    prize: "Credits & Perks"
+    prize: "Hedera Certification & Mentoring"
   },
   { 
     id: "devops", 
@@ -172,6 +172,6 @@ export const faqs: FAQItem[] = [
   { question: "What is the team size?", answer: "Teams can range from 1 to 4 participants. You can form teams prior to the event or connect with teammates during Day 1 networking." },
   { question: "Is there a registration fee?", answer: "Round 1 registration is free! A registration fee of ₹1,000 per team is required only if your team is shortlisted for Round 2." },
   { question: "Where is NEXORA held?", answer: "NEXORA takes place in person at SNS IHUB, Coimbatore (August 22–23)." },
-  { question: "What are the prizes and perks?", answer: "₹30,000 in cash prizes, direct internship offers from partner companies, and exclusive cloud/GPU credit offers for participants." },
+  { question: "What are the prizes and perks?", answer: "₹30,000 in cash prizes, direct internship offers from partner companies, and exclusive access to Hedera Blockchain Certification and mentoring for participants." },
   { question: "What should I bring?", answer: "Bring your laptop, charger, valid ID, and enthusiasm to build!" },
 ];
