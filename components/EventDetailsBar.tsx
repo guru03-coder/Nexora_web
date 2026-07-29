@@ -64,54 +64,54 @@ export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProp
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 60, opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="fixed bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 z-40 w-[95%] max-w-5xl glass-panel rounded-full px-3.5 sm:px-8 py-2 sm:py-3 shadow-[0_10px_35px_rgba(0,0,0,0.9)] border border-crimson/40"
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-[95%] max-w-5xl glass-panel rounded-full px-5 sm:px-8 py-3 shadow-[0_10px_35px_rgba(0,0,0,0.9)] border border-crimson/40"
         >
-          <div className="flex flex-nowrap items-center justify-between gap-2 sm:gap-3 text-xs sm:text-sm font-mono text-gray-200">
+          <div className="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm font-mono text-gray-200">
             {/* Left Side: Animated Event Launch Countdown Timer */}
-            <div className="flex items-center gap-1.5 sm:gap-3">
-              <div className="flex items-center gap-1">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-crimson-glow animate-ping shrink-0" />
-                <Timer className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-crimson-glow shrink-0" />
+                <Timer className="w-4 h-4 text-crimson-glow shrink-0" />
                 <span className="hidden sm:inline-block text-[11px] font-mono uppercase tracking-widest text-gray-400">
                   LAUNCH IN
                 </span>
               </div>
 
               {/* Ticking Digit Counters */}
-              <div className="flex items-center gap-0.5 sm:gap-1 font-mono font-bold text-[11px] sm:text-sm">
-                <div className="bg-black/80 border border-crimson/50 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
+              <div className="flex items-center gap-1 font-mono font-bold text-xs sm:text-sm">
+                <div className="bg-black/80 border border-crimson/50 px-2 py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
                   {String(timeLeft.days).padStart(2, "0")}
-                  <span className="text-[8px] sm:text-[9px] text-gray-400 ml-0.5">d</span>
+                  <span className="text-[9px] text-gray-400 ml-0.5">d</span>
                 </div>
-                <span className="text-crimson-glow animate-pulse font-extrabold text-[10px] sm:text-xs">:</span>
+                <span className="text-crimson-glow animate-pulse font-extrabold">:</span>
 
-                <div className="bg-black/80 border border-crimson/50 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
+                <div className="bg-black/80 border border-crimson/50 px-2 py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
                   {String(timeLeft.hours).padStart(2, "0")}
-                  <span className="text-[8px] sm:text-[9px] text-gray-400 ml-0.5">h</span>
+                  <span className="text-[9px] text-gray-400 ml-0.5">h</span>
                 </div>
-                <span className="text-crimson-glow animate-pulse font-extrabold text-[10px] sm:text-xs">:</span>
+                <span className="text-crimson-glow animate-pulse font-extrabold">:</span>
 
-                <div className="bg-black/80 border border-crimson/50 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
+                <div className="bg-black/80 border border-crimson/50 px-2 py-1 rounded-md text-crimson-glow shadow-[0_0_10px_rgba(0,229,255,0.4)]">
                   {String(timeLeft.minutes).padStart(2, "0")}
-                  <span className="text-[8px] sm:text-[9px] text-gray-400 ml-0.5">m</span>
+                  <span className="text-[9px] text-gray-400 ml-0.5">m</span>
                 </div>
-                <span className="text-crimson-glow animate-pulse font-extrabold text-[10px] sm:text-xs">:</span>
+                <span className="text-crimson-glow animate-pulse font-extrabold">:</span>
 
                 <motion.div
                   key={timeLeft.seconds}
                   initial={{ scale: 1.15, opacity: 0.8 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-black/80 border border-crimson/60 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-md text-white bg-gradient-to-r from-crimson/30 to-crimson/10 shadow-[0_0_15px_rgba(0,240,255,0.7)]"
+                  className="bg-black/80 border border-crimson/60 px-2 py-1 rounded-md text-white bg-gradient-to-r from-crimson/30 to-crimson/10 shadow-[0_0_15px_rgba(0,240,255,0.7)]"
                 >
                   {String(timeLeft.seconds).padStart(2, "0")}
-                  <span className="text-[8px] sm:text-[9px] text-gray-300 ml-0.5">s</span>
+                  <span className="text-[9px] text-gray-300 ml-0.5">s</span>
                 </motion.div>
               </div>
             </div>
 
             {/* Right Side: Venue (Clickable Google Maps link), Date & Register Button */}
-            <div className="flex items-center gap-2 sm:gap-6">
+            <div className="flex items-center gap-3 sm:gap-6">
               {/* Location Link */}
               <a
                 href={event.mapUrl}
@@ -138,9 +138,9 @@ export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProp
                 href={event.registerUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-crimson hover:bg-crimson-glow text-black font-display text-[10px] sm:text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,229,255,0.6)] hover:shadow-[0_0_30px_rgba(0,240,255,0.9)] hover:scale-105 shrink-0"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-crimson hover:bg-crimson-glow text-black font-display text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,229,255,0.6)] hover:shadow-[0_0_30px_rgba(0,240,255,0.9)] hover:scale-105"
               >
-                <QrCode className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
+                <QrCode className="w-3.5 h-3.5" />
                 <span>Register</span>
               </a>
             </div>

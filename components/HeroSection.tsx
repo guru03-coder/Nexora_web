@@ -127,27 +127,23 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
       />
 
       {/* Interactive Clickable Hotspots overlay matching video's native buttons */}
-      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center flex flex-col items-center justify-center pt-40 sm:pt-72">
-        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mt-8 sm:mt-24">
+      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center flex flex-col items-center justify-center pt-64 sm:pt-72">
+        <div className="flex flex-col sm:flex-row items-center gap-6 mt-16 sm:mt-24">
           {/* Hotspot over CLAIM ACCESS PASS */}
           <a
             href={event.registerUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Claim Access Pass"
-            className="w-56 sm:w-60 h-12 sm:h-14 rounded-full cursor-pointer bg-cyan-500/15 sm:bg-white/0 hover:bg-cyan-500/25 border border-cyan-400/40 sm:border-transparent hover:border-cyan-400/50 transition-all duration-300 shadow-[0_0_20px_rgba(0,229,255,0.3)] sm:shadow-[0_0_20px_rgba(0,229,255,0)] hover:shadow-[0_0_30px_rgba(0,229,255,0.6)] flex items-center justify-center font-display text-xs font-bold uppercase tracking-wider text-cyan-300 sm:text-transparent"
-          >
-            <span className="sm:hidden">Claim Access Pass</span>
-          </a>
+            className="w-56 sm:w-60 h-14 rounded-full cursor-pointer bg-white/0 hover:bg-cyan-500/20 border border-transparent hover:border-cyan-400/50 transition-all duration-300 shadow-[0_0_20px_rgba(0,229,255,0)] hover:shadow-[0_0_30px_rgba(0,229,255,0.6)] flex items-center justify-center"
+          />
 
           {/* Hotspot over EXPLORE TRACKS */}
           <a
             href="#tracks"
             aria-label="Explore Tracks"
-            className="w-56 sm:w-60 h-12 sm:h-14 rounded-full cursor-pointer bg-white/10 sm:bg-white/0 hover:bg-white/20 border border-white/30 sm:border-transparent hover:border-white/40 transition-all duration-300 flex items-center justify-center font-display text-xs font-bold uppercase tracking-wider text-gray-200 sm:text-transparent"
-          >
-            <span className="sm:hidden">Explore Tracks</span>
-          </a>
+            className="w-56 sm:w-60 h-14 rounded-full cursor-pointer bg-white/0 hover:bg-white/10 border border-transparent hover:border-white/40 transition-all duration-300"
+          />
         </div>
       </div>
 
