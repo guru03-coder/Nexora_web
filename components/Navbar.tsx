@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { event } from "@/data/event";
+import Image from "next/image";
 
 interface NavbarProps {
   onRegisterClick: () => void;
@@ -29,19 +30,16 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Logo & Tag */}
+        {/* Brand Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="relative w-8 h-8 rounded-lg bg-crimson/20 border border-crimson/40 flex items-center justify-center font-display font-black text-white text-xs group-hover:scale-105 transition-transform">
-            H
-            <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-crimson-glow animate-pulse" />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-2xl font-display font-extrabold tracking-wider metal-gradient">
-              {event.name}
-            </span>
-            <span className="text-[10px] font-mono text-gray-400 -mt-1 tracking-widest uppercase">
-              by {event.presentedBy}
-            </span>
+          <div className="relative w-12 h-12 rounded-lg overflow-hidden border border-crimson/40 bg-white/5 flex items-center justify-center group-hover:scale-105 transition-transform">
+            <Image
+              src="/logo.jpeg"
+              alt="Nexora Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
         </a>
 

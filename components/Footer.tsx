@@ -11,12 +11,14 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-crimson/20 border border-crimson/40 flex items-center justify-center font-display font-black text-white text-xs">
-                H
+              <div className="relative w-12 h-12 rounded-lg overflow-hidden border border-crimson/40 bg-white/5 flex items-center justify-center">
+                <Image
+                  src="/logo.jpeg"
+                  alt="Nexora Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <span className="text-2xl font-display font-extrabold metal-gradient">
-                {event.name}
-              </span>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">
               Presented by <strong className="text-white">{event.presentedBy}</strong>. 24-Hour hackathon building the next era of artificial intelligence, autonomous agents, and deep tech.
