@@ -80,13 +80,15 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
 
             {/* Action Link */}
             <a
-              href={event.registerUrl.startsWith("http") ? event.registerUrl : "#register"}
+              href={event.registerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => {
                 onClose();
               }}
               className="inline-flex items-center justify-center gap-2 w-full py-3 px-6 rounded-xl bg-gradient-to-r from-crimson to-crimson-dark text-white font-display font-semibold hover:shadow-[0_0_25px_rgba(255,30,60,0.6)] transition-all duration-300"
             >
-              <span>Proceed to Portal</span>
+              <span>Proceed to Unstop Portal</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </motion.div>

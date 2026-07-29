@@ -134,13 +134,15 @@ export default function EventDetailsBar({ onRegisterClick }: EventDetailsBarProp
               </div>
 
               {/* Pill Register Button */}
-              <button
-                onClick={onRegisterClick}
+              <a
+                href={event.registerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 rounded-full bg-crimson hover:bg-crimson-glow text-black font-display text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,229,255,0.6)] hover:shadow-[0_0_30px_rgba(0,240,255,0.9)] hover:scale-105"
               >
                 <QrCode className="w-3.5 h-3.5" />
                 <span>Register</span>
-              </button>
+              </a>
             </div>
           </div>
         </motion.div>

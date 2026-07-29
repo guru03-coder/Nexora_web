@@ -25,11 +25,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nexora-hackhere.vercel.app"),
   title: "NEXORA 2026 | Beyond Limits. Beyond Imagination — by HackHere",
-  description: "NEXORA is a premier hackathon presented by HackHere in Coimbatore. Join 5,000+ builders, compete across frontier tracks, and solve real-world challenges.",
+  description: "NEXORA is a premier hackathon presented by HackHere in Coimbatore. Join builders, compete across frontier tracks, and solve real-world challenges.",
   openGraph: {
     title: "NEXORA 2026 | Beyond Limits. Beyond Imagination",
-    description: "Presented by HackHere. August 29–30 in Coimbatore.",
+    description: "Presented by HackHere. August 22–23 in Coimbatore.",
     images: ["/fin.png"],
   },
 };

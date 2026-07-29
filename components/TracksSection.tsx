@@ -63,17 +63,9 @@ export default function TracksSection() {
                   </h3>
 
                   {/* Domain Description */}
-                  <p className="text-sm text-gray-400 leading-relaxed font-sans mb-6">
+                  <p className="text-sm text-gray-400 leading-relaxed font-sans">
                     {track.description}
                   </p>
-                </div>
-
-                {/* Footer Link */}
-                <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-gray-400 group-hover:text-white transition-colors">
-                  <span>Domain ID: #{track.id}</span>
-                  <span className="group-hover:translate-x-1 transition-transform text-crimson-glow font-bold">
-                    Learn More →
-                  </span>
                 </div>
               </motion.div>
             );

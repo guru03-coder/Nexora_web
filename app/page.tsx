@@ -12,6 +12,7 @@ import AboutSection from "@/components/AboutSection";
 import TracksSection from "@/components/TracksSection";
 import ScheduleSection from "@/components/ScheduleSection";
 import SponsorsMarquee from "@/components/SponsorsMarquee";
+import JuriesSection from "@/components/JuriesSection";
 import FAQSection from "@/components/FAQSection";
 import RegisterCTASection from "@/components/RegisterCTASection";
 import Footer from "@/components/Footer";
@@ -85,6 +86,16 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           <SponsorsMarquee />
+        </motion.div>
+
+        {/* Juries & Chief Guests Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <JuriesSection />
         </motion.div>
 
         {/* FAQ Section */}

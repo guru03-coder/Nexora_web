@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { event } from "@/data/event";
 
 interface HeroSectionProps {
   onRegisterClick: () => void;
@@ -129,10 +130,12 @@ export default function HeroSection({ onRegisterClick }: HeroSectionProps) {
       <div className="relative z-20 max-w-5xl mx-auto px-4 text-center flex flex-col items-center justify-center pt-64 sm:pt-72">
         <div className="flex flex-col sm:flex-row items-center gap-6 mt-16 sm:mt-24">
           {/* Hotspot over CLAIM ACCESS PASS */}
-          <button
-            onClick={onRegisterClick}
+          <a
+            href={event.registerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Claim Access Pass"
-            className="w-56 sm:w-60 h-14 rounded-full cursor-pointer bg-white/0 hover:bg-cyan-500/20 border border-transparent hover:border-cyan-400/50 transition-all duration-300 shadow-[0_0_20px_rgba(0,229,255,0)] hover:shadow-[0_0_30px_rgba(0,229,255,0.6)]"
+            className="w-56 sm:w-60 h-14 rounded-full cursor-pointer bg-white/0 hover:bg-cyan-500/20 border border-transparent hover:border-cyan-400/50 transition-all duration-300 shadow-[0_0_20px_rgba(0,229,255,0)] hover:shadow-[0_0_30px_rgba(0,229,255,0.6)] flex items-center justify-center"
           />
 
           {/* Hotspot over EXPLORE TRACKS */}

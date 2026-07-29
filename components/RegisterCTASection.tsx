@@ -41,14 +41,16 @@ export default function RegisterCTASection({ onRegisterClick }: RegisterCTASecti
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-                <button
-                  onClick={onRegisterClick}
+                <a
+                  href={event.registerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-8 py-4 rounded-full bg-crimson hover:bg-crimson-glow text-black font-display text-sm font-bold uppercase tracking-wider shadow-[0_0_30px_rgba(0,229,255,0.7)] hover:shadow-[0_0_50px_rgba(0,240,255,1)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
                 >
                   <QrCode className="w-5 h-5" />
                   <span>Register Now</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
 
                 <div className="text-center sm:text-left text-xs font-mono text-gray-400 py-2">
                   <span>100% Free Entry</span> • <span>₹30K Prize Pool</span> • <span>Internships & Credits</span>
@@ -58,9 +60,11 @@ export default function RegisterCTASection({ onRegisterClick }: RegisterCTASecti
 
             {/* Right QR Visual */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
-              <div
-                onClick={onRegisterClick}
-                className="group relative cursor-pointer bg-white p-4 rounded-2xl border-2 border-crimson/50 shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:scale-105 transition-all duration-300"
+              <a
+                href={event.registerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative cursor-pointer bg-white p-4 rounded-2xl border-2 border-crimson/50 shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:scale-105 transition-all duration-300 block"
               >
                 <div className="relative w-48 h-48">
                   <Image
@@ -71,9 +75,9 @@ export default function RegisterCTASection({ onRegisterClick }: RegisterCTASecti
                   />
                 </div>
                 <div className="absolute inset-0 bg-crimson/80 backdrop-blur-xs rounded-xl opacity-0 group-hover:opacity-100 flex items-center justify-center text-black font-display text-xs font-bold uppercase tracking-wider transition-opacity duration-300">
-                  Click to Expand
+                  Open Unstop Portal
                 </div>
-              </div>
+              </a>
               <span className="text-xs font-mono text-gray-400 mt-3">
                 Scan with phone camera to register
               </span>

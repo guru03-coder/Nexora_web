@@ -17,21 +17,28 @@ export interface Track {
   prize: string;
 }
 
-export interface ScheduleItem {
-  time: string;
+export interface EventPhase {
+  phase: string;
   title: string;
-  description: string;
-}
-
-export interface ScheduleDay {
-  day: string;
   date: string;
-  items: ScheduleItem[];
+  description: string;
 }
 
 export interface Sponsor {
   name: string;
   logoPath: string;
+}
+
+export interface JuryMember {
+  id: string;
+  name: string;
+  role: string;
+  company: string;
+  category: string;
+  bio: string;
+  image: string;
+  linkedin?: string;
+  twitter?: string;
 }
 
 export interface FAQItem {
@@ -47,18 +54,16 @@ export const event: EventInfo = {
   venue: "SNS IHUB",
   mapUrl: "https://maps.app.goo.gl/5Qv5T9LsVeL58uxd8",
   dateRange: "August 22–23",
-  registerUrl: "#register",
+  registerUrl: "https://unstop.com/p/nexora-hackhere-1726957",
 };
 
 export const sponsors: Sponsor[] = [
-  { name: "Journi", logoPath: "/sponsors/journi.jpeg" },
-  { name: "Elyon", logoPath: "/sponsors/elyon.jpeg" },
-  { name: "Featherless AI", logoPath: "/sponsors/featherlessai.jpeg" },
-  { name: "PwC", logoPath: "/sponsors/logo_pwc.png" },
-  { name: "StartupTN", logoPath: "/sponsors/startuptn.jpeg" },
-  { name: "Wyntrix", logoPath: "/sponsors/wyntrix.jpeg" },
-  { name: "MaestroMinds", logoPath: "/sponsors/maestrominds.png" },
-  { name: "Medo", logoPath: "/sponsors/medo.png" },
+  { name: "Sponsor 1", logoPath: "/sponsors/wp_sponsor_1.jpeg" },
+  { name: "Sponsor 2", logoPath: "/sponsors/wp_sponsor_2.jpeg" },
+  { name: "Sponsor 3", logoPath: "/sponsors/wp_sponsor_3.jpeg" },
+  { name: "Sponsor 4", logoPath: "/sponsors/wp_sponsor_4.jpeg" },
+  { name: "Sponsor 5", logoPath: "/sponsors/wp_sponsor_5.jpeg" },
+  { name: "Sponsor 6", logoPath: "/sponsors/calendar_sponsor.png" },
 ];
 
 export const tracks: Track[] = [
@@ -92,28 +97,73 @@ export const tracks: Track[] = [
   },
 ];
 
-export const schedule: ScheduleDay[] = [
+export const phases: EventPhase[] = [
   {
-    day: "Day 1",
-    date: "August 22",
-    items: [
-      { time: "09:00 AM", title: "Registration & Check-in", description: "Collect hacker badges, welcome kits, and compute credentials at SNS IHUB." },
-      { time: "10:00 AM", title: "Opening Ceremony", description: "Kickoff, rules briefing, sponsor challenges & domain reveal." },
-      { time: "11:00 AM", title: "24-Hour Hacking Begins", description: "API keys & GPU compute grants distributed. Hacking officially unlocked!" },
-      { time: "03:00 PM", title: "Technical Workshop", description: "Building Autonomous Swarms & Next-Gen Infrastructure." },
-      { time: "08:00 PM", title: "Dinner & Mentor Speed-Dating", description: "Connect with 1-on-1 industry and AI engineering mentors." },
-    ],
+    phase: "PHASE 1",
+    title: "LAUNCH & REGISTRATION",
+    date: "Online Submission Ends Aug 12",
+    description: "Round 1 online screening — Idea/Abstract submission focusing on core domains through Unstop. Shortlisted on Innovation, Feasibility, Technical Approach, and Real-World Impact.",
   },
   {
-    day: "Day 2",
+    phase: "PHASE 2",
+    title: "IDEATION & SHORTLISTING",
+    date: "August 13 – August 16",
+    description: "Deep dive into challenge domains and solution evaluations. The top shortlisted teams are selected for the offline grand finale.",
+  },
+  {
+    phase: "PHASE 3",
+    title: "BUILD (24H SPRINT)",
+    date: "August 22 – August 23",
+    description: "Build your working prototype at the physical venue (SNS IHUB, Coimbatore) over a continuous 24-hour period with direct mentorship support.",
+  },
+  {
+    phase: "PHASE 4",
+    title: "PITCH & AWARDS",
     date: "August 23",
-    items: [
-      { time: "09:00 AM", title: "Breakfast & Pitch Prep", description: "Refine slide decks, live demos, and project submissions." },
-      { time: "11:00 AM", title: "Hacking Concludes & Submissions", description: "Hard code freeze on GitHub & Devpost repositories." },
-      { time: "11:30 AM", title: "Judging & Demos", description: "Project evaluations by expert jury panel." },
-      { time: "02:30 PM", title: "Top Finalist Demos", description: "Live main stage pitches to partner companies." },
-      { time: "04:00 PM", title: "Closing & Awards Ceremony", description: "₹30,000 prize distribution, internship offers & credit announcements." },
-    ],
+    description: "Present your prototype to expert judges. Evaluated on Innovation, Execution, Impact, and Presentation.",
+  },
+];
+
+export const juries: JuryMember[] = [
+  {
+    id: "jury-1",
+    name: "Ranghan Venkatraman",
+    role: "CEO",
+    company: "Rezilyens",
+    category: "Chief Guest",
+    bio: "CEO of Rezilyens, leading cutting-edge technological resilience and business strategy.",
+    image: "/juries/jury_1.jpeg",
+    linkedin: "https://www.linkedin.com/in/ranghanvenkatraman/",
+  },
+  {
+    id: "jury-2",
+    name: "Ranjani Venkatraman",
+    role: "Co-CEO",
+    company: "Rezilyens",
+    category: "Chief Guest",
+    bio: "Co-CEO of Rezilyens, steering organizational growth, innovative technology operations, and enterprise strategy.",
+    image: "/juries/jury_2.jpeg",
+    linkedin: "https://www.linkedin.com/in/ranjani-venkatraman-2609a4176/",
+  },
+  {
+    id: "jury-3",
+    name: "Reinard Abhishek J",
+    role: "Design Engineer II",
+    company: "Becton Dickinson",
+    category: "Jury Member",
+    bio: "Design Engineer II at Becton Dickinson, specializing in medical device innovation and product engineering.",
+    image: "/juries/jury_3.jpeg",
+    linkedin: "https://www.linkedin.com/in/reinard-abhishek-a781a3179/",
+  },
+  {
+    id: "jury-4",
+    name: "Subhashini S",
+    role: "HR and Insurance Trainer",
+    company: "Pronoia IMF",
+    category: "Jury Member",
+    bio: "HR and Insurance Trainer at Pronoia IMF, empowering talent and professional excellence.",
+    image: "/juries/jury_4.jpeg",
+    linkedin: "https://www.linkedin.com/in/s-subhashini-625794230?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },
 ];
 

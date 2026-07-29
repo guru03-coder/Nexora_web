@@ -25,7 +25,7 @@ export default function FAQSection() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow">
-            [ 05 // SYSTEM INQUIRIES ]
+            [ 06 // SYSTEM INQUIRIES ]
           </span>
           <h2 className="text-3xl sm:text-5xl font-display font-bold mt-2 mb-4">
             FREQUENTLY ASKED <span className="metal-gradient">QUESTIONS</span>
