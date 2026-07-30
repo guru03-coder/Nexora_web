@@ -35,20 +35,20 @@ export default function MobileTeamSection() {
               transition={{ duration: 0.4, delay: idx * 0.1 }}
               className="p-5 rounded-3xl bg-gradient-to-b from-cyan-950/80 to-ink border border-cyan-500/40 space-y-4 relative overflow-hidden backdrop-blur-sm shadow-[0_0_20px_rgba(0,229,255,0.15)]"
             >
-              {/* Vertical Photo Frame */}
-              <div className="relative w-full h-56 rounded-2xl overflow-hidden border border-cyan-400/60 bg-black/60 flex items-center justify-center p-3 shadow-[0_0_15px_rgba(0,229,255,0.2)]">
+              {/* Standardized Vertical Photo Frame */}
+              <div className="relative w-full aspect-[4/5] max-h-72 rounded-2xl overflow-hidden border border-cyan-400/60 bg-black/60 shadow-[0_0_15px_rgba(0,229,255,0.2)]">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-contain p-2"
+                  className="object-cover object-top"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-ink to-transparent" />
               </div>
 
-              {/* Name & Designation */}
-              <div className="space-y-1 text-center">
-                <h3 className="text-xl font-display font-extrabold text-white">
+              {/* Single Line Name & Designation */}
+              <div className="space-y-1 text-center min-w-0">
+                <h3 className="text-lg font-display font-extrabold text-white truncate whitespace-nowrap">
                   {member.name}
                 </h3>
                 <p className="text-xs font-mono font-bold text-cyan-400 tracking-wide uppercase">

@@ -44,29 +44,32 @@ export default function TeamSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="glass-panel rounded-3xl p-6 border border-white/15 hover:border-crimson hover:shadow-[0_0_30px_rgba(0,229,255,0.25)] transition-all duration-300 flex flex-col justify-between overflow-hidden group relative"
+                className="glass-panel rounded-3xl p-5 border border-white/15 hover:border-crimson hover:shadow-[0_0_30px_rgba(0,229,255,0.25)] transition-all duration-300 flex flex-col justify-between overflow-hidden group relative"
               >
                 {/* Glowing Top Accent Bar */}
                 <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-crimson to-crimson-dark group-hover:h-2 transition-all duration-300" />
 
-                {/* Vertical Portrait Photo Frame */}
-                <div className="relative w-full h-64 sm:h-72 bg-black/60 rounded-2xl overflow-hidden border border-crimson/40 mb-5 flex items-center justify-center p-3 group-hover:border-crimson transition-colors shadow-[0_0_20px_rgba(0,229,255,0.15)]">
+                {/* Standardized Vertical Portrait Photo Frame */}
+                <div className="relative w-full aspect-[4/5] bg-black/60 rounded-2xl overflow-hidden border border-crimson/40 mb-4 group-hover:border-crimson transition-colors shadow-[0_0_20px_rgba(0,229,255,0.15)]">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-ink to-transparent pointer-events-none" />
+                  <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-ink/90 to-transparent pointer-events-none" />
                 </div>
 
                 {/* Card Details: Name & Designation */}
                 <div className="flex flex-col flex-grow justify-between space-y-4">
-                  <div className="text-left space-y-1">
-                    <h3 className="text-2xl font-display font-extrabold text-white group-hover:text-crimson-glow transition-colors">
+                  <div className="text-left space-y-1 min-w-0">
+                    <h3
+                      className="text-lg xl:text-xl font-display font-extrabold text-white group-hover:text-crimson-glow transition-colors truncate whitespace-nowrap"
+                      title={member.name}
+                    >
                       {member.name}
                     </h3>
-                    <p className="text-sm font-mono font-bold text-crimson-glow tracking-wide uppercase">
+                    <p className="text-xs sm:text-sm font-mono font-bold text-crimson-glow tracking-wide uppercase">
                       {member.role}
                     </p>
                   </div>
