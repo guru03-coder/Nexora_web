@@ -50,8 +50,8 @@ export default function AboutSection() {
             },
             {
               icon: Globe,
-              title: "Hybrid Mode",
-              desc: "Join in-person at SNS IHUB, Coimbatore or compete online from anywhere worldwide.",
+              title: "Direct Entry Format",
+              desc: "Register directly on Unstop to confirm your slot for the physical 24-hour hackathon sprint at SNS IHUB, Coimbatore.",
             },
             {
               icon: Trophy,
@@ -60,8 +60,8 @@ export default function AboutSection() {
             },
             {
               icon: Layers,
-              title: "2-Stage Format",
-              desc: "Round 1 online idea submission followed by Round 2 offline 24-hour sprint at SNS IHUB.",
+              title: "Direct Grand Finale",
+              desc: "Direct access to the physical 24-hour build & live pitch grand finale at SNS IHUB, Coimbatore.",
             },
           ].map((item, idx) => (
             <motion.div

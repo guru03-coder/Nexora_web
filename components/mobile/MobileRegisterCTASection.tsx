@@ -63,7 +63,7 @@ export default function MobileRegisterCTASection({ onRegisterClick }: MobileRegi
           </a>
 
           <p className="text-[11px] font-mono text-cyan-300">
-            ₹1,000/Team (Only if Shortlisted for Round 2) • ₹30K Pool
+            ₹1,000/Team Fee (Direct Entry to 24H Finale) • ₹30K Pool
           </p>
         </div>
       </div>

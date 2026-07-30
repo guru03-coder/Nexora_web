@@ -30,7 +30,7 @@ export default function ScheduleSection() {
             EVENT <span className="metal-gradient">PHASES</span>
           </h2>
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            From online abstract submission on Unstop to 24-hour physical build & live pitch.
+            From direct team registration on Unstop to 24-hour physical build & live pitch grand finale.
           </p>
         </motion.div>
 

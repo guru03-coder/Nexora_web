@@ -101,26 +101,26 @@ export const phases: EventPhase[] = [
   {
     phase: "PHASE 1",
     title: "LAUNCH & REGISTRATION",
-    date: "Online Submission Ends Aug 12",
-    description: "Round 1 online screening — Idea/Abstract submission focusing on core domains through Unstop. Shortlisted on Innovation, Feasibility, Technical Approach, and Real-World Impact.",
+    date: "Registration Open on Unstop",
+    description: "Direct entry registration — Register your team of 1–4 participants on Unstop to secure your slot for the 24-hour offline grand finale.",
   },
   {
     phase: "PHASE 2",
-    title: "IDEATION & SHORTLISTING",
-    date: "August 13 – August 16",
-    description: "Deep dive into challenge domains and solution evaluations. The top shortlisted teams are selected for the offline grand finale.",
+    title: "PREPARATION & IDEATION",
+    date: "August 13 – August 21",
+    description: "Explore challenge tracks, review technical documentation, refine your architecture, and prepare for the physical build sprint.",
   },
   {
     phase: "PHASE 3",
-    title: "BUILD (24H SPRINT)",
+    title: "BUILD (24H OFFLINE SPRINT)",
     date: "August 22 – August 23",
-    description: "Build your working prototype at the physical venue (SNS IHUB, Coimbatore) over a continuous 24-hour period with direct mentorship support.",
+    description: "Build your working prototype live at SNS IHUB, Coimbatore over a continuous 24-hour period with direct technical mentorship.",
   },
   {
     phase: "PHASE 4",
-    title: "PITCH & AWARDS",
+    title: "PITCH & GRAND FINALE AWARDS",
     date: "August 23",
-    description: "Present your prototype to expert judges. Evaluated on Innovation, Execution, Impact, and Presentation.",
+    description: "Present your working prototype live to our jury panel and chief guests to compete for ₹30K cash prizes, internships & Hedera certifications.",
   },
 ];
 
@@ -169,8 +169,8 @@ export const juries: JuryMember[] = [
 
 export const faqs: FAQItem[] = [
   { question: "Who can participate?", answer: "NEXORA is open to developers, designers, students, and tech enthusiasts. Both beginners and experienced hackers are welcome!" },
-  { question: "What is the team size?", answer: "Teams can range from 1 to 4 participants. You can form teams prior to the event or connect with teammates during Day 1 networking." },
-  { question: "Is there a registration fee?", answer: "Round 1 registration is free! A registration fee of ₹1,000 per team is required only if your team is shortlisted for Round 2." },
+  { question: "What is the team size?", answer: "Teams can range from 1 to 4 participants. Form your team prior to the event or connect with teammates during Day 1 networking." },
+  { question: "Is there a registration fee?", answer: "The registration fee is ₹1,000 per team, which grants direct entry to the 24-hour offline hackathon grand finale at SNS IHUB, Coimbatore." },
   { question: "Where is NEXORA held?", answer: "NEXORA takes place in person at SNS IHUB, Coimbatore (August 22–23)." },
   { question: "What are the prizes and perks?", answer: "₹30,000 in cash prizes, direct internship offers from partner companies, and exclusive access to Hedera Blockchain Certification and mentoring for participants." },
   { question: "What should I bring?", answer: "Bring your laptop, charger, valid ID, and enthusiasm to build!" },

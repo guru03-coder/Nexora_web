@@ -12,8 +12,8 @@ const highlights = [
   },
   {
     icon: Globe,
-    title: "Hybrid Mode Format",
-    desc: "Round 1 online idea submission followed by Round 2 offline 24-hour hackathon sprint at SNS IHUB, Coimbatore.",
+    title: "Direct Entry Format",
+    desc: "Register directly on Unstop to join the physical 24-hour hackathon sprint at SNS IHUB, Coimbatore.",
   },
   {
     icon: Trophy,
@@ -22,8 +22,8 @@ const highlights = [
   },
   {
     icon: Layers,
-    title: "2-Stage Competition",
-    desc: "Shortlist fee of ₹1,000/team is required ONLY if selected for the Round 2 offline hackathon.",
+    title: "Direct Grand Finale",
+    desc: "Registration fee of ₹1,000/team grants direct access to the 24-hour physical build & live pitch at SNS IHUB.",
   },
 ];
 
