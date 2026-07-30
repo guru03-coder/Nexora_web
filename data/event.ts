@@ -138,10 +138,10 @@ export const juries: JuryMember[] = [
   {
     id: "jury-3",
     name: "Reinard Abhishek J",
-    role: "Design Engineer II",
-    company: "Becton Dickinson",
+    role: "HR",
+    company: "ELRO Tech",
     category: "Jury Member",
-    bio: "Design Engineer II at Becton Dickinson, specializing in medical device innovation and product engineering.",
+    bio: "HR at ELRO Tech, empowering talent acquisition, organizational growth, and human resources strategy.",
     image: "/juries/jury_3.jpeg",
     linkedin: "https://www.linkedin.com/in/reinard-abhishek-a781a3179/",
   },
