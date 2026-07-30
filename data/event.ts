@@ -126,16 +126,6 @@ export const phases: EventPhase[] = [
 
 export const juries: JuryMember[] = [
   {
-    id: "jury-1",
-    name: "Ranghan Venkatraman",
-    role: "CEO",
-    company: "Rezilyens",
-    category: "Chief Guest",
-    bio: "CEO of Rezilyens, leading cutting-edge technological resilience and business strategy.",
-    image: "/juries/jury_1.jpeg",
-    linkedin: "https://www.linkedin.com/in/ranghanvenkatraman/",
-  },
-  {
     id: "jury-2",
     name: "Ranjani Venkatraman",
     role: "Co-CEO",
