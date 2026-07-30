@@ -41,6 +41,16 @@ export interface JuryMember {
   twitter?: string;
 }
 
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  company: string;
+  bio: string;
+  image: string;
+  linkedin?: string;
+}
+
 export interface FAQItem {
   question: string;
   answer: string;
@@ -164,4 +174,43 @@ export const faqs: FAQItem[] = [
   { question: "Where is NEXORA held?", answer: "NEXORA takes place in person at SNS IHUB, Coimbatore (August 22–23)." },
   { question: "What are the prizes and perks?", answer: "₹30,000 in cash prizes, direct internship offers from partner companies, and exclusive access to Hedera Blockchain Certification and mentoring for participants." },
   { question: "What should I bring?", answer: "Bring your laptop, charger, valid ID, and enthusiasm to build!" },
+];
+
+export const teamMembers: TeamMember[] = [
+  {
+    id: "team-1",
+    name: "Lead Organizer",
+    role: "Core Organizing Lead",
+    company: "HackHere",
+    bio: "Heading event strategy, partnership executions, and grand finale operations for NEXORA 2026.",
+    image: "/logo.jpeg",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: "team-2",
+    name: "Technical Lead",
+    role: "Dev & Challenge Architecture",
+    company: "HackHere",
+    bio: "Architecting domain challenge tracks, developer portals, and hackathon technical infrastructure.",
+    image: "/logo.jpeg",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: "team-3",
+    name: "Operations Lead",
+    role: "Venue & Logistics Manager",
+    company: "HackHere",
+    bio: "Managing physical venue logistics at SNS IHUB, Coimbatore, participant hospitality, and 24-hour sprint flow.",
+    image: "/logo.jpeg",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: "team-4",
+    name: "Community Lead",
+    role: "Participant Experience & Outreach",
+    company: "HackHere",
+    bio: "Fostering hacker community outreach, mentor network coordination, and live participant support.",
+    image: "/logo.jpeg",
+    linkedin: "https://www.linkedin.com/",
+  },
 ];

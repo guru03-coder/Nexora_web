@@ -125,6 +125,14 @@ export default function MobileNavbar({ onRegisterClick }: MobileNavbarProps) {
                 <ArrowRight className="w-4 h-4 text-cyan-400" />
               </a>
               <a
+                href="#team"
+                onClick={closeMenu}
+                className="py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 text-gray-200 flex items-center justify-between"
+              >
+                <span>Organizing Team</span>
+                <ArrowRight className="w-4 h-4 text-cyan-400" />
+              </a>
+              <a
                 href="#faq"
                 onClick={closeMenu}
                 className="py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 text-gray-200 flex items-center justify-between"

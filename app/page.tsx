@@ -13,6 +13,7 @@ import TracksSection from "@/components/TracksSection";
 import ScheduleSection from "@/components/ScheduleSection";
 import SponsorsMarquee from "@/components/SponsorsMarquee";
 import JuriesSection from "@/components/JuriesSection";
+import TeamSection from "@/components/TeamSection";
 import FAQSection from "@/components/FAQSection";
 import RegisterCTASection from "@/components/RegisterCTASection";
 import Footer from "@/components/Footer";
@@ -27,6 +28,7 @@ import MobileTracksSection from "@/components/mobile/MobileTracksSection";
 import MobileScheduleSection from "@/components/mobile/MobileScheduleSection";
 import MobileSponsorsMarquee from "@/components/mobile/MobileSponsorsMarquee";
 import MobileJuriesSection from "@/components/mobile/MobileJuriesSection";
+import MobileTeamSection from "@/components/mobile/MobileTeamSection";
 import MobileFAQSection from "@/components/mobile/MobileFAQSection";
 import MobileRegisterCTASection from "@/components/mobile/MobileRegisterCTASection";
 import MobileFooter from "@/components/mobile/MobileFooter";
@@ -116,6 +118,16 @@ export default function Home() {
             <JuriesSection />
           </motion.div>
 
+          {/* Core Organizing Team Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+          >
+            <TeamSection />
+          </motion.div>
+
           {/* FAQ Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -151,6 +163,7 @@ export default function Home() {
           <MobileScheduleSection />
           <MobileSponsorsMarquee />
           <MobileJuriesSection />
+          <MobileTeamSection />
           <MobileFAQSection />
           <MobileRegisterCTASection onRegisterClick={handleOpenQRModal} />
           <MobileFooter />
