@@ -49,15 +49,8 @@ export default function TeamSection() {
                 {/* Glowing Top Accent Bar */}
                 <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-crimson to-crimson-dark group-hover:h-2 transition-all duration-300" />
 
-                {/* Top Position Tag */}
-                <div className="mb-4">
-                  <span className="px-3 py-1 rounded-full bg-crimson/20 border border-crimson/40 text-crimson-glow text-[10px] font-mono font-bold tracking-widest uppercase inline-block">
-                    {member.role}
-                  </span>
-                </div>
-
                 {/* Vertical Portrait Photo Frame */}
-                <div className="relative w-full h-52 sm:h-56 bg-black/60 rounded-2xl overflow-hidden border border-crimson/40 mb-4 flex items-center justify-center p-3 group-hover:border-crimson transition-colors shadow-[0_0_20px_rgba(0,229,255,0.15)]">
+                <div className="relative w-full h-64 sm:h-72 bg-black/60 rounded-2xl overflow-hidden border border-crimson/40 mb-5 flex items-center justify-center p-3 group-hover:border-crimson transition-colors shadow-[0_0_20px_rgba(0,229,255,0.15)]">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -67,25 +60,20 @@ export default function TeamSection() {
                   <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-ink to-transparent pointer-events-none" />
                 </div>
 
-                {/* Card Details */}
-                <div className="flex flex-col flex-grow justify-between space-y-3">
-                  <div>
-                    <h3 className="text-xl font-display font-bold text-white group-hover:text-crimson-glow transition-colors">
+                {/* Card Details: Name & Designation */}
+                <div className="flex flex-col flex-grow justify-between space-y-4">
+                  <div className="text-left space-y-1">
+                    <h3 className="text-2xl font-display font-extrabold text-white group-hover:text-crimson-glow transition-colors">
                       {member.name}
                     </h3>
-
-                    <p className="text-xs font-mono text-gray-400 mt-1">
-                      ORGANIZATION: <span className="text-white font-semibold">{member.company}</span>
-                    </p>
-
-                    <p className="text-xs text-gray-300 font-sans leading-relaxed mt-2 line-clamp-3">
-                      {member.bio}
+                    <p className="text-sm font-mono font-bold text-crimson-glow tracking-wide uppercase">
+                      {member.role}
                     </p>
                   </div>
 
                   {/* LinkedIn Action Link */}
                   {member.linkedin && (
-                    <div className="pt-4 border-t border-white/10 mt-auto">
+                    <div className="pt-3 border-t border-white/10 mt-auto">
                       <a
                         href={member.linkedin}
                         target="_blank"
