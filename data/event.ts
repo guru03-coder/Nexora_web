@@ -178,12 +178,12 @@ export const faqs: FAQItem[] = [
 export const teamMembers: TeamMember[] = [
   {
     id: "team-3",
-    name: "Operations Lead",
-    role: "Venue & Logistics Manager",
+    name: "Ezhil K K",
+    role: "CEO",
     company: "HackHere",
-    bio: "Managing physical venue logistics at SNS IHUB, Coimbatore, participant hospitality, and 24-hour sprint flow.",
+    bio: "Chief Executive Officer at HackHere, steering event vision, strategic partnerships, and operations for NEXORA 2026.",
     image: "/team/team_3.jpeg",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/ezhilkathirvelan/",
   },
   {
     id: "team-1",
