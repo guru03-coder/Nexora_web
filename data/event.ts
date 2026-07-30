@@ -153,7 +153,6 @@ export const juries: JuryMember[] = [
     category: "Jury Member",
     bio: "HR at ELRO Tech, empowering talent acquisition, organizational growth, and human resources strategy.",
     image: "/juries/jury_3.jpeg",
-    linkedin: "https://www.linkedin.com/in/reinard-abhishek-a781a3179/",
   },
   {
     id: "jury-4",
