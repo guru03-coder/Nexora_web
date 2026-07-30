@@ -182,7 +182,7 @@ export const teamMembers: TeamMember[] = [
     role: "Core Organizing Lead",
     company: "HackHere",
     bio: "Heading event strategy, partnership executions, and grand finale operations for NEXORA 2026.",
-    image: "/logo.jpeg",
+    image: "/team/team_1.jpeg",
     linkedin: "https://www.linkedin.com/",
   },
   {
@@ -191,7 +191,7 @@ export const teamMembers: TeamMember[] = [
     role: "Dev & Challenge Architecture",
     company: "HackHere",
     bio: "Architecting domain challenge tracks, developer portals, and hackathon technical infrastructure.",
-    image: "/logo.jpeg",
+    image: "/team/team_2.jpeg",
     linkedin: "https://www.linkedin.com/",
   },
   {
@@ -200,7 +200,7 @@ export const teamMembers: TeamMember[] = [
     role: "Venue & Logistics Manager",
     company: "HackHere",
     bio: "Managing physical venue logistics at SNS IHUB, Coimbatore, participant hospitality, and 24-hour sprint flow.",
-    image: "/logo.jpeg",
+    image: "/team/team_3.jpeg",
     linkedin: "https://www.linkedin.com/",
   },
   {
