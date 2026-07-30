@@ -177,6 +177,15 @@ export const faqs: FAQItem[] = [
 
 export const teamMembers: TeamMember[] = [
   {
+    id: "team-3",
+    name: "Operations Lead",
+    role: "Venue & Logistics Manager",
+    company: "HackHere",
+    bio: "Managing physical venue logistics at SNS IHUB, Coimbatore, participant hospitality, and 24-hour sprint flow.",
+    image: "/team/team_3.jpeg",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
     id: "team-1",
     name: "Lead Organizer",
     role: "Core Organizing Lead",
@@ -195,21 +204,12 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/",
   },
   {
-    id: "team-3",
-    name: "Operations Lead",
-    role: "Venue & Logistics Manager",
-    company: "HackHere",
-    bio: "Managing physical venue logistics at SNS IHUB, Coimbatore, participant hospitality, and 24-hour sprint flow.",
-    image: "/team/team_3.jpeg",
-    linkedin: "https://www.linkedin.com/",
-  },
-  {
     id: "team-4",
     name: "Community Lead",
     role: "Participant Experience & Outreach",
     company: "HackHere",
     bio: "Fostering hacker community outreach, mentor network coordination, and live participant support.",
-    image: "/logo.jpeg",
+    image: "/team/team_4.png",
     linkedin: "https://www.linkedin.com/",
   },
 ];
