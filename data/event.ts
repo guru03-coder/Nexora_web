@@ -64,7 +64,7 @@ export const event: EventInfo = {
   venue: "SNS IHUB",
   mapUrl: "https://maps.app.goo.gl/5Qv5T9LsVeL58uxd8",
   dateRange: "August 22–23",
-  registerUrl: "https://unstop.com/p/nexora-hackhere-1726957",
+  registerUrl: "https://unstop.com/hackathons/nexora-hackhere-1727929",
 };
 
 export const sponsors: Sponsor[] = [
