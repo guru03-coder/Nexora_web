@@ -11,6 +11,7 @@ import EventDetailsBar from "@/components/EventDetailsBar";
 import AboutSection from "@/components/AboutSection";
 import TracksSection from "@/components/TracksSection";
 import ScheduleSection from "@/components/ScheduleSection";
+import RewardsSection from "@/components/RewardsSection";
 import SponsorsMarquee from "@/components/SponsorsMarquee";
 import JuriesSection from "@/components/JuriesSection";
 import TeamSection from "@/components/TeamSection";
@@ -26,6 +27,7 @@ import MobileEventDetailsBar from "@/components/mobile/MobileEventDetailsBar";
 import MobileAboutSection from "@/components/mobile/MobileAboutSection";
 import MobileTracksSection from "@/components/mobile/MobileTracksSection";
 import MobileScheduleSection from "@/components/mobile/MobileScheduleSection";
+import MobileRewardsSection from "@/components/mobile/MobileRewardsSection";
 import MobileSponsorsMarquee from "@/components/mobile/MobileSponsorsMarquee";
 import MobileJuriesSection from "@/components/mobile/MobileJuriesSection";
 import MobileTeamSection from "@/components/mobile/MobileTeamSection";
@@ -78,6 +80,16 @@ export default function Home() {
             <AboutSection />
           </motion.div>
 
+          {/* Juries & Chief Guests Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+          >
+            <JuriesSection />
+          </motion.div>
+
           {/* Tracks Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -98,6 +110,16 @@ export default function Home() {
             <ScheduleSection />
           </motion.div>
 
+          {/* Rewards Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+          >
+            <RewardsSection />
+          </motion.div>
+
           {/* Sponsors Marquee */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -106,16 +128,6 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <SponsorsMarquee />
-          </motion.div>
-
-          {/* Juries & Chief Guests Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-          >
-            <JuriesSection />
           </motion.div>
 
           {/* Core Organizing Team Section */}
@@ -159,10 +171,11 @@ export default function Home() {
           <MobileNavbar onRegisterClick={handleOpenQRModal} />
           <MobileHeroSection onRegisterClick={handleOpenQRModal} />
           <MobileAboutSection />
+          <MobileJuriesSection />
           <MobileTracksSection />
           <MobileScheduleSection />
+          <MobileRewardsSection />
           <MobileSponsorsMarquee />
-          <MobileJuriesSection />
           <MobileTeamSection />
           <MobileFAQSection />
           <MobileRegisterCTASection onRegisterClick={handleOpenQRModal} />

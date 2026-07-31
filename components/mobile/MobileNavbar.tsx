@@ -93,6 +93,14 @@ export default function MobileNavbar({ onRegisterClick }: MobileNavbarProps) {
                 <ArrowRight className="w-4 h-4 text-cyan-400" />
               </a>
               <a
+                href="#juries"
+                onClick={closeMenu}
+                className="py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 text-gray-200 flex items-center justify-between"
+              >
+                <span>Juries & Chief Guests</span>
+                <ArrowRight className="w-4 h-4 text-cyan-400" />
+              </a>
+              <a
                 href="#tracks"
                 onClick={closeMenu}
                 className="py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 text-gray-200 flex items-center justify-between"
@@ -109,19 +117,19 @@ export default function MobileNavbar({ onRegisterClick }: MobileNavbarProps) {
                 <ArrowRight className="w-4 h-4 text-cyan-400" />
               </a>
               <a
+                href="#rewards"
+                onClick={closeMenu}
+                className="py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 text-gray-200 flex items-center justify-between"
+              >
+                <span>Rewards & Perks</span>
+                <ArrowRight className="w-4 h-4 text-cyan-400" />
+              </a>
+              <a
                 href="#sponsors"
                 onClick={closeMenu}
                 className="py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 text-gray-200 flex items-center justify-between"
               >
                 <span>Sponsors</span>
-                <ArrowRight className="w-4 h-4 text-cyan-400" />
-              </a>
-              <a
-                href="#juries"
-                onClick={closeMenu}
-                className="py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400 text-gray-200 flex items-center justify-between"
-              >
-                <span>Juries & Chief Guests</span>
                 <ArrowRight className="w-4 h-4 text-cyan-400" />
               </a>
               <a

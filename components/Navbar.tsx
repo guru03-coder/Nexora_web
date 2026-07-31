@@ -48,17 +48,20 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
           <a href="#about" className="hover:text-crimson-glow transition-colors">
             About
           </a>
+          <a href="#juries" className="hover:text-crimson-glow transition-colors">
+            Juries
+          </a>
           <a href="#tracks" className="hover:text-crimson-glow transition-colors">
             Domains
           </a>
           <a href="#schedule" className="hover:text-crimson-glow transition-colors">
             Schedule
           </a>
+          <a href="#rewards" className="hover:text-crimson-glow transition-colors">
+            Rewards
+          </a>
           <a href="#sponsors" className="hover:text-crimson-glow transition-colors">
             Sponsors
-          </a>
-          <a href="#juries" className="hover:text-crimson-glow transition-colors">
-            Juries
           </a>
           <a href="#team" className="hover:text-crimson-glow transition-colors">
             Team
