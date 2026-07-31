@@ -14,13 +14,13 @@ export default function MobileTeamSection() {
         <div className="text-center space-y-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-[10px] font-mono uppercase tracking-widest">
             <Users className="w-3.5 h-3.5 text-cyan-400" />
-            <span>ORGANIZING TEAM</span>
+            <span>TEAM HACKHERE</span>
           </div>
           <h2 className="text-2xl font-display font-extrabold text-white">
-            MEET THE <span className="text-cyan-400">ORGANIZERS</span>
+            MEET TEAM <span className="text-cyan-400">HACKHERE</span>
           </h2>
           <p className="text-xs text-gray-300">
-            The core leads engineering NEXORA 2026.
+            The core leads driving HackHere and NEXORA 2026.
           </p>
         </div>
 

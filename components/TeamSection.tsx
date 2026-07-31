@@ -23,13 +23,13 @@ export default function TeamSection() {
         >
           <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow flex items-center justify-center gap-2">
             <Users className="w-4 h-4 text-crimson-glow" />
-            <span>[ 06 // CORE ORGANIZING TEAM ]</span>
+            <span>[ 06 // MEET TEAM HACKHERE ]</span>
           </span>
           <h2 className="text-3xl sm:text-5xl font-display font-bold mt-2 mb-4">
-            ORGANIZING <span className="metal-gradient">TEAM</span>
+            MEET TEAM <span className="metal-gradient">HACKHERE</span>
           </h2>
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            The visionary leads and operational orchestrators driving NEXORA 2026.
+            The visionary leads and operational orchestrators driving HackHere and NEXORA 2026.
           </p>
         </motion.div>
 

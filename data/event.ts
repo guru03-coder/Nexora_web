@@ -124,7 +124,7 @@ export const phases: EventPhase[] = [
     phase: "PHASE 3",
     title: "BUILD (24H OFFLINE SPRINT)",
     date: "August 22 – August 23",
-    description: "Build your working prototype live at SNS IHUB, Coimbatore over a continuous 24-hour period with direct technical mentorship.",
+    description: "Build your working prototype live at SNS IHUB, Coimbatore over a continuous 24-hour period. Problem statements will be provided on the spot.",
   },
   {
     phase: "PHASE 4",
@@ -171,7 +171,7 @@ export const faqs: FAQItem[] = [
   { question: "What is the team size?", answer: "Teams can range from 1 to 4 participants. Form your team prior to the event or connect with teammates during Day 1 networking." },
   { question: "Is there a registration fee?", answer: "The registration fee is ₹1,000 per team, which grants direct entry to the 24-hour offline hackathon grand finale at SNS IHUB, Coimbatore." },
   { question: "Where is NEXORA held?", answer: "NEXORA takes place in person at SNS IHUB, Coimbatore (August 22–23)." },
-  { question: "What are the prizes and perks?", answer: "₹30,000 in cash prizes, direct internship offers from partner companies, and exclusive access to Hedera Blockchain Certification and mentoring for participants." },
+  { question: "What are the prizes and perks?", answer: "₹30,000 in cash prizes, direct internship offers from partner companies, Hedera Blockchain Certification, and hands-on technical bootcamp on blockchain for participants." },
   { question: "What should I bring?", answer: "Bring your laptop, charger, valid ID, and enthusiasm to build!" },
 ];
 

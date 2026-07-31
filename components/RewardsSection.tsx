@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Award, Briefcase, ShieldCheck, Sparkles, Cpu } from "lucide-react";
+import { Trophy, Award, Briefcase, ShieldCheck, Sparkles, Cpu, BookOpen } from "lucide-react";
 
 export interface RewardItem {
   id: string;
@@ -29,7 +29,7 @@ const rewardCards: RewardItem[] = [
     title: "DIRECT INTERNSHIP OFFERS",
     badge: "CAREER FAST-TRACK",
     highlight: "INTERNSHIPS",
-    description: "Exclusive fast-track hiring pipelines and paid internship opportunities with leading partner tech firms.",
+    description: "Exclusive fast-track hiring pipelines and internship opportunities with leading partner tech firms.",
     color: "from-cyan-500/20 via-blue-600/20 to-cyan-500/10 border-cyan-400/40 text-cyan-400",
   },
   {
@@ -42,22 +42,31 @@ const rewardCards: RewardItem[] = [
     color: "from-purple-500/20 via-indigo-600/20 to-purple-500/10 border-purple-400/40 text-purple-400",
   },
   {
-    id: "mentorship",
-    icon: Award,
-    title: "1-ON-1 TECHNICAL MENTORSHIP",
-    badge: "EXPERT MENTORS",
-    highlight: "MENTORSHIP",
-    description: "Direct 1-on-1 guidance from seasoned tech executives, senior engineers, and domain architects.",
+    id: "blockchain-bootcamp",
+    icon: BookOpen,
+    title: "TECHNICAL BOOTCAMP ON BLOCKCHAIN",
+    badge: "WEB3 TRAINING",
+    highlight: "BOOTCAMP",
+    description: "Hands-on technical bootcamp covering blockchain architecture, smart contracts, and Web3 development.",
     color: "from-emerald-500/20 via-teal-600/20 to-emerald-500/10 border-emerald-400/40 text-emerald-400",
   },
   {
-    id: "ai-credits-cert",
+    id: "ai-credits",
     icon: Cpu,
-    title: "PARTICIPATION CERTIFICATE & AI CREDITS",
-    badge: "ALL PARTICIPANTS",
-    highlight: "AI CREDITS",
-    description: "Official physical certificates of participation and exclusive AI credits for all participants.",
+    title: "FEATHERLESS AI CREDITS & INFERENCE",
+    badge: "AI COMPUTING",
+    highlight: "$325 AI CREDITS",
+    description: "All participants receive $25 AI credits, 1-month inference & 40+ models. Winning team additionally gets $300 Featherless AI credits.",
     color: "from-rose-500/20 via-pink-600/20 to-rose-500/10 border-rose-400/40 text-rose-400",
+  },
+  {
+    id: "physical-cert",
+    icon: Award,
+    title: "PHYSICAL PARTICIPATION CERTIFICATE",
+    badge: "ALL PARTICIPANTS",
+    highlight: "CERTIFICATES",
+    description: "Official physical certificates of participation awarded to all hackathon builders.",
+    color: "from-amber-500/20 via-orange-600/20 to-amber-500/10 border-amber-400/40 text-amber-400",
   },
 ];
 
@@ -85,7 +94,7 @@ export default function RewardsSection() {
             REWARDS & <span className="metal-gradient">PERKS</span>
           </h2>
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            Unlock ₹30K cash pool, direct paid internships, Hedera certifications, and expert mentorship.
+            Unlock ₹30K cash pool, direct internships, Hedera certifications, Featherless AI credits, and physical certificates.
           </p>
         </motion.div>
 
@@ -121,8 +130,8 @@ export default function RewardsSection() {
           </div>
         </motion.div>
 
-        {/* 4 Supporting Perks Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* 5 Supporting Perks Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {rewardCards.slice(1).map((reward, idx) => {
             const IconComponent = reward.icon;
             return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Briefcase, ShieldCheck, Award, Cpu, Sparkles } from "lucide-react";
+import { Trophy, Briefcase, ShieldCheck, Cpu, Sparkles, BookOpen, Award } from "lucide-react";
 
 export default function MobileRewardsSection() {
   return (
@@ -18,7 +18,7 @@ export default function MobileRewardsSection() {
             REWARDS & <span className="text-amber-400">PERKS</span>
           </h2>
           <p className="text-xs text-gray-300">
-            Win cash awards, paid internships, Web3 certs & technical mentorship.
+            Win cash awards, internships, Web3 certs & technical blockchain bootcamp.
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export default function MobileRewardsSection() {
             </div>
             <div className="space-y-1">
               <h4 className="text-sm font-display font-bold text-white">
-                Direct Paid Internships
+                Direct Internship Offers
               </h4>
               <p className="text-xs text-gray-300 font-sans">
                 Fast-track interview pipelines with hiring partners including ELRO Tech, Rezilyens & Pronoia IMF.
@@ -92,7 +92,7 @@ export default function MobileRewardsSection() {
             </div>
           </motion.div>
 
-          {/* Technical Mentorship */}
+          {/* Technical Bootcamp on Blockchain */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -101,19 +101,19 @@ export default function MobileRewardsSection() {
             className="p-4 rounded-2xl bg-emerald-950/40 border border-emerald-500/30 flex items-start gap-4"
           >
             <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <Award className="w-5 h-5 text-emerald-400" />
+              <BookOpen className="w-5 h-5 text-emerald-400" />
             </div>
             <div className="space-y-1">
               <h4 className="text-sm font-display font-bold text-white">
-                1-on-1 Technical Mentorship
+                Technical Bootcamp on Blockchain
               </h4>
               <p className="text-xs text-gray-300 font-sans">
-                Direct 1-on-1 guidance from jury leaders, senior engineers & domain architects.
+                Hands-on technical bootcamp covering blockchain architecture, smart contracts, and Web3 development.
               </p>
             </div>
           </motion.div>
 
-          {/* Participation Certificate & AI Credits */}
+          {/* Featherless AI Credits */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -126,10 +126,31 @@ export default function MobileRewardsSection() {
             </div>
             <div className="space-y-1">
               <h4 className="text-sm font-display font-bold text-white">
-                Participation Certificate & AI Credits
+                Featherless AI Credits & Inference
               </h4>
               <p className="text-xs text-gray-300 font-sans">
-                Official physical certificates of participation and exclusive free AI compute credits for all participants.
+                All participants receive $25 AI credits, 1 month of inference access & 40+ AI models. Winning team gets $300 Featherless AI credits.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Physical Participation Certificate */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            className="p-4 rounded-2xl bg-amber-950/40 border border-amber-500/30 flex items-start gap-4"
+          >
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Award className="w-5 h-5 text-amber-400" />
+            </div>
+            <div className="space-y-1">
+              <h4 className="text-sm font-display font-bold text-white">
+                Physical Participation Certificate
+              </h4>
+              <p className="text-xs text-gray-300 font-sans">
+                Official physical certificates of participation awarded to all hackathon builders.
               </p>
             </div>
           </motion.div>
