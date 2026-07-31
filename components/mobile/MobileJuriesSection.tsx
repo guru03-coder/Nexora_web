@@ -22,7 +22,7 @@ export default function MobileJuriesSection() {
             CHIEF GUEST & <span className="text-cyan-400">JURY PANEL</span>
           </h2>
           <p className="text-[11px] text-gray-300">
-            Meet the industry leaders and mentors evaluating NEXORA 2026.
+            Meet the industry leaders and mentors evaluating the event.
           </p>
         </div>
 

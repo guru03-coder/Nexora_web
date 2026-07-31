@@ -138,10 +138,10 @@ export const juries: JuryMember[] = [
   {
     id: "jury-2",
     name: "Ranjani Venkatraman",
-    role: "Co-CEO",
+    role: "Co-CEO & Founder",
     company: "Rezilyens",
     category: "Chief Guest",
-    bio: "Co-CEO of Rezilyens, steering organizational growth, innovative technology operations, and enterprise strategy.",
+    bio: "Founder & Co-CEO of Rezilyens. Pioneering enterprise AI, machine learning, and cybersecurity solutions to drive operational excellence.",
     image: "/juries/jury_2.jpeg",
     linkedin: "https://www.linkedin.com/in/ranjani-venkatraman-2609a4176/",
   },

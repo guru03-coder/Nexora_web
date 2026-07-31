@@ -31,7 +31,7 @@ export default function JuriesSection() {
             CHIEF GUEST & <span className="metal-gradient">JURY PANEL</span>
           </h2>
           <p className="text-gray-400 font-sans text-xs sm:text-sm">
-            Distinguished industry leaders and mentor evaluators guiding NEXORA 2026.
+            Distinguished industry leaders and mentor evaluators.
           </p>
         </motion.div>
 
@@ -114,9 +114,6 @@ export default function JuriesSection() {
 
                   <div className="pt-2 border-t border-amber-500/20 flex items-center justify-between text-[10px] font-mono text-amber-400/80 font-semibold uppercase tracking-wider">
                     <span>// CHIEF GUEST OF HONOR</span>
-                    <span className="text-amber-300 flex items-center gap-1">
-                      <Award className="w-3.5 h-3.5" /> NEXORA 2026
-                    </span>
                   </div>
                 </div>
               </motion.div>
