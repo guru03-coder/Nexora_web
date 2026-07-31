@@ -54,14 +54,14 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
               </p>
             </div>
 
-            {/* QR Image */}
-            <div className="relative mx-auto w-64 h-64 bg-white p-3 rounded-xl shadow-inner border-2 border-crimson/50 mb-6 group">
-              <div className="relative w-full h-full">
+            {/* Event Poster / QR Image */}
+            <div className="relative mx-auto w-full max-w-[280px] aspect-[994/1350] bg-black/80 p-2 rounded-2xl shadow-inner border-2 border-crimson/50 mb-6 overflow-hidden group">
+              <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
                   src="/qr/nexora-qr.png"
-                  alt="NEXORA Registration QR Code"
+                  alt="NEXORA Registration Event Poster"
                   fill
-                  className="object-contain"
+                  className="object-cover rounded-xl"
                 />
               </div>
             </div>

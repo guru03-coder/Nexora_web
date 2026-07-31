@@ -53,33 +53,33 @@ export default function RegisterCTASection({ onRegisterClick }: RegisterCTASecti
                 </a>
 
                 <div className="text-center sm:text-left text-xs font-mono text-gray-400 py-2">
-                  <span>₹1,000/Team Registration Fee (Direct Entry)</span> • <span>₹30K Prize Pool</span> • <span>Hedera Certification & Mentoring</span>
+                  <span>₹1,000/Team Registration Fee</span> • <span>₹30K Prize Pool</span> • <span>Hedera Cert & Technical Bootcamp</span>
                 </div>
               </div>
             </div>
 
-            {/* Right QR Visual */}
+            {/* Right Poster Visual */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center">
               <a
                 href={event.registerUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative cursor-pointer bg-white p-4 rounded-2xl border-2 border-crimson/50 shadow-[0_0_30px_rgba(0,229,255,0.4)] hover:scale-105 transition-all duration-300 block"
+                className="group relative cursor-pointer p-2 bg-black/80 rounded-2xl border-2 border-crimson/50 shadow-[0_0_35px_rgba(0,229,255,0.35)] hover:scale-105 transition-all duration-300 block overflow-hidden"
               >
-                <div className="relative w-48 h-48">
+                <div className="relative w-56 h-[290px] rounded-xl overflow-hidden">
                   <Image
                     src="/qr/nexora-qr.png"
-                    alt="Registration QR Code"
+                    alt="NEXORA Registration Event Poster"
                     fill
-                    className="object-contain"
+                    className="object-cover rounded-xl"
                   />
                 </div>
-                <div className="absolute inset-0 bg-crimson/80 backdrop-blur-xs rounded-xl opacity-0 group-hover:opacity-100 flex items-center justify-center text-black font-display text-xs font-bold uppercase tracking-wider transition-opacity duration-300">
+                <div className="absolute inset-0 bg-crimson/85 backdrop-blur-xs rounded-xl opacity-0 group-hover:opacity-100 flex items-center justify-center text-black font-display text-xs font-bold uppercase tracking-wider transition-opacity duration-300 p-4 text-center">
                   Open Unstop Portal
                 </div>
               </a>
               <span className="text-xs font-mono text-gray-400 mt-3">
-                Scan with phone camera to register
+                Scan QR code on poster to register
               </span>
             </div>
 

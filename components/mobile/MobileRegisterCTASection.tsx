@@ -27,25 +27,25 @@ export default function MobileRegisterCTASection({ onRegisterClick }: MobileRegi
           </p>
         </div>
 
-        {/* QR Code Graphic */}
+        {/* Poster Graphic */}
         <div className="flex flex-col items-center justify-center space-y-2">
           <a
             href={event.registerUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-white rounded-2xl border-2 border-cyan-400 shadow-[0_0_20px_rgba(0,229,255,0.4)] block"
+            className="p-2 bg-black/80 rounded-2xl border-2 border-cyan-400 shadow-[0_0_25px_rgba(0,229,255,0.4)] block overflow-hidden"
           >
-            <div className="relative w-36 h-36">
+            <div className="relative w-48 h-[250px] rounded-xl overflow-hidden">
               <Image
                 src="/qr/nexora-qr.png"
-                alt="Registration QR Code"
+                alt="NEXORA Registration Poster"
                 fill
-                className="object-contain"
+                className="object-cover rounded-xl"
               />
             </div>
           </a>
           <span className="text-[10px] font-mono text-gray-400">
-            Scan or tap QR to open Unstop portal
+            Scan or tap poster to open Unstop portal
           </span>
         </div>
 
