@@ -65,7 +65,7 @@ export default function MobileJuriesSection() {
                     src={person.image}
                     alt={person.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="space-y-0.5 min-w-0">
@@ -132,7 +132,7 @@ export default function MobileJuriesSection() {
                       src={jury.image}
                       alt={jury.name}
                       fill
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
                   <div className="space-y-0.5 min-w-0">
