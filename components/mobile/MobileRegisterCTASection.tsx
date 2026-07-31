@@ -44,9 +44,6 @@ export default function MobileRegisterCTASection({ onRegisterClick }: MobileRegi
               />
             </div>
           </a>
-          <span className="text-[10px] font-mono text-gray-400">
-            Scan or tap poster to open Unstop portal
-          </span>
         </div>
 
         {/* Direct Button */}
@@ -61,10 +58,6 @@ export default function MobileRegisterCTASection({ onRegisterClick }: MobileRegi
             <span>REGISTER NOW ON UNSTOP</span>
             <ExternalLink className="w-4 h-4" />
           </a>
-
-          <p className="text-[11px] font-mono text-cyan-300">
-            ₹1,000/Team Fee (Direct Entry to 24H Finale) • ₹30K Pool
-          </p>
         </div>
       </div>
     </section>

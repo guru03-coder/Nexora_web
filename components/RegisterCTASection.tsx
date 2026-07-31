@@ -51,10 +51,6 @@ export default function RegisterCTASection({ onRegisterClick }: RegisterCTASecti
                   <span>Register Now</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
-
-                <div className="text-center sm:text-left text-xs font-mono text-gray-400 py-2">
-                  <span>₹1,000/Team Registration Fee</span> • <span>₹30K Prize Pool</span> • <span>Hedera Cert & Technical Bootcamp</span>
-                </div>
               </div>
             </div>
 
@@ -78,9 +74,6 @@ export default function RegisterCTASection({ onRegisterClick }: RegisterCTASecti
                   Open Unstop Portal
                 </div>
               </a>
-              <span className="text-xs font-mono text-gray-400 mt-3">
-                Scan QR code on poster to register
-              </span>
             </div>
 
           </div>
