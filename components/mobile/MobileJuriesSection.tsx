@@ -3,10 +3,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { juries, JuryMember } from "@/data/event";
-import { Linkedin, UserCheck, Crown, ShieldCheck, Sparkles, Award } from "lucide-react";
+import { Linkedin, UserCheck, ShieldCheck } from "lucide-react";
 
 export default function MobileJuriesSection() {
-  const chiefGuests = juries.filter((item) => item.category === "Chief Guest");
   const juryMembers = juries.filter((item) => item.category !== "Chief Guest");
 
   return (
@@ -16,89 +15,17 @@ export default function MobileJuriesSection() {
         <div className="text-center space-y-1.5">
           <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-[10px] font-mono uppercase tracking-widest">
             <UserCheck className="w-3 h-3 text-cyan-400" />
-            <span>HONORED GUESTS & EVALUATORS</span>
+            <span>EXPERT EVALUATORS</span>
           </div>
           <h2 className="text-xl font-display font-extrabold text-white">
-            CHIEF GUEST & <span className="text-cyan-400">JURY PANEL</span>
+            EXPERT <span className="text-cyan-400">JURY PANEL</span>
           </h2>
           <p className="text-[11px] text-gray-300">
             Meet the industry leaders and mentors evaluating the event.
           </p>
         </div>
 
-        {/* ================= SUBSECTION 1: CHIEF GUEST SPECIALIZATION ================= */}
-        <div className="space-y-3">
-          <div className="flex items-center gap-1.5">
-            <Crown className="w-3.5 h-3.5 text-amber-400" />
-            <h3 className="text-[11px] font-mono font-bold uppercase tracking-wider text-amber-300">
-              CHIEF GUEST OF HONOR
-            </h3>
-          </div>
-
-          {chiefGuests.map((person: JuryMember) => (
-            <motion.div
-              key={person.id}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4 }}
-              className="p-4 rounded-2xl bg-gradient-to-b from-amber-950/70 via-ink to-black border-2 border-amber-400/80 space-y-3 relative overflow-hidden backdrop-blur-sm shadow-[0_0_20px_rgba(251,191,36,0.2)]"
-            >
-              {/* Gold Top Strip */}
-              <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 z-30" />
-
-              {/* Header Telemetry Badge */}
-              <div className="flex items-center justify-between border-b pb-2 border-amber-500/30 pt-1">
-                <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-amber-400 flex items-center gap-1">
-                  <Sparkles className="w-3 h-3 text-amber-400" />
-                  <span>CHIEF EXECUTIVE</span>
-                </span>
-                <span className="text-[10px] font-mono text-amber-300 flex items-center gap-1">
-                  <Award className="w-3 h-3 text-amber-400" /> KEYNOTE
-                </span>
-              </div>
-
-              {/* Photo & Identity */}
-              <div className="flex items-center gap-3.5">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden border-2 border-amber-400/80 shrink-0 shadow-[0_0_12px_rgba(251,191,36,0.3)]">
-                  <Image
-                    src={person.image}
-                    alt={person.name}
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
-                <div className="space-y-0.5 min-w-0">
-                  <h4 className="text-sm sm:text-base font-display font-extrabold text-white truncate">
-                    {person.name}
-                  </h4>
-                  <p className="text-xs font-mono font-bold text-amber-300 truncate">
-                    {person.role}
-                  </p>
-                  <p className="text-[11px] text-gray-300 truncate">
-                    {person.company}
-                  </p>
-                </div>
-              </div>
-
-              {person.linkedin && (
-                <div className="pt-1">
-                  <a
-                    href={person.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-2 rounded-xl bg-amber-950/80 hover:bg-amber-400 hover:text-black border border-amber-500/50 text-amber-300 font-display text-[11px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all shadow-[0_0_12px_rgba(251,191,36,0.2)]"
-                  >
-                    <Linkedin className="w-3.5 h-3.5" />
-                    <span>Connect on LinkedIn</span>
-                  </a>
-                </div>
-              )}
-            </motion.div>
-          ))}
-        </div>
-
-        {/* ================= SUBSECTION 2: JURY PANEL ================= */}
+        {/* ================= JURY PANEL ================= */}
         <div className="space-y-3">
           <div className="flex items-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />

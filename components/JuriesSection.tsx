@@ -3,10 +3,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { juries, JuryMember } from "@/data/event";
-import { Linkedin, Crown, ShieldCheck, Sparkles, Award } from "lucide-react";
+import { Linkedin, ShieldCheck } from "lucide-react";
 
 export default function JuriesSection() {
-  const chiefGuests = juries.filter((item) => item.category === "Chief Guest");
   const juryMembers = juries.filter((item) => item.category !== "Chief Guest");
 
   return (
@@ -25,103 +24,17 @@ export default function JuriesSection() {
           className="text-center max-w-2xl mx-auto space-y-2"
         >
           <span className="text-xs font-mono uppercase tracking-widest text-crimson-glow">
-            [ 02 // HONORARY GUESTS & EXPERT EVALUATORS ]
+            [ 02 // EXPERT EVALUATORS ]
           </span>
           <h2 className="text-3xl sm:text-4xl font-display font-bold">
-            CHIEF GUEST & <span className="metal-gradient">JURY PANEL</span>
+            EXPERT <span className="metal-gradient">JURY PANEL</span>
           </h2>
           <p className="text-gray-400 font-sans text-xs sm:text-sm">
             Distinguished industry leaders and mentor evaluators.
           </p>
         </motion.div>
 
-        {/* ================= SUBSECTION 1: CHIEF GUEST SPECIALIZATION ================= */}
-        <div className="space-y-5">
-          <div className="flex items-center justify-center gap-3">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-amber-500/60" />
-            <span className="px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/50 text-amber-300 font-mono text-[11px] font-bold tracking-widest uppercase flex items-center gap-2 shadow-[0_0_15px_rgba(251,191,36,0.25)]">
-              <Crown className="w-3.5 h-3.5 text-amber-400" />
-              <span>HONORARY CHIEF GUEST & KEYNOTE SPEAKER</span>
-            </span>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-500/60" />
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            {chiefGuests.map((person: JuryMember) => (
-              <motion.div
-                key={person.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                whileHover={{ y: -4, scale: 1.01 }}
-                className="rounded-2xl border-2 border-amber-400/80 shadow-[0_0_40px_rgba(251,191,36,0.3)] bg-gradient-to-r from-amber-950/70 via-ink to-black flex flex-col sm:flex-row overflow-hidden group relative"
-              >
-                {/* Gold Top Accent Line */}
-                <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 z-30" />
-
-                {/* Compact Photo Frame with Object-Top Position */}
-                <div className="relative w-full sm:w-52 h-56 sm:h-auto bg-black/70 overflow-hidden flex items-center justify-center p-3 flex-shrink-0">
-                  <div className="relative w-full h-full rounded-xl overflow-hidden border border-amber-400/60 shadow-[0_0_20px_rgba(251,191,36,0.3)]">
-                    <Image
-                      src={person.image}
-                      alt={person.name}
-                      fill
-                      className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-5 sm:p-6 flex flex-col justify-between flex-grow bg-ink/95 space-y-4">
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="px-2.5 py-0.5 rounded-md bg-amber-500/15 border border-amber-500/40 text-amber-300 font-mono text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5">
-                        <Sparkles className="w-3 h-3 text-amber-400" />
-                        <span>CHIEF EXECUTIVE</span>
-                      </span>
-                      {person.linkedin && (
-                        <a
-                          href={person.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-950/80 border border-amber-500/50 text-amber-300 hover:bg-amber-500/30 text-xs font-mono transition-all"
-                          aria-label={`${person.name} LinkedIn`}
-                        >
-                          <Linkedin className="w-3.5 h-3.5" />
-                          <span>LinkedIn</span>
-                        </a>
-                      )}
-                    </div>
-
-                    <h3 className="text-xl sm:text-2xl font-display font-extrabold text-white group-hover:text-amber-300 transition-colors">
-                      {person.name}
-                    </h3>
-
-                    <div>
-                      <p className="text-xs font-mono text-amber-400 font-bold">
-                        {person.role}
-                      </p>
-                      <p className="text-[11px] text-gray-300 font-sans">
-                        {person.company}
-                      </p>
-                    </div>
-
-                    <p className="text-xs text-gray-300 font-sans leading-relaxed">
-                      {person.bio}
-                    </p>
-                  </div>
-
-                  <div className="pt-2 border-t border-amber-500/20 flex items-center justify-between text-[10px] font-mono text-amber-400/80 font-semibold uppercase tracking-wider">
-                    <span>// CHIEF GUEST OF HONOR</span>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        {/* ================= SUBSECTION 2: JURY PANEL ================= */}
+        {/* ================= JURY PANEL ================= */}
         <div className="space-y-5">
           <div className="flex items-center justify-center gap-3">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-cyan-500/50" />
