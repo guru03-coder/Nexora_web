@@ -209,7 +209,7 @@ export const teamMembers: TeamMember[] = [
     role: "CTO",
     company: "HackHere",
     bio: "Chief Technology Officer",
-    image: "/team/team_4.png",
+    image: "/team/team_guru.png",
     linkedin: "https://www.linkedin.com/in/k-guru-prakash-9a4184337/",
   },
 ];
