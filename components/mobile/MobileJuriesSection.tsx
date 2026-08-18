@@ -44,13 +44,8 @@ export default function MobileJuriesSection() {
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
                 className="p-4 rounded-xl bg-white/5 border border-cyan-500/40 space-y-3 relative overflow-hidden backdrop-blur-sm shadow-[0_0_15px_rgba(0,229,255,0.12)]"
               >
-                {/* Header Telemetry Badge */}
-                <div className="flex items-center justify-end border-b pb-2 border-cyan-500/20">
-                  <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
-                </div>
-
                 {/* Photo & Identity */}
-                <div className="flex items-center gap-3.5">
+                <div className="flex items-center gap-3.5 pt-1">
                   <div className="relative w-16 h-16 rounded-xl overflow-hidden border-2 border-cyan-400/60 shrink-0 shadow-[0_0_12px_rgba(0,229,255,0.25)]">
                     <Image
                       src={jury.image}
