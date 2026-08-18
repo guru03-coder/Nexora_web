@@ -45,10 +45,7 @@ export default function MobileJuriesSection() {
                 className="p-4 rounded-xl bg-white/5 border border-cyan-500/40 space-y-3 relative overflow-hidden backdrop-blur-sm shadow-[0_0_15px_rgba(0,229,255,0.12)]"
               >
                 {/* Header Telemetry Badge */}
-                <div className="flex items-center justify-between border-b pb-2 border-cyan-500/20">
-                  <span className="text-[10px] font-mono text-cyan-400 tracking-widest uppercase">
-                    JUDGE 0{idx + 1}
-                  </span>
+                <div className="flex items-center justify-end border-b pb-2 border-cyan-500/20">
                   <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
                 </div>
 
