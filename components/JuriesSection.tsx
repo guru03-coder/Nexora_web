@@ -45,7 +45,7 @@ export default function JuriesSection() {
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-cyan-500/50" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-stretch">
             {juryMembers.map((person: JuryMember, idx: number) => (
               <motion.div
                 key={person.id}

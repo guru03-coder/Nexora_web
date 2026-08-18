@@ -136,15 +136,6 @@ export const phases: EventPhase[] = [
 
 export const juries: JuryMember[] = [
   {
-    id: "jury-1",
-    name: "Dr. Kaushik Hatti, PhD",
-    role: "CISO & Chief Data Scientist",
-    company: "Rezilyens LLC",
-    category: "Jury Member",
-    bio: "CISO & Chief Data Scientist at Rezilyens LLC with 18+ years in AI, drug discovery & cybersecurity. IISc PhD alumnus, BW 40 Under 40, and GAISA 4.0 awardee.",
-    image: "/juries/kaushik_hatti.jpeg",
-  },
-  {
     id: "jury-3",
     name: "Reinard Abhishek J",
     role: "HR",
@@ -162,6 +153,15 @@ export const juries: JuryMember[] = [
     bio: "HR and Insurance Trainer at Pronoia IMF, empowering talent and professional excellence.",
     image: "/juries/jury_4.jpeg",
     linkedin: "https://www.linkedin.com/in/s-subhashini-625794230?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  },
+  {
+    id: "jury-5",
+    name: "Dr. Kaushik Hatti, PhD",
+    role: "CISO & Chief Data Scientist",
+    company: "Rezilyens LLC",
+    category: "Jury Member",
+    bio: "CISO & Chief Data Scientist at Rezilyens LLC with 18+ years in AI & Cybersecurity. GAISA 4.0 'Best Use of AI' & BW 40 Under 40 awardee.",
+    image: "/juries/kaushik.jpeg",
   },
 ];
 
