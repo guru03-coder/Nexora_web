@@ -136,6 +136,15 @@ export const phases: EventPhase[] = [
 
 export const juries: JuryMember[] = [
   {
+    id: "jury-1",
+    name: "Dr. Kaushik Hatti, PhD",
+    role: "CISO & Chief Data Scientist",
+    company: "Rezilyens LLC",
+    category: "Jury Member",
+    bio: "CISO & Chief Data Scientist at Rezilyens LLC with 18+ years in AI, drug discovery & cybersecurity. IISc PhD alumnus, BW 40 Under 40, and GAISA 4.0 awardee.",
+    image: "/juries/kaushik_hatti.jpeg",
+  },
+  {
     id: "jury-3",
     name: "Reinard Abhishek J",
     role: "HR",
