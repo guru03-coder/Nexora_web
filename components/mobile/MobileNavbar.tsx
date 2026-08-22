@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight, ExternalLink } from "lucide-react";
+import { Menu, X, ArrowRight, ExternalLink, ShieldCheck } from "lucide-react";
 import { event } from "@/data/event";
 import Image from "next/image";
+import Link from "next/link";
 
 interface MobileNavbarProps {
   onRegisterClick: () => void;
@@ -148,6 +149,14 @@ export default function MobileNavbar({ onRegisterClick }: MobileNavbarProps) {
                 <span>FAQ</span>
                 <ArrowRight className="w-4 h-4 text-cyan-400" />
               </a>
+              <Link
+                href="/final"
+                onClick={closeMenu}
+                className="py-2.5 px-4 rounded-xl bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 flex items-center justify-between font-bold"
+              >
+                <span>Final Portal</span>
+                <ShieldCheck className="w-4 h-4 text-cyan-400" />
+              </Link>
             </nav>
 
             <div className="pt-2">
