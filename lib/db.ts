@@ -244,7 +244,13 @@ export async function updateTeamSubmission(
 ): Promise<TeamRecord | null> {
   const collection = await getMongoCollection();
   const db = await getDbAsync();
-  const index = db.teams.findIndex((t) => t.id === teamId || t.name.toLowerCase() === teamId.toLowerCase());
+  const candidates = normalizeTeamIdCandidates(teamId);
+  const index = db.teams.findIndex(
+    (t) =>
+      candidates.includes(t.id.toLowerCase()) ||
+      t.id.toLowerCase() === teamId.toLowerCase() ||
+      t.name.toLowerCase() === teamId.toLowerCase()
+  );
   
   if (index !== -1) {
     const current = db.teams[index];
@@ -273,11 +279,15 @@ export async function updateTeamSubmission(
       updatedAt: new Date().toISOString(),
     };
 
+    db.teams[index] = updatedTeam;
+    saveDb(db);
+
     if (collection) {
-      await collection.updateOne({ id: updatedTeam.id }, { $set: updatedTeam }, { upsert: true });
-    } else {
-      db.teams[index] = updatedTeam;
-      saveDb(db);
+      try {
+        await collection.updateOne({ id: current.id }, { $set: updatedTeam }, { upsert: true });
+      } catch (err) {
+        console.error("MongoDB Atlas sync error (saved locally):", err);
+      }
     }
     return updatedTeam;
   }

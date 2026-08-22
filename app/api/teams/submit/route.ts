@@ -14,6 +14,7 @@ export async function POST(request: Request) {
       memberList,
       leaderName,
       leaderEmail,
+      isRosterLocked,
     } = body;
 
     if (!teamId) {
@@ -32,6 +33,7 @@ export async function POST(request: Request) {
       memberList,
       leaderName,
       leaderEmail,
+      isRosterLocked,
     });
 
     if (!updatedTeam) {
