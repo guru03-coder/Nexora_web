@@ -11,25 +11,49 @@ interface TrackSpinWheelProps {
   teamId: string;
 }
 
+function getSavedSpinState(tId: string): boolean {
+  if (typeof window === "undefined") return false;
+  const cleanId = (tId || "").toLowerCase().trim();
+  const rawId = (tId || "").trim();
+  const keys = [
+    `nexora_track_spin_v2_${cleanId}`,
+    `nexora_track_spin_v2_${rawId}`,
+    `nexora_track_spin_${cleanId}`,
+    `nexora_spin_done_${cleanId}`,
+  ];
+  return keys.some((k) => localStorage.getItem(k) === "true");
+}
+
+function saveSpinState(tId: string) {
+  if (typeof window === "undefined") return;
+  const cleanId = (tId || "").toLowerCase().trim();
+  const rawId = (tId || "").trim();
+  const keys = [
+    `nexora_track_spin_v2_${cleanId}`,
+    `nexora_track_spin_v2_${rawId}`,
+    `nexora_track_spin_${cleanId}`,
+    `nexora_spin_done_${cleanId}`,
+  ];
+  keys.forEach((k) => localStorage.setItem(k, "true"));
+}
+
 export default function TrackSpinWheel({
   track,
   problemStatement,
   problemStatementFileUrl,
   teamId,
 }: TrackSpinWheelProps) {
-  const storageKey = `nexora_track_spin_v2_${teamId}`;
-  const [isRevealed, setIsRevealed] = useState<boolean>(false);
+  const [isRevealed, setIsRevealed] = useState<boolean>(() => getSavedSpinState(teamId));
   const [isSpinning, setIsSpinning] = useState<boolean>(false);
   const [rotationDegree, setRotationDegree] = useState<number>(0);
-  const [showResult, setShowResult] = useState<boolean>(false);
+  const [showResult, setShowResult] = useState<boolean>(() => getSavedSpinState(teamId));
 
   useEffect(() => {
-    const saved = localStorage.getItem(storageKey);
-    if (saved === "true") {
+    if (getSavedSpinState(teamId)) {
       setIsRevealed(true);
       setShowResult(true);
     }
-  }, [storageKey]);
+  }, [teamId]);
 
   // 8 segments alternating: 0=Cyber, 1=Med, 2=Cyber, 3=Med, 4=Cyber, 5=Med, 6=Cyber, 7=Med
   // Pointer is at TOP (0 deg / 360 deg).
@@ -38,7 +62,7 @@ export default function TrackSpinWheel({
   // Center of Slice 1 (Med-Tech): 67.5°
   // To bring Slice under top pointer (0°): Wheel must rotate by (360 - sliceCenterAngle)
   const handleSpin = () => {
-    if (isSpinning) return;
+    if (isSpinning || isRevealed || showResult) return;
 
     setIsSpinning(true);
     setShowResult(false);
@@ -59,7 +83,7 @@ export default function TrackSpinWheel({
       setIsSpinning(false);
       setIsRevealed(true);
       setShowResult(true);
-      localStorage.setItem(storageKey, "true");
+      saveSpinState(teamId);
     }, 3800);
   };
 
