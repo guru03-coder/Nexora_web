@@ -24,17 +24,25 @@ export async function POST(request: Request) {
       );
     }
 
-    const updatedTeam = await updateTeamSubmission(teamId, {
-      gitRepoUrl,
-      projectFileUrl,
-      projectFileName,
-      demoVideoUrl,
-      submissionUrl,
-      memberList,
-      leaderName,
-      leaderEmail,
-      isRosterLocked,
-    });
+    let updatedTeam;
+    try {
+      updatedTeam = await updateTeamSubmission(teamId, {
+        gitRepoUrl,
+        projectFileUrl,
+        projectFileName,
+        demoVideoUrl,
+        submissionUrl,
+        memberList,
+        leaderName,
+        leaderEmail,
+        isRosterLocked,
+      });
+    } catch (err: any) {
+      return NextResponse.json(
+        { success: false, message: err.message || "Database sync failed." },
+        { status: 500 }
+      );
+    }
 
     if (!updatedTeam) {
       return NextResponse.json(

@@ -293,10 +293,14 @@ export async function updateTeamSubmission(
     if (collection) {
       try {
         await collection.updateOne({ id: current.id }, { $set: updatedTeam }, { upsert: true });
-      } catch (err) {
-        console.error("MongoDB Atlas sync error (saved locally):", err);
+      } catch (err: any) {
+        console.error("MongoDB Atlas sync error:", err);
+        throw new Error("Failed to save to Cloud Database. Please contact admins (Error: " + err.message + ")");
       }
+    } else if (process.env.MONGODB_URI) {
+        throw new Error("Database connection failed. Vercel IP might be blocked by MongoDB Atlas. Please configure Network Access to 0.0.0.0/0 in MongoDB Atlas.");
     }
+    
     return updatedTeam;
   }
   return null;
