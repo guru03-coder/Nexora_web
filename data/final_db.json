@@ -30,7 +30,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.635Z"
     },
     {
       "_id": "6a89340443bb4570d91666cb",
@@ -61,7 +61,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666cc",
@@ -92,7 +92,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666cd",
@@ -110,9 +110,9 @@
           "phone": "8438534008"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tech_buddies",
@@ -123,7 +123,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666ce",
@@ -141,9 +141,9 @@
           "phone": "9842503241"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_hackspark",
@@ -154,7 +154,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666cf",
@@ -172,9 +172,9 @@
           "phone": "9487482693"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_elite_hacker",
@@ -185,7 +185,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d0",
@@ -216,7 +216,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d1",
@@ -234,9 +234,9 @@
           "phone": "7358707202"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_gladiator",
@@ -247,7 +247,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d2",
@@ -265,9 +265,9 @@
           "phone": "9791561558"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_code_trinity",
@@ -278,7 +278,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d3",
@@ -296,9 +296,9 @@
           "phone": "9843522318"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_quadracore",
@@ -309,7 +309,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d4",
@@ -340,7 +340,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d5",
@@ -371,7 +371,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d6",
@@ -402,7 +402,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d7",
@@ -433,7 +433,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d8",
@@ -451,9 +451,9 @@
           "phone": "9043319271"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_teamx",
@@ -464,7 +464,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666d9",
@@ -495,7 +495,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666da",
@@ -513,9 +513,9 @@
           "phone": "8189836792"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_shinsei_team",
@@ -526,7 +526,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666db",
@@ -544,9 +544,9 @@
           "phone": "9715662774"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_vision_coders",
@@ -557,7 +557,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666dc",
@@ -575,9 +575,9 @@
           "phone": "9360792947"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_shetech",
@@ -588,7 +588,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666dd",
@@ -606,9 +606,9 @@
           "phone": "7200230742"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_terminal_velocity",
@@ -619,7 +619,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666de",
@@ -637,9 +637,9 @@
           "phone": "6369615217"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_visionx",
@@ -650,7 +650,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666df",
@@ -681,7 +681,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e0",
@@ -699,9 +699,9 @@
           "phone": "9500077799"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_code_x",
@@ -712,7 +712,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e1",
@@ -730,9 +730,9 @@
           "phone": "9345773837"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_nexus",
@@ -743,7 +743,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e2",
@@ -774,7 +774,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e3",
@@ -805,7 +805,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e4",
@@ -823,9 +823,9 @@
           "phone": "9342009517"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_code_pirates",
@@ -836,7 +836,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e5",
@@ -867,7 +867,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e6",
@@ -898,7 +898,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e7",
@@ -916,9 +916,9 @@
           "phone": "8838584301"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_agentx",
@@ -929,7 +929,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.451Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e8",
@@ -947,9 +947,9 @@
           "phone": "9344546102"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_ctrl_alt_elite",
@@ -960,7 +960,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666e9",
@@ -991,7 +991,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666ea",
@@ -1009,9 +1009,9 @@
           "phone": "9884470371"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_exception_handlers",
@@ -1022,7 +1022,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666eb",
@@ -1053,7 +1053,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666ec",
@@ -1084,7 +1084,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666ed",
@@ -1102,9 +1102,9 @@
           "phone": "9677389619"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_red_dragons",
@@ -1115,7 +1115,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666ee",
@@ -1133,9 +1133,9 @@
           "phone": "7845159905"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_code_slayers",
@@ -1146,7 +1146,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666ef",
@@ -1177,7 +1177,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f0",
@@ -1208,7 +1208,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f1",
@@ -1226,9 +1226,9 @@
           "phone": "9488352388"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_the_boolean_buddies",
@@ -1239,7 +1239,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f2",
@@ -1257,9 +1257,9 @@
           "phone": "8610799150"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_code_lordz",
@@ -1270,7 +1270,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f3",
@@ -1288,9 +1288,9 @@
           "phone": "8248743565"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_nextgen",
@@ -1301,7 +1301,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f4",
@@ -1319,9 +1319,9 @@
           "phone": "8015486108"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_porygon",
@@ -1332,7 +1332,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f5",
@@ -1363,7 +1363,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f6",
@@ -1381,9 +1381,9 @@
           "phone": "6374855311"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_future_forge",
@@ -1394,7 +1394,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f7",
@@ -1412,9 +1412,9 @@
           "phone": "123456789"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_ivaantra",
@@ -1425,7 +1425,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f8",
@@ -1443,9 +1443,9 @@
           "phone": "9442777855"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_hackhere",
@@ -1456,7 +1456,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666f9",
@@ -1474,9 +1474,9 @@
           "phone": "8438813780"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_adhik_innovations",
@@ -1487,7 +1487,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666fa",
@@ -1518,7 +1518,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666fb",
@@ -1549,7 +1549,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666fc",
@@ -1567,9 +1567,9 @@
           "phone": "8903719781"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_hell_s_angels",
@@ -1580,7 +1580,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666fd",
@@ -1598,9 +1598,9 @@
           "phone": "6380863410"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_team_nedrzz",
@@ -1611,7 +1611,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666fe",
@@ -1629,9 +1629,9 @@
           "phone": "7449032605"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_novacore",
@@ -1642,7 +1642,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d91666ff",
@@ -1673,7 +1673,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166700",
@@ -1691,9 +1691,9 @@
           "phone": "9385571756"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_team_blank",
@@ -1704,7 +1704,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166701",
@@ -1722,9 +1722,9 @@
           "phone": "9344867268"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tech_pixelz",
@@ -1735,7 +1735,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166702",
@@ -1753,9 +1753,9 @@
           "phone": "6374569198"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tech_titans",
@@ -1766,7 +1766,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166703",
@@ -1784,9 +1784,9 @@
           "phone": "9019310063"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_nova",
@@ -1797,7 +1797,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166704",
@@ -1815,9 +1815,9 @@
           "phone": "9786509313"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_neuro_knot",
@@ -1828,7 +1828,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166705",
@@ -1846,9 +1846,9 @@
           "phone": "7092287921"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_spark_ai",
@@ -1859,7 +1859,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166706",
@@ -1877,9 +1877,9 @@
           "phone": "9361629066"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_hack_4ce",
@@ -1890,7 +1890,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166707",
@@ -1921,7 +1921,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166708",
@@ -1952,7 +1952,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166709",
@@ -1970,9 +1970,9 @@
           "phone": "9003674163"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_neon_neural",
@@ -1983,7 +1983,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916670a",
@@ -2014,7 +2014,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916670b",
@@ -2032,9 +2032,9 @@
           "phone": "7904154647"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_innovator_tech",
@@ -2045,7 +2045,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916670c",
@@ -2076,7 +2076,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916670d",
@@ -2094,9 +2094,9 @@
           "phone": "8754024396"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_atlas",
@@ -2107,7 +2107,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916670e",
@@ -2125,9 +2125,9 @@
           "phone": "8778832459"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_c",
@@ -2138,7 +2138,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916670f",
@@ -2169,7 +2169,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166710",
@@ -2200,7 +2200,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166711",
@@ -2218,9 +2218,9 @@
           "phone": "9122202900"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_hack_wizards",
@@ -2231,7 +2231,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166712",
@@ -2249,9 +2249,9 @@
           "phone": "8610753345"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_hackaholics",
@@ -2262,7 +2262,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166713",
@@ -2280,9 +2280,9 @@
           "phone": "7094337219"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_spark_ai_2",
@@ -2293,7 +2293,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166714",
@@ -2324,7 +2324,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166715",
@@ -2342,9 +2342,9 @@
           "phone": "6379850322"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_hacksphere",
@@ -2355,7 +2355,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166716",
@@ -2373,9 +2373,9 @@
           "phone": "6382090311"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_team_phoenix",
@@ -2386,7 +2386,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166717",
@@ -2404,9 +2404,9 @@
           "phone": "8072478272"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_noventra",
@@ -2417,7 +2417,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166718",
@@ -2448,7 +2448,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166719",
@@ -2466,9 +2466,9 @@
           "phone": "9894784178"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_bytebloom",
@@ -2479,7 +2479,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916671a",
@@ -2510,7 +2510,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916671b",
@@ -2528,9 +2528,9 @@
           "phone": "8072029577"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_wefixo",
@@ -2541,7 +2541,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916671c",
@@ -2572,7 +2572,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916671d",
@@ -2590,9 +2590,9 @@
           "phone": "9345398796"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_team_sapt",
@@ -2603,7 +2603,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916671e",
@@ -2634,7 +2634,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916671f",
@@ -2665,7 +2665,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166720",
@@ -2696,7 +2696,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166721",
@@ -2727,7 +2727,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166722",
@@ -2758,7 +2758,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166723",
@@ -2776,9 +2776,9 @@
           "phone": "7010600850"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_nova_fusion",
@@ -2789,7 +2789,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166724",
@@ -2807,9 +2807,9 @@
           "phone": "8807703149"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_neura_nova_ai",
@@ -2820,7 +2820,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166725",
@@ -2851,7 +2851,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166726",
@@ -2882,7 +2882,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166727",
@@ -2913,7 +2913,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166728",
@@ -2944,7 +2944,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166729",
@@ -2962,9 +2962,9 @@
           "phone": "8610480163"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_ignytra",
@@ -2975,7 +2975,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916672a",
@@ -3006,7 +3006,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916672b",
@@ -3024,9 +3024,9 @@
           "phone": "9677451560"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_curious_freaks",
@@ -3037,7 +3037,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916672c",
@@ -3055,9 +3055,9 @@
           "phone": "9360264300"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tetra",
@@ -3068,7 +3068,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916672d",
@@ -3099,7 +3099,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916672e",
@@ -3130,7 +3130,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916672f",
@@ -3161,7 +3161,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166730",
@@ -3192,7 +3192,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166731",
@@ -3223,7 +3223,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166732",
@@ -3241,9 +3241,9 @@
           "phone": "8248262457"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_zerolimit",
@@ -3254,7 +3254,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166733",
@@ -3272,9 +3272,9 @@
           "phone": "9384150437"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_neuranova",
@@ -3285,7 +3285,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166734",
@@ -3303,9 +3303,9 @@
           "phone": "9952554533"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_classic_debuggers",
@@ -3316,7 +3316,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166735",
@@ -3334,9 +3334,9 @@
           "phone": "7305151622"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_nex_alchemists",
@@ -3347,7 +3347,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166736",
@@ -3378,7 +3378,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166737",
@@ -3409,7 +3409,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166738",
@@ -3440,7 +3440,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166739",
@@ -3471,7 +3471,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916673a",
@@ -3489,9 +3489,9 @@
           "phone": "9600370986"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_digital_minds",
@@ -3502,7 +3502,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916673b",
@@ -3533,7 +3533,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916673c",
@@ -3551,9 +3551,9 @@
           "phone": "6385868699"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_arima",
@@ -3564,7 +3564,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916673d",
@@ -3595,7 +3595,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916673e",
@@ -3613,9 +3613,9 @@
           "phone": "9566232008"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_techstrangers",
@@ -3626,7 +3626,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916673f",
@@ -3644,9 +3644,9 @@
           "phone": "7397606951"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_marcus",
@@ -3657,7 +3657,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166740",
@@ -3675,9 +3675,9 @@
           "phone": "9095060359"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_just_catch_the_fish",
@@ -3688,7 +3688,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166741",
@@ -3719,7 +3719,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166742",
@@ -3750,7 +3750,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166743",
@@ -3781,7 +3781,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166744",
@@ -3812,7 +3812,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166745",
@@ -3843,7 +3843,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166746",
@@ -3874,7 +3874,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166747",
@@ -3905,7 +3905,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166748",
@@ -3936,7 +3936,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166749",
@@ -3967,7 +3967,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916674a",
@@ -3998,7 +3998,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916674b",
@@ -4029,7 +4029,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916674c",
@@ -4047,9 +4047,9 @@
           "phone": "9361878737"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tech_crystal",
@@ -4060,7 +4060,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916674d",
@@ -4091,7 +4091,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916674e",
@@ -4122,7 +4122,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916674f",
@@ -4153,7 +4153,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166750",
@@ -4184,7 +4184,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166751",
@@ -4202,9 +4202,9 @@
           "phone": "9962478747"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_skillnova",
@@ -4215,7 +4215,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166752",
@@ -4246,7 +4246,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166753",
@@ -4264,9 +4264,9 @@
           "phone": "9344600249"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_nexaris",
@@ -4277,7 +4277,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.452Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166754",
@@ -4308,7 +4308,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166755",
@@ -4326,9 +4326,9 @@
           "phone": "9443652380"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_coder_s_caf_",
@@ -4339,7 +4339,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166756",
@@ -4370,7 +4370,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166757",
@@ -4388,9 +4388,9 @@
           "phone": "7604860136"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_byce_rush",
@@ -4401,7 +4401,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166758",
@@ -4432,7 +4432,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166759",
@@ -4450,9 +4450,9 @@
           "phone": "9596302910"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_revengers",
@@ -4463,7 +4463,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916675a",
@@ -4481,9 +4481,9 @@
           "phone": "8778544330"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_queen_of_ctrl_alt_elite",
@@ -4494,7 +4494,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916675b",
@@ -4525,7 +4525,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916675c",
@@ -4543,9 +4543,9 @@
           "phone": "9791198423"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tech_sparkz",
@@ -4556,7 +4556,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916675d",
@@ -4574,9 +4574,9 @@
           "phone": "6369770320"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tech_vista",
@@ -4587,7 +4587,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916675e",
@@ -4618,7 +4618,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916675f",
@@ -4636,9 +4636,9 @@
           "phone": "7010503093"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_the_demogargon",
@@ -4649,7 +4649,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "id": "NEX2057",
@@ -4679,7 +4679,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "id": "NEX2058",
@@ -4696,9 +4696,9 @@
           "phone": "9344376285"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_the_starks",
@@ -4709,7 +4709,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166760",
@@ -4740,7 +4740,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166761",
@@ -4771,7 +4771,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166762",
@@ -4789,9 +4789,9 @@
           "phone": "9489136421"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_techno_titans",
@@ -4802,7 +4802,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166763",
@@ -4833,7 +4833,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166764",
@@ -4851,9 +4851,9 @@
           "phone": "956604557"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_elite_force",
@@ -4864,7 +4864,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166765",
@@ -4895,7 +4895,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166766",
@@ -4926,7 +4926,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166767",
@@ -4944,9 +4944,9 @@
           "phone": "8754239754"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_quantum_quads",
@@ -4957,7 +4957,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166768",
@@ -4988,7 +4988,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166769",
@@ -5006,9 +5006,9 @@
           "phone": "8438966728"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_breach_blockers",
@@ -5019,7 +5019,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916676a",
@@ -5037,9 +5037,9 @@
           "phone": "6385481316"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_code_crafters",
@@ -5050,7 +5050,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916676b",
@@ -5068,9 +5068,9 @@
           "phone": "8148047678"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_infinity",
@@ -5081,7 +5081,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916676c",
@@ -5099,9 +5099,9 @@
           "phone": "7620956737"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_team_harmony",
@@ -5112,7 +5112,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916676d",
@@ -5143,7 +5143,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916676e",
@@ -5161,9 +5161,9 @@
           "phone": "8270778954"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_tech_hack",
@@ -5174,7 +5174,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d916676f",
@@ -5192,9 +5192,9 @@
           "phone": "9003502957"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_black_squad",
@@ -5205,7 +5205,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166770",
@@ -5236,7 +5236,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166771",
@@ -5267,7 +5267,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166772",
@@ -5298,7 +5298,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166773",
@@ -5329,7 +5329,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166774",
@@ -5347,9 +5347,9 @@
           "phone": "7904624406"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_bineary_beast",
@@ -5360,7 +5360,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     },
     {
       "_id": "6a89340443bb4570d9166775",
@@ -5378,9 +5378,9 @@
           "phone": "123456789"
         }
       ],
-      "track": "Med-Tech",
-      "problemStatement": "Med-Tech Official Problem Statement Challenge",
-      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
       "score": 0,
       "status": "In Progress",
       "dbName": "nexora_db_futureflux",
@@ -5391,7 +5391,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T11:59:11.453Z"
+      "updatedAt": "2026-08-22T13:48:11.636Z"
     }
   ]
 }
