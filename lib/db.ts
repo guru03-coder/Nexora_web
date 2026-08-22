@@ -297,8 +297,8 @@ export async function updateTeamSubmission(
         console.error("MongoDB Atlas sync error:", err);
         throw new Error("Failed to save to Cloud Database. Please contact admins (Error: " + err.message + ")");
       }
-    } else if (process.env.MONGODB_URI) {
-        throw new Error("Database connection failed. Vercel IP might be blocked by MongoDB Atlas. Please configure Network Access to 0.0.0.0/0 in MongoDB Atlas.");
+    } else {
+        throw new Error("Database connection failed. Vercel is missing the MONGODB_URI Environment Variable! Please add it in your Vercel Project Settings.");
     }
     
     return updatedTeam;
