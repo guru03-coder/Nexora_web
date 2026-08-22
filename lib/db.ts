@@ -96,12 +96,16 @@ const INITIAL_DB_DATA: DatabaseSchema = {
 
 // Ensure local database directory & JSON file exist
 function ensureDb() {
-  const dir = path.dirname(DB_PATH);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-  if (!fs.existsSync(DB_PATH)) {
-    fs.writeFileSync(DB_PATH, JSON.stringify(INITIAL_DB_DATA, null, 2), "utf-8");
+  try {
+    const dir = path.dirname(DB_PATH);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    if (!fs.existsSync(DB_PATH)) {
+      fs.writeFileSync(DB_PATH, JSON.stringify(INITIAL_DB_DATA, null, 2), "utf-8");
+    }
+  } catch (err) {
+    // Read-only filesystem on Vercel serverless environment
   }
 }
 
@@ -128,8 +132,12 @@ export function getDb(): DatabaseSchema {
 
 // Write database locally
 export function saveDb(data: DatabaseSchema) {
-  ensureDb();
-  fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2), "utf-8");
+  try {
+    ensureDb();
+    fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2), "utf-8");
+  } catch (err) {
+    // Read-only filesystem on Vercel serverless environment
+  }
 }
 
 // Async Database fetch (Supports Cloud MongoDB Atlas OR Local JSON)

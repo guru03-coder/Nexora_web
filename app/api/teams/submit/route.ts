@@ -48,10 +48,10 @@ export async function POST(request: Request) {
       message: "Team details, Git link, and project file submission saved to database!",
       team: updatedTeam,
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Submission Error:", error);
     return NextResponse.json(
-      { success: false, message: "Failed to process project submission." },
+      { success: false, message: `Failed to process project submission: ${error?.message || String(error)}` },
       { status: 500 }
     );
   }
