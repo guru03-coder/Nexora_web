@@ -2,6 +2,7 @@
   "adminPasskey": "admin123",
   "teams": [
     {
+      "_id": "6a89340443bb4570d91666ca",
       "id": "NEX0001",
       "name": "ASTRANOVA",
       "passcode": "7358620251",
@@ -29,9 +30,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.239Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666cb",
       "id": "NEX0002",
       "name": "Pied Piper",
       "passcode": "7904336751",
@@ -59,9 +61,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666cc",
       "id": "NEX0003",
       "name": "The 404s",
       "passcode": "9445387138",
@@ -89,9 +92,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666cd",
       "id": "NEX0004",
       "name": "Tech Buddies",
       "passcode": "8438534008",
@@ -119,9 +123,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666ce",
       "id": "NEX0005",
       "name": "Hackspark",
       "passcode": "9842503241",
@@ -149,9 +154,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666cf",
       "id": "NEX0006",
       "name": "Elite hacker",
       "passcode": "9487482693",
@@ -179,9 +185,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d0",
       "id": "NEX0007",
       "name": "TECHCODERS",
       "passcode": "7812873623",
@@ -209,9 +216,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d1",
       "id": "NEX0008",
       "name": "Gladiator",
       "passcode": "7358707202",
@@ -239,9 +247,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d2",
       "id": "NEX0009",
       "name": "Code trinity",
       "passcode": "9791561558",
@@ -269,9 +278,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d3",
       "id": "NEX0010",
       "name": "Quadracore",
       "passcode": "9843522318",
@@ -299,9 +309,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d4",
       "id": "NEX0011",
       "name": "Lupus venture",
       "passcode": "9345993085",
@@ -329,9 +340,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d5",
       "id": "NEX0012",
       "name": "Vmax",
       "passcode": "6385584105",
@@ -359,9 +371,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d6",
       "id": "NEX0013",
       "name": "CacheMeOutside",
       "passcode": "9865812113",
@@ -389,9 +402,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d7",
       "id": "NEX0014",
       "name": "Stars",
       "passcode": "8438158499",
@@ -419,9 +433,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d8",
       "id": "NEX0015",
       "name": "TeamX",
       "passcode": "9043319271",
@@ -449,9 +464,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666d9",
       "id": "NEX0016",
       "name": "SynergyX",
       "passcode": "9500721734",
@@ -479,9 +495,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666da",
       "id": "NEX0017",
       "name": "SHINSEI TEAM",
       "passcode": "8189836792",
@@ -509,9 +526,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666db",
       "id": "NEX0018",
       "name": "VISION CODERS",
       "passcode": "9715662774",
@@ -539,9 +557,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666dc",
       "id": "NEX0019",
       "name": "SHETECH",
       "passcode": "9360792947",
@@ -569,9 +588,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666dd",
       "id": "NEX0020",
       "name": "Terminal Velocity",
       "passcode": "7200230742",
@@ -599,9 +619,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666de",
       "id": "NEX0021",
       "name": "VisionX",
       "passcode": "6369615217",
@@ -629,9 +650,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666df",
       "id": "NEX0022",
       "name": "Code Strikers",
       "passcode": "9677285223",
@@ -659,9 +681,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e0",
       "id": "NEX0023",
       "name": "CODE X",
       "passcode": "9500077799",
@@ -689,9 +712,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e1",
       "id": "NEX0024",
       "name": "NEXUS",
       "passcode": "9345773837",
@@ -719,9 +743,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e2",
       "id": "NEX0025",
       "name": "Zero Bugs",
       "passcode": "8538975190",
@@ -749,9 +774,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e3",
       "id": "NEX0026",
       "name": "Hackie chan",
       "passcode": "7812856057",
@@ -779,9 +805,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e4",
       "id": "NEX0027",
       "name": "Code Pirates",
       "passcode": "9342009517",
@@ -809,9 +836,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e5",
       "id": "NEX0028",
       "name": "Zyvora2.0",
       "passcode": "9942119235",
@@ -839,9 +867,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e6",
       "id": "NEX0029",
       "name": "Team",
       "passcode": "9363655676",
@@ -869,9 +898,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e7",
       "id": "NEX0030",
       "name": "AgentX",
       "passcode": "8838584301",
@@ -899,9 +929,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.451Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e8",
       "id": "NEX0031",
       "name": "CTRL ALT ELITE",
       "passcode": "9344546102",
@@ -929,9 +960,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666e9",
       "id": "NEX0032",
       "name": "Team Ultron",
       "passcode": "7373550465",
@@ -959,9 +991,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666ea",
       "id": "NEX0033",
       "name": "Exception Handlers",
       "passcode": "9884470371",
@@ -989,9 +1022,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666eb",
       "id": "NEX0034",
       "name": "Debugging dragons",
       "passcode": "9344399379",
@@ -1019,9 +1053,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666ec",
       "id": "NEX0035",
       "name": "Grid mind",
       "passcode": "8098147347",
@@ -1049,9 +1084,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666ed",
       "id": "NEX0036",
       "name": "Red dragons",
       "passcode": "9677389619",
@@ -1079,9 +1115,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666ee",
       "id": "NEX0037",
       "name": "CODE SLAYERS",
       "passcode": "7845159905",
@@ -1109,9 +1146,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666ef",
       "id": "NEX0038",
       "name": "Zenbyte",
       "passcode": "9344206876",
@@ -1139,9 +1177,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f0",
       "id": "NEX0039",
       "name": "Pixel Fusion",
       "passcode": "8903335030",
@@ -1169,9 +1208,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f1",
       "id": "NEX0040",
       "name": "The Boolean Buddies",
       "passcode": "9488352388",
@@ -1199,9 +1239,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f2",
       "id": "NEX0041",
       "name": "Code Lordz",
       "passcode": "8610799150",
@@ -1229,9 +1270,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f3",
       "id": "NEX0042",
       "name": "Nextgen",
       "passcode": "8248743565",
@@ -1259,9 +1301,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f4",
       "id": "NEX0043",
       "name": "Porygon",
       "passcode": "8015486108",
@@ -1289,9 +1332,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f5",
       "id": "NEX0044",
       "name": "Tech Nova",
       "passcode": "9342888798",
@@ -1319,9 +1363,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f6",
       "id": "NEX0045",
       "name": "Future Forge",
       "passcode": "6374855311",
@@ -1349,9 +1394,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f7",
       "id": "NEX0046",
       "name": "Ivaantra",
       "passcode": "123456789",
@@ -1379,9 +1425,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f8",
       "id": "NEX7777",
       "name": "HackHere",
       "passcode": "9442777855",
@@ -1409,9 +1456,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666f9",
       "id": "NEX1001",
       "name": "ADHIK Innovations",
       "passcode": "8438813780",
@@ -1439,9 +1487,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666fa",
       "id": "NEX1002",
       "name": "NOVIQ",
       "passcode": "9092186988",
@@ -1469,9 +1518,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666fb",
       "id": "NEX1003",
       "name": "Team Innovix",
       "passcode": "9488683631",
@@ -1499,9 +1549,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666fc",
       "id": "NEX1004",
       "name": "Hell's Angels",
       "passcode": "8903719781",
@@ -1529,9 +1580,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666fd",
       "id": "NEX1005",
       "name": "Team Nedrzz",
       "passcode": "6380863410",
@@ -1559,9 +1611,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666fe",
       "id": "NEX1006",
       "name": "Novacore",
       "passcode": "7449032605",
@@ -1589,9 +1642,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d91666ff",
       "id": "NEX1007",
       "name": "Infinity loop",
       "passcode": "8870211275",
@@ -1619,9 +1673,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166700",
       "id": "NEX1008",
       "name": "Team Blank",
       "passcode": "9385571756",
@@ -1649,9 +1704,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166701",
       "id": "NEX1009",
       "name": "Tech Pixelz",
       "passcode": "9344867268",
@@ -1679,9 +1735,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166702",
       "id": "NEX1010",
       "name": "Tech Titans",
       "passcode": "6374569198",
@@ -1709,9 +1766,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166703",
       "id": "NEX1011",
       "name": "Nova",
       "passcode": "9019310063",
@@ -1739,9 +1797,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166704",
       "id": "NEX1012",
       "name": "Neuro knot",
       "passcode": "9786509313",
@@ -1769,9 +1828,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166705",
       "id": "NEX1013",
       "name": "Spark Ai",
       "passcode": "7092287921",
@@ -1799,9 +1859,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166706",
       "id": "NEX1014",
       "name": "Hack 4ce",
       "passcode": "9361629066",
@@ -1829,9 +1890,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166707",
       "id": "NEX1015",
       "name": "Apex_Go",
       "passcode": "7871538005",
@@ -1859,9 +1921,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166708",
       "id": "NEX1016",
       "name": "United innovators",
       "passcode": "9952658711",
@@ -1889,9 +1952,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166709",
       "id": "NEX1017",
       "name": "Neon Neural",
       "passcode": "9003674163",
@@ -1919,9 +1983,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916670a",
       "id": "NEX1018",
       "name": "AI THALAIVAN",
       "passcode": "9043323273",
@@ -1949,9 +2014,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916670b",
       "id": "NEX1019",
       "name": "Innovator Tech",
       "passcode": "7904154647",
@@ -1979,9 +2045,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916670c",
       "id": "NEX1020",
       "name": "ECHELON",
       "passcode": "6380233707",
@@ -2009,9 +2076,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916670d",
       "id": "NEX1021",
       "name": "Atlas",
       "passcode": "8754024396",
@@ -2039,9 +2107,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916670e",
       "id": "NEX1022",
       "name": "C",
       "passcode": "8778832459",
@@ -2069,9 +2138,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.249Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916670f",
       "id": "NEX1023",
       "name": "Genz brain",
       "passcode": "9361263010",
@@ -2099,9 +2169,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166710",
       "id": "NEX1024",
       "name": "SmartMove",
       "passcode": "8754057112",
@@ -2129,9 +2200,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166711",
       "id": "NEX1025",
       "name": "Hack wizards",
       "passcode": "9122202900",
@@ -2159,9 +2231,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166712",
       "id": "NEX1026",
       "name": "HACKAHOLICS",
       "passcode": "8610753345",
@@ -2189,9 +2262,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166713",
       "id": "NEX1027",
       "name": "Spark AI 2",
       "passcode": "7094337219",
@@ -2219,9 +2293,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166714",
       "id": "NEX1028",
       "name": "BUG BUSTERS",
       "passcode": "7810075278",
@@ -2249,9 +2324,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166715",
       "id": "NEX1029",
       "name": "HACKSPHERE",
       "passcode": "6379850322",
@@ -2279,9 +2355,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166716",
       "id": "NEX1030",
       "name": "Team Phoenix",
       "passcode": "6382090311",
@@ -2309,9 +2386,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166717",
       "id": "NEX1031",
       "name": "NOVENTRA",
       "passcode": "8072478272",
@@ -2339,9 +2417,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166718",
       "id": "NEX1032",
       "name": "CodeVerse",
       "passcode": "9894848214",
@@ -2369,9 +2448,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166719",
       "id": "NEX1033",
       "name": "BYTEBLOOM",
       "passcode": "9894784178",
@@ -2399,9 +2479,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916671a",
       "id": "NEX1034",
       "name": "TECH UNSTOPPIEE",
       "passcode": "7010039863",
@@ -2429,9 +2510,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916671b",
       "id": "NEX1035",
       "name": "Wefixo",
       "passcode": "8072029577",
@@ -2459,9 +2541,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916671c",
       "id": "NEX1036",
       "name": "Smart Thinkers",
       "passcode": "7397280809",
@@ -2489,9 +2572,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916671d",
       "id": "NEX1037",
       "name": "Team SAPT",
       "passcode": "9345398796",
@@ -2519,9 +2603,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916671e",
       "id": "NEX1038",
       "name": "VisionQuad",
       "passcode": "8122244046",
@@ -2549,9 +2634,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916671f",
       "id": "NEX1039",
       "name": "JARVIS",
       "passcode": "9342957628",
@@ -2579,9 +2665,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166720",
       "id": "NEX1040",
       "name": "Alphaloop",
       "passcode": "9043332705",
@@ -2609,9 +2696,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166721",
       "id": "NEX1041",
       "name": "Cybrog",
       "passcode": "9159048874",
@@ -2639,9 +2727,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166722",
       "id": "NEX1042",
       "name": "Code Red",
       "passcode": "6379305941",
@@ -2669,9 +2758,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166723",
       "id": "NEX1043",
       "name": "Nova fusion",
       "passcode": "7010600850",
@@ -2699,9 +2789,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166724",
       "id": "NEX1044",
       "name": "Neura Nova AI",
       "passcode": "8807703149",
@@ -2729,9 +2820,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166725",
       "id": "NEX1045",
       "name": "Logic legends",
       "passcode": "8438082833",
@@ -2759,9 +2851,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166726",
       "id": "NEX1046",
       "name": "Elite AI",
       "passcode": "6383002552",
@@ -2789,9 +2882,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166727",
       "id": "NEX1047",
       "name": "THINK TANKERS",
       "passcode": "9363289822",
@@ -2819,9 +2913,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166728",
       "id": "NEX2001",
       "name": "Dynamo Developers",
       "passcode": "8489737878",
@@ -2849,9 +2944,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166729",
       "id": "NEX2002",
       "name": "Ignytra",
       "passcode": "8610480163",
@@ -2879,9 +2975,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916672a",
       "id": "NEX2003",
       "name": "Cyber crackers",
       "passcode": "6383239016",
@@ -2909,9 +3006,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916672b",
       "id": "NEX2004",
       "name": "Curious Freaks",
       "passcode": "9677451560",
@@ -2939,9 +3037,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916672c",
       "id": "NEX2005",
       "name": "Tetra",
       "passcode": "9360264300",
@@ -2969,9 +3068,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916672d",
       "id": "NEX2006",
       "name": "Team Titans",
       "passcode": "8072068959",
@@ -2999,9 +3099,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916672e",
       "id": "NEX2007",
       "name": "Hackhive",
       "passcode": "9894161618",
@@ -3029,9 +3130,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916672f",
       "id": "NEX2008",
       "name": "NDC",
       "passcode": "8122355161",
@@ -3059,9 +3161,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166730",
       "id": "NEX2009",
       "name": "Code synapse",
       "passcode": "9363159701",
@@ -3089,9 +3192,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166731",
       "id": "NEX2010",
       "name": "Team Mavericks",
       "passcode": "7845125922",
@@ -3119,9 +3223,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166732",
       "id": "NEX2011",
       "name": "Zerolimit",
       "passcode": "8248262457",
@@ -3149,9 +3254,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166733",
       "id": "NEX2012",
       "name": "NeuraNova",
       "passcode": "9384150437",
@@ -3179,9 +3285,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166734",
       "id": "NEX2013",
       "name": "Classic debuggers",
       "passcode": "9952554533",
@@ -3209,9 +3316,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166735",
       "id": "NEX2014",
       "name": "Nex Alchemists",
       "passcode": "7305151622",
@@ -3239,9 +3347,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166736",
       "id": "NEX2015",
       "name": "CODEHACKERS",
       "passcode": "9342652388",
@@ -3269,9 +3378,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166737",
       "id": "NEX2016",
       "name": "TESSERACT",
       "passcode": "6381925090",
@@ -3299,9 +3409,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166738",
       "id": "NEX2017",
       "name": "Nullspace",
       "passcode": "9789092882",
@@ -3329,9 +3440,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166739",
       "id": "NEX2018",
       "name": "Team ONT",
       "passcode": "6380429857",
@@ -3359,9 +3471,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916673a",
       "id": "NEX2019",
       "name": "Digital Minds",
       "passcode": "9600370986",
@@ -3389,9 +3502,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916673b",
       "id": "NEX2020",
       "name": "Freaky Coders",
       "passcode": "8838551559",
@@ -3419,9 +3533,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916673c",
       "id": "NEX2021",
       "name": "ARIMA",
       "passcode": "6385868699",
@@ -3449,9 +3564,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916673d",
       "id": "NEX2022",
       "name": "Dynamic Four",
       "passcode": "8903481218",
@@ -3479,9 +3595,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916673e",
       "id": "NEX2023",
       "name": "TechStrangers",
       "passcode": "9566232008",
@@ -3509,9 +3626,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916673f",
       "id": "NEX2024",
       "name": "Marcus",
       "passcode": "7397606951",
@@ -3539,9 +3657,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166740",
       "id": "NEX2025",
       "name": "Just Catch The Fish",
       "passcode": "9095060359",
@@ -3569,9 +3688,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166741",
       "id": "NEX2026",
       "name": "Dexos House",
       "passcode": "7604906071",
@@ -3599,9 +3719,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166742",
       "id": "NEX2027",
       "name": "Mukesh Kumar M",
       "passcode": "7010043143",
@@ -3629,9 +3750,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166743",
       "id": "NEX2028",
       "name": "Imayon",
       "passcode": "7092994970",
@@ -3659,9 +3781,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166744",
       "id": "NEX2029",
       "name": "Quantum Four",
       "passcode": "7695924820",
@@ -3689,9 +3812,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166745",
       "id": "NEX2030",
       "name": "TECH FUSION",
       "passcode": "9791910758",
@@ -3719,9 +3843,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166746",
       "id": "NEX2031",
       "name": "The Chosen",
       "passcode": "7010648508",
@@ -3749,9 +3874,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166747",
       "id": "NEX2032",
       "name": "PRIMELOGIX",
       "passcode": "9940768187",
@@ -3779,9 +3905,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166748",
       "id": "NEX2033",
       "name": "Techcrew",
       "passcode": "9952348477",
@@ -3809,9 +3936,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166749",
       "id": "NEX2034",
       "name": "THE INNOVATORS",
       "passcode": "9489430023",
@@ -3839,9 +3967,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916674a",
       "id": "NEX2035",
       "name": "Sanjay PK",
       "passcode": "9361841974",
@@ -3869,9 +3998,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916674b",
       "id": "NEX2036",
       "name": "Zero Tolerance",
       "passcode": "7418431480",
@@ -3899,9 +4029,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916674c",
       "id": "NEX2037",
       "name": "Tech Crystal",
       "passcode": "9361878737",
@@ -3929,9 +4060,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916674d",
       "id": "NEX2038",
       "name": "QuadAI",
       "passcode": "9042843990",
@@ -3959,9 +4091,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916674e",
       "id": "NEX2039",
       "name": "Bytecraft",
       "passcode": "9787786015",
@@ -3989,9 +4122,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d916674f",
       "id": "NEX2040",
       "name": "Cipher Crew",
       "passcode": "6369760116",
@@ -4019,9 +4153,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166750",
       "id": "NEX2041",
       "name": "SHADOW CODERS",
       "passcode": "9715478656",
@@ -4049,9 +4184,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166751",
       "id": "NEX2042",
       "name": "SkillNova",
       "passcode": "9962478747",
@@ -4079,9 +4215,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166752",
       "id": "NEX2043",
       "name": "Mindflux",
       "passcode": "9176566444",
@@ -4109,9 +4246,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166753",
       "id": "NEX2044",
       "name": "Nexaris",
       "passcode": "9344600249",
@@ -4139,9 +4277,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.452Z"
     },
     {
+      "_id": "6a89340443bb4570d9166754",
       "id": "NEX2045",
       "name": "TRIO_TECH",
       "passcode": "6383542459",
@@ -4169,9 +4308,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166755",
       "id": "NEX2046",
       "name": "Coder's Café",
       "passcode": "9443652380",
@@ -4199,9 +4339,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166756",
       "id": "NEX2047",
       "name": "OBSTACLES",
       "passcode": "9025853410",
@@ -4229,9 +4370,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166757",
       "id": "NEX2048",
       "name": "Byce Rush",
       "passcode": "7604860136",
@@ -4259,9 +4401,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166758",
       "id": "NEX2049",
       "name": "maverics",
       "passcode": "6379236101",
@@ -4289,9 +4432,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166759",
       "id": "NEX2050",
       "name": "Revengers",
       "passcode": "9596302910",
@@ -4319,9 +4463,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916675a",
       "id": "NEX2051",
       "name": "Queen Of CTRL ALT ELITE",
       "passcode": "8778544330",
@@ -4349,9 +4494,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916675b",
       "id": "NEX2052",
       "name": "SquadPhoenix",
       "passcode": "9840101717",
@@ -4379,9 +4525,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916675c",
       "id": "NEX2053",
       "name": "Tech Sparkz",
       "passcode": "9791198423",
@@ -4409,9 +4556,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916675d",
       "id": "NEX2054",
       "name": "Tech Vista",
       "passcode": "6369770320",
@@ -4439,9 +4587,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916675e",
       "id": "NEX2055",
       "name": "QUAD_CORE",
       "passcode": "9092170168",
@@ -4469,9 +4618,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916675f",
       "id": "NEX2056",
       "name": "The Demogargon",
       "passcode": "7010503093",
@@ -4499,9 +4649,70 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.250Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "id": "NEX2057",
+      "name": "Spartans",
+      "passcode": "9092119266",
+      "leaderName": "Sakthi.V",
+      "leaderPhone": "9092119266",
+      "membersCount": 4,
+      "isRosterLocked": false,
+      "memberList": [
+        {
+          "name": "Sakthi.V",
+          "role": "Team Lead",
+          "phone": "9092119266"
+        }
+      ],
+      "track": "Cyber Security",
+      "problemStatement": "Cyber Security Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/cybersecurity_ps.pdf",
+      "score": 0,
+      "status": "In Progress",
+      "dbName": "nexora_db_spartans",
+      "dbStatus": "Connected",
+      "dbStorage": "10 GB SSD",
+      "dbHost": "db.nexora.internal:5580",
+      "gitRepoUrl": "",
+      "projectFileUrl": "",
+      "projectFileName": "",
+      "submissionUrl": "",
+      "updatedAt": "2026-08-22T11:59:11.453Z"
+    },
+    {
+      "id": "NEX2058",
+      "name": "THE STARKS",
+      "passcode": "9344376285",
+      "leaderName": "Tarun",
+      "leaderPhone": "9344376285",
+      "membersCount": 4,
+      "isRosterLocked": false,
+      "memberList": [
+        {
+          "name": "Tarun",
+          "role": "Team Lead",
+          "phone": "9344376285"
+        }
+      ],
+      "track": "Med-Tech",
+      "problemStatement": "Med-Tech Official Problem Statement Challenge",
+      "problemStatementFileUrl": "/documents/medtech_ps.pdf",
+      "score": 0,
+      "status": "In Progress",
+      "dbName": "nexora_db_the_starks",
+      "dbStatus": "Connected",
+      "dbStorage": "10 GB SSD",
+      "dbHost": "db.nexora.internal:5581",
+      "gitRepoUrl": "",
+      "projectFileUrl": "",
+      "projectFileName": "",
+      "submissionUrl": "",
+      "updatedAt": "2026-08-22T11:59:11.453Z"
+    },
+    {
+      "_id": "6a89340443bb4570d9166760",
       "id": "NEX3001",
       "name": "Code Nest",
       "passcode": "8148496380",
@@ -4529,9 +4740,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166761",
       "id": "NEX3002",
       "name": "EDITH",
       "passcode": "9080496793",
@@ -4559,9 +4771,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166762",
       "id": "NEX3003",
       "name": "Techno Titans",
       "passcode": "9489136421",
@@ -4589,9 +4802,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166763",
       "id": "NEX3004",
       "name": "Altronix",
       "passcode": "9159015718",
@@ -4619,9 +4833,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166764",
       "id": "NEX3005",
       "name": "Elite force",
       "passcode": "956604557",
@@ -4649,9 +4864,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166765",
       "id": "NEX3006",
       "name": "Zero TeamX",
       "passcode": "9778116733",
@@ -4679,9 +4895,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166766",
       "id": "NEX3007",
       "name": "AT-TI",
       "passcode": "7305957921",
@@ -4709,9 +4926,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166767",
       "id": "NEX3008",
       "name": "Quantum_Quads",
       "passcode": "8754239754",
@@ -4739,9 +4957,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166768",
       "id": "NEX3009",
       "name": "Nexora Nomads",
       "passcode": "6383849100",
@@ -4769,9 +4988,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166769",
       "id": "NEX3010",
       "name": "BREACH BLOCKERS",
       "passcode": "8438966728",
@@ -4799,9 +5019,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916676a",
       "id": "NEX3011",
       "name": "Code crafters",
       "passcode": "6385481316",
@@ -4829,9 +5050,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916676b",
       "id": "NEX3012",
       "name": "Infinity",
       "passcode": "8148047678",
@@ -4859,9 +5081,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916676c",
       "id": "NEX3013",
       "name": "TEAM HARMONY",
       "passcode": "7620956737",
@@ -4889,9 +5112,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916676d",
       "id": "NEX3014",
       "name": "PRETTY STAR",
       "passcode": "8838197577",
@@ -4919,9 +5143,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916676e",
       "id": "NEX3015",
       "name": "Tech hack",
       "passcode": "8270778954",
@@ -4949,9 +5174,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d916676f",
       "id": "NEX3016",
       "name": "BLACK SQUAD",
       "passcode": "9003502957",
@@ -4979,9 +5205,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166770",
       "id": "NEX3017",
       "name": "Nm",
       "passcode": "7904335564",
@@ -5009,9 +5236,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166771",
       "id": "NEX3018",
       "name": "Code Nest",
       "passcode": "8148496380",
@@ -5039,9 +5267,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166772",
       "id": "NEX3019",
       "name": "Abdulkani B",
       "passcode": "8072924468",
@@ -5069,9 +5298,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166773",
       "id": "NEX3020",
       "name": "Stack Smashers",
       "passcode": "7548851756",
@@ -5099,9 +5329,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166774",
       "id": "NEX3021",
       "name": "Bineary beast",
       "passcode": "7904624406",
@@ -5129,9 +5360,10 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     },
     {
+      "_id": "6a89340443bb4570d9166775",
       "id": "NEX3022",
       "name": "FutureFlux",
       "passcode": "123456789",
@@ -5159,7 +5391,7 @@
       "projectFileUrl": "",
       "projectFileName": "",
       "submissionUrl": "",
-      "updatedAt": "2026-08-22T05:30:41.251Z"
+      "updatedAt": "2026-08-22T11:59:11.453Z"
     }
   ]
 }
