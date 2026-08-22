@@ -140,7 +140,7 @@ export default function FinalPortalPage() {
 
   const handleLogout = () => {
     localStorage.removeItem("nexora_auth");
-    setActiveTab("login");
+    setActiveTab("team");
     setIsAdminLoggedIn(false);
     setCurrentTeam(null);
   };
@@ -567,6 +567,7 @@ export default function FinalPortalPage() {
         {(isAdminLoggedIn || currentTeam) && (
           <button
             onClick={() => {
+              localStorage.removeItem("nexora_auth");
               setIsAdminLoggedIn(false);
               setCurrentTeam(null);
               setSuccessMsg("");
