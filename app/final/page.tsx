@@ -138,6 +138,47 @@ export default function FinalPortalPage() {
     fetchTeams();
   }, []);
 
+  const handleLogout = () => {
+    localStorage.removeItem("nexora_auth");
+    setActiveTab("login");
+    setIsAdminLoggedIn(false);
+    setCurrentTeam(null);
+  };
+
+  useEffect(() => {
+    const storedAuth = localStorage.getItem("nexora_auth");
+    if (storedAuth) {
+      try {
+        const parsed = JSON.parse(storedAuth);
+        if (parsed.type === "admin") {
+          setIsAdminLoggedIn(true);
+          setAdminPasskey(parsed.passkey);
+          setActiveTab("admin");
+        } else if (parsed.type === "team") {
+          setIsLoading(true);
+          fetch("/api/auth/team", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ teamId: parsed.teamId, passcode: parsed.passcode }),
+          })
+            .then(res => res.json())
+            .then(data => {
+              if (data.success) {
+                setIsAdminLoggedIn(false);
+                populateTeamState(data.team);
+                setActiveTab("team");
+              } else {
+                localStorage.removeItem("nexora_auth");
+              }
+            })
+            .finally(() => setIsLoading(false));
+        }
+      } catch (e) {
+        localStorage.removeItem("nexora_auth");
+      }
+    }
+  }, []);
+
   // Filtered & Paginated Teams for Admin View
   const filteredTeams = useMemo(() => {
     return teamsList.filter((t) => {
@@ -224,6 +265,7 @@ export default function FinalPortalPage() {
           setTeamsList(data.teams);
           setActiveTab("admin");
           setSuccessMsg(`Master Admin Authenticated! Managing ${data.teams.length} team accounts.`);
+          localStorage.setItem("nexora_auth", JSON.stringify({ type: "admin", passkey: passkeyToUse }));
           setIsLoading(false);
           return;
         }
@@ -247,6 +289,7 @@ export default function FinalPortalPage() {
         setActiveTab("team");
         setErrorMsg("");
         setSuccessMsg("");
+        localStorage.setItem("nexora_auth", JSON.stringify({ type: "team", teamId: teamInput, passcode: teamPassword }));
       } else {
         setErrorMsg(data.message || "Invalid Team ID or Passcode.");
       }
@@ -348,7 +391,7 @@ export default function FinalPortalPage() {
           memberList,
           leaderName,
           leaderEmail,
-          isRosterLocked: true, // LOCK ROSTER PERMANENTLY FOR TEAM
+          isRosterLocked: false,
         }),
       });
       const data = await res.json();
@@ -356,7 +399,7 @@ export default function FinalPortalPage() {
       if (data.success) {
         populateTeamState(data.team);
         setEditingMembers(false);
-        setSuccessMsg("Team roster finalized and locked permanently!");
+        setSuccessMsg("Team members saved successfully!");
         fetchTeams();
       } else {
         setErrorMsg(data.message || "Failed to save team roster.");
@@ -659,17 +702,22 @@ export default function FinalPortalPage() {
                 </div>
 
                 {/* Roster Lock Status Badge */}
-                {currentTeam.isRosterLocked ? (
-                  <div className="px-3.5 py-1.5 rounded-xl bg-amber-950/60 border border-amber-500/40 text-amber-300 text-xs font-mono flex items-center gap-2">
-                    <Lock className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Roster Finalized & Locked</span>
-                  </div>
-                ) : (
-                  <div className="px-3.5 py-1.5 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs font-mono flex items-center gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>1-Time Roster Edit Available</span>
-                  </div>
-                )}
+                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-3">
+                  {currentTeam.isRosterLocked ? (
+                    <div className="px-3.5 py-1.5 rounded-xl bg-amber-950/60 border border-amber-500/40 text-amber-300 text-xs font-mono flex items-center gap-2">
+                      <Lock className="w-3.5 h-3.5 text-amber-400" />
+                      <span>Roster Locked</span>
+                    </div>
+                  ) : (
+                    <div className="px-3.5 py-1.5 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs font-mono flex items-center gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Roster Edit Available</span>
+                    </div>
+                  )}
+                  <button onClick={handleLogout} className="px-3.5 py-1.5 rounded-xl bg-red-950/60 border border-red-500/40 hover:bg-red-900/60 text-red-300 text-xs font-mono transition-all">
+                    Logout
+                  </button>
+                </div>
               </div>
 
               {/* Team Members Details Section (One-Time Edit & Lock) */}
@@ -703,8 +751,8 @@ export default function FinalPortalPage() {
                 {editingMembers && !currentTeam.isRosterLocked ? (
                   /* Edit Members Form (One-Time Add) */
                   <form onSubmit={handleSaveMembersOneTime} className="space-y-4 font-mono text-xs pt-2">
-                    <div className="p-3 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-300 text-[11px]">
-                      ⚠️ <strong>IMPORTANT:</strong> You can only submit your team roster <strong>ONCE</strong>. Make sure all details are accurate before locking!
+                    <div className="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 text-[11px]">
+                      ✅ <strong>INFO:</strong> Please ensure all team member names are spelled correctly before saving.
                     </div>
 
                     <div className="space-y-3">
@@ -739,9 +787,9 @@ export default function FinalPortalPage() {
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-black font-display font-extrabold text-xs uppercase flex items-center gap-2 shadow-[0_0_20px_rgba(255,191,0,0.5)] transition-all"
+                      className="px-6 py-3 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-black font-display font-extrabold text-xs uppercase flex items-center gap-2 shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all"
                     >
-                      {isLoading ? <RefreshCw className="w-4 h-4 animate-spin" /> : "Finalize & Lock Team Roster"}
+                      {isLoading ? <RefreshCw className="w-4 h-4 animate-spin" /> : "Save Team Members"}
                     </button>
                   </form>
                 ) : (
