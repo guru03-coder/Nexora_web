@@ -21,10 +21,13 @@ def generate_excel_report(db_path, output_excel_path):
         db = json.load(f)
 
     teams = db.get("teams", [])
-    cyber_teams = sorted(teams, key=lambda x: x["id"])
+    
+    cyber_teams = sorted([t for t in teams if t.get("track") == "Cyber Security"], key=lambda x: x["id"])
+    med_teams = sorted([t for t in teams if t.get("track") == "Med-Tech"], key=lambda x: x["id"])
 
     wb = openpyxl.Workbook()
     
+    # Border styles
     thin_border = Border(
         left=Side(style='thin', color='CBD5E1'),
         right=Side(style='thin', color='CBD5E1'),
@@ -39,112 +42,136 @@ def generate_excel_report(db_path, output_excel_path):
         bottom=Side(style='medium', color='475569')
     )
 
-    # 1. Cyber Security Master Roster Sheet
-    ws = wb.active
-    ws.title = "Cyber Security Track"
-    ws.views.sheetView[0].showGridLines = True
-
-    # Title Block
-    ws.merge_cells('A1:I1')
-    title_cell = ws['A1']
-    title_cell.value = f"NEXORA 2026 — CYBER SECURITY TRACK MASTER ROSTER ({len(cyber_teams)} TEAMS)"
-    title_cell.font = Font(name="Calibri", size=14, bold=True, color="FFFFFF")
-    title_cell.fill = PatternFill(start_color="581C87", end_color="581C87", fill_type="solid")
-    title_cell.alignment = Alignment(horizontal="center", vertical="center")
-    ws.row_dimensions[1].height = 30
-
-    # Subtitle Block
-    ws.merge_cells('A2:I2')
-    sub_cell = ws['A2']
-    now_str = datetime.now().strftime("%B %d, %Y • %I:%M %p")
-    sub_cell.value = f"Official Event Team Roster • Generated on {now_str} • Total Registered Teams: {len(cyber_teams)}"
-    sub_cell.font = Font(name="Calibri", size=10, italic=True, color="475569")
-    sub_cell.fill = PatternFill(start_color="F1F5F9", end_color="F1F5F9", fill_type="solid")
-    sub_cell.alignment = Alignment(horizontal="center", vertical="center")
-    ws.row_dimensions[2].height = 20
-
-    ws.row_dimensions[3].height = 10
-
-    # Table Headers
-    headers = [
-        "S.No", "Team ID", "Team Name", "Team Leader Name", 
-        "Contact Phone", "Team Size", "Assigned Venue / Floor", 
-        "Track", "Submission Status"
-    ]
-    
-    for col_num, header_title in enumerate(headers, 1):
-        cell = ws.cell(row=4, column=col_num)
-        cell.value = header_title
-        cell.font = Font(name="Calibri", size=11, bold=True, color="FFFFFF")
-        cell.fill = PatternFill(start_color="581C87", end_color="581C87", fill_type="solid")
-        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
-        cell.border = header_border
-
-    ws.row_dimensions[4].height = 26
-
-    # Populate Rows
-    for row_idx, t in enumerate(cyber_teams, start=5):
-        venue = get_floor_name(t["id"])
-        status = t.get("status", "In Progress")
+    # Helper function to style a team sheet
+    def build_team_sheet(ws, sheet_title, team_list, header_color, zebra_color, is_cyber=True):
+        ws.views.sheetView[0].showGridLines = True
         
-        row_values = [
-            row_idx - 4,
-            t["id"],
-            t["name"],
-            t.get("leaderName", "N/A"),
-            t.get("leaderPhone", "N/A"),
-            t.get("membersCount", 4),
-            venue,
-            "Cyber Security",
-            status
+        # Title Block
+        ws.merge_cells('A1:I1')
+        title_cell = ws['A1']
+        title_cell.value = f"NEXORA 2026 — {sheet_title.upper()} ({len(team_list)} TEAMS)"
+        title_cell.font = Font(name="Calibri", size=14, bold=True, color="FFFFFF")
+        title_cell.fill = PatternFill(start_color=header_color, end_color=header_color, fill_type="solid")
+        title_cell.alignment = Alignment(horizontal="center", vertical="center")
+        ws.row_dimensions[1].height = 30
+
+        # Subtitle Block
+        ws.merge_cells('A2:I2')
+        sub_cell = ws['A2']
+        now_str = datetime.now().strftime("%B %d, %Y • %I:%M %p")
+        sub_cell.value = f"Official Team Details • Generated on {now_str} • Total Registered Teams in Track: {len(team_list)}"
+        sub_cell.font = Font(name="Calibri", size=10, italic=True, color="475569")
+        sub_cell.fill = PatternFill(start_color="F1F5F9", end_color="F1F5F9", fill_type="solid")
+        sub_cell.alignment = Alignment(horizontal="center", vertical="center")
+        ws.row_dimensions[2].height = 20
+
+        # Empty row
+        ws.row_dimensions[3].height = 10
+
+        # Table Headers
+        headers = [
+            "S.No", "Team ID", "Team Name", "Team Leader Name", 
+            "Contact Phone", "Team Size", "Assigned Venue / Floor", 
+            "Track", "Submission Status"
         ]
+        
+        for col_num, header_title in enumerate(headers, 1):
+            cell = ws.cell(row=4, column=col_num)
+            cell.value = header_title
+            cell.font = Font(name="Calibri", size=11, bold=True, color="FFFFFF")
+            cell.fill = PatternFill(start_color=header_color, end_color=header_color, fill_type="solid")
+            cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+            cell.border = header_border
 
-        fill_color = "F3E8FF" if (row_idx % 2 == 0) else "FFFFFF"
+        ws.row_dimensions[4].height = 26
 
-        for col_num, val in enumerate(row_values, 1):
-            cell = ws.cell(row=row_idx, column=col_num)
-            cell.value = val
-            cell.border = thin_border
-            cell.fill = PatternFill(start_color=fill_color, end_color=fill_color, fill_type="solid")
+        # Populate Rows
+        for row_idx, t in enumerate(team_list, start=5):
+            venue = get_floor_name(t["id"])
+            status = t.get("status", "In Progress")
+            
+            row_values = [
+                row_idx - 4,
+                t["id"],
+                t["name"],
+                t.get("leaderName", "N/A"),
+                t.get("leaderPhone", "N/A"),
+                t.get("membersCount", 4),
+                venue,
+                t.get("track", ""),
+                status
+            ]
 
-            if col_num in [1, 2, 5, 6, 8, 9]:
-                cell.alignment = Alignment(horizontal="center", vertical="center")
-            else:
-                cell.alignment = Alignment(horizontal="left", vertical="center")
+            fill_color = zebra_color if (row_idx % 2 == 0) else "FFFFFF"
 
-            if col_num == 2:
-                cell.font = Font(name="Calibri", size=10, bold=True, color="6B21A8")
-            elif col_num == 3:
-                cell.font = Font(name="Calibri", size=10, bold=True, color="0F172A")
-            else:
-                cell.font = Font(name="Calibri", size=10, color="1E293B")
+            for col_num, val in enumerate(row_values, 1):
+                cell = ws.cell(row=row_idx, column=col_num)
+                cell.value = val
+                cell.border = thin_border
+                cell.fill = PatternFill(start_color=fill_color, end_color=fill_color, fill_type="solid")
 
-        ws.row_dimensions[row_idx].height = 20
+                # Alignments and specific formatting
+                if col_num in [1, 2, 5, 6, 9]:
+                    cell.alignment = Alignment(horizontal="center", vertical="center")
+                else:
+                    cell.alignment = Alignment(horizontal="left", vertical="center")
 
-    # Auto-fit column widths
-    for col in ws.columns:
-        max_len = 0
-        col_letter = get_column_letter(col[0].column)
-        for cell in col:
-            if cell.row in [1, 2]: continue
-            val_str = str(cell.value or "")
-            if len(val_str) > max_len:
-                max_len = len(val_str)
-        ws.column_dimensions[col_letter].width = max(max_len + 4, 12)
+                if col_num == 2:
+                    cell.font = Font(name="Calibri", size=10, bold=True, color="6B21A8" if is_cyber else "047857")
+                elif col_num == 3:
+                    cell.font = Font(name="Calibri", size=10, bold=True, color="0F172A")
+                else:
+                    cell.font = Font(name="Calibri", size=10, color="1E293B")
 
-    # 2. Venue Summary Sheet
-    ws_summary = wb.create_sheet(title="Venue Breakdown Summary")
+            ws.row_dimensions[row_idx].height = 20
+
+        # Auto-fit column widths
+        for col in ws.columns:
+            max_len = 0
+            col_letter = get_column_letter(col[0].column)
+            for cell in col:
+                if cell.row in [1, 2]: continue
+                val_str = str(cell.value or "")
+                if len(val_str) > max_len:
+                    max_len = len(val_str)
+            ws.column_dimensions[col_letter].width = max(max_len + 4, 12)
+
+    # 1. Cyber Security Sheet
+    ws_cyber = wb.active
+    ws_cyber.title = "Cyber Security Track"
+    build_team_sheet(
+        ws_cyber, 
+        "Cyber Security Track Team Details", 
+        cyber_teams, 
+        header_color="581C87", 
+        zebra_color="F3E8FF", 
+        is_cyber=True
+    )
+
+    # 2. Med-Tech Sheet
+    ws_med = wb.create_sheet(title="Med-Tech Track")
+    build_team_sheet(
+        ws_med, 
+        "Med-Tech Track Team Details", 
+        med_teams, 
+        header_color="065F46", 
+        zebra_color="ECFDF5", 
+        is_cyber=False
+    )
+
+    # 3. Overview & Summary Sheet
+    ws_summary = wb.create_sheet(title="Track Summary Overview")
     ws_summary.views.sheetView[0].showGridLines = True
     
-    ws_summary.merge_cells('A1:E1')
+    ws_summary.merge_cells('A1:F1')
     t_cell = ws_summary['A1']
-    t_cell.value = "NEXORA 2026 — CYBER SECURITY VENUE DISTRIBUTION"
+    t_cell.value = "NEXORA 2026 — MASTER TRACK & VENUE SUMMARY"
     t_cell.font = Font(name="Calibri", size=14, bold=True, color="FFFFFF")
     t_cell.fill = PatternFill(start_color="0F172A", end_color="0F172A", fill_type="solid")
     t_cell.alignment = Alignment(horizontal="center", vertical="center")
     ws_summary.row_dimensions[1].height = 30
 
-    sum_headers = ["Venue / Location", "ID Range", "Track Name", "Total Teams", "Percentage"]
+    sum_headers = ["Venue / Location", "ID Range", "Cyber Security", "Med-Tech", "Total Teams", "Track Split %"]
     for col_idx, h in enumerate(sum_headers, 1):
         c = ws_summary.cell(row=3, column=col_idx)
         c.value = h
@@ -157,7 +184,13 @@ def generate_excel_report(db_path, output_excel_path):
     floors = {}
     for t in teams:
         fl = get_floor_name(t["id"])
-        floors[fl] = floors.get(fl, 0) + 1
+        if fl not in floors:
+            floors[fl] = {"total": 0, "cyber": 0, "med": 0}
+        floors[fl]["total"] += 1
+        if t.get("track") == "Cyber Security":
+            floors[fl]["cyber"] += 1
+        else:
+            floors[fl]["med"] += 1
 
     prefix_map = {
         "Ground Floor": "NEX0001 - NEX0046",
@@ -167,20 +200,21 @@ def generate_excel_report(db_path, output_excel_path):
     }
 
     r_idx = 4
-    for fl_name, count in floors.items():
+    for fl_name, counts in floors.items():
         row_vals = [
             fl_name,
             prefix_map.get(fl_name, "N/A"),
-            "Cyber Security",
-            count,
-            f"{(count/len(teams))*100:.1f}%"
+            counts["cyber"],
+            counts["med"],
+            counts["total"],
+            f"{(counts['total']/len(teams))*100:.1f}%"
         ]
         for col_idx, val in enumerate(row_vals, 1):
             c = ws_summary.cell(row=r_idx, column=col_idx)
             c.value = val
             c.border = thin_border
             c.font = Font(name="Calibri", size=10, color="1E293B")
-            if col_idx in [3, 4, 5]:
+            if col_idx in [3, 4, 5, 6]:
                 c.alignment = Alignment(horizontal="center", vertical="center")
             else:
                 c.alignment = Alignment(horizontal="left", vertical="center")
@@ -188,14 +222,14 @@ def generate_excel_report(db_path, output_excel_path):
         r_idx += 1
 
     # Total Row
-    total_vals = ["GRAND TOTAL", "ALL VENUES", "Cyber Security", len(teams), "100.0%"]
+    total_vals = ["GRAND TOTAL", "ALL VENUES", len(cyber_teams), len(med_teams), len(teams), "100.0%"]
     for col_idx, val in enumerate(total_vals, 1):
         c = ws_summary.cell(row=r_idx, column=col_idx)
         c.value = val
         c.font = Font(name="Calibri", size=10, bold=True, color="0F172A")
         c.fill = PatternFill(start_color="E2E8F0", end_color="E2E8F0", fill_type="solid")
         c.border = thin_border
-        if col_idx in [3, 4, 5]:
+        if col_idx in [3, 4, 5, 6]:
             c.alignment = Alignment(horizontal="center", vertical="center")
         else:
             c.alignment = Alignment(horizontal="left", vertical="center")
@@ -207,7 +241,39 @@ def generate_excel_report(db_path, output_excel_path):
         ws_summary.column_dimensions[col_letter].width = max(max_len + 5, 14)
 
     wb.save(output_excel_path)
-    print(f"Excel report successfully generated at: {output_excel_path}")
+    print(f"Combined Excel report saved to: {output_excel_path}")
+
+    # Build Standalone Med-Tech Excel File
+    wb_med_only = openpyxl.Workbook()
+    ws_m = wb_med_only.active
+    ws_m.title = "Med-Tech Track"
+    build_team_sheet(
+        ws_m, 
+        "Med-Tech Track Team Details", 
+        med_teams, 
+        header_color="065F46", 
+        zebra_color="ECFDF5", 
+        is_cyber=False
+    )
+    med_path = output_excel_path.replace("Nexora_Admin_Track_Report.xlsx", "Nexora_MedTech_Teams.xlsx")
+    wb_med_only.save(med_path)
+    print(f"Standalone Med-Tech Excel report saved to: {med_path}")
+
+    # Build Standalone Cyber Security Excel File
+    wb_cyber_only = openpyxl.Workbook()
+    ws_c = wb_cyber_only.active
+    ws_c.title = "Cyber Security Track"
+    build_team_sheet(
+        ws_c, 
+        "Cyber Security Track Team Details", 
+        cyber_teams, 
+        header_color="581C87", 
+        zebra_color="F3E8FF", 
+        is_cyber=True
+    )
+    cyber_path = output_excel_path.replace("Nexora_Admin_Track_Report.xlsx", "Nexora_CyberSecurity_Teams.xlsx")
+    wb_cyber_only.save(cyber_path)
+    print(f"Standalone Cyber Security Excel report saved to: {cyber_path}")
 
 if __name__ == "__main__":
     db_file = "./data/final_db.json"
@@ -215,5 +281,5 @@ if __name__ == "__main__":
     os.makedirs(os.path.dirname(out_excel), exist_ok=True)
     generate_excel_report(db_file, out_excel)
 
-    root_excel = "./Nexora_Admin_Track_Report.xlsx"
-    generate_excel_report(db_file, root_excel)
+    # Copy to root directory as well
+    generate_excel_report(db_file, "./Nexora_Admin_Track_Report.xlsx")
