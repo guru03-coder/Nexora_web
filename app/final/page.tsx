@@ -352,6 +352,9 @@ export default function FinalPortalPage() {
           gitRepoUrl,
           projectFileUrl,
           projectFileName,
+          memberList,
+          leaderName,
+          leaderEmail,
         }),
       });
       const data = await res.json();
@@ -392,6 +395,9 @@ export default function FinalPortalPage() {
           memberList,
           leaderName,
           leaderEmail,
+          gitRepoUrl,
+          projectFileUrl,
+          projectFileName,
           isRosterLocked: false,
         }),
       });
