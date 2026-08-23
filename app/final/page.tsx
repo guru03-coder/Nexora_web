@@ -99,7 +99,7 @@ export default function FinalPortalPage() {
   const [memberList, setMemberList] = useState<TeamMember[]>([]);
 
   // Admin Data & Search/Filter
-  const [adminView, setAdminView] = useState<"database" | "rosters">("database");
+  const [adminView, setAdminView] = useState<"database" | "rosters" | "submissions">("database");
   const [teamsList, setTeamsList] = useState<TeamRecord[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [filterStatus, setFilterStatus] = useState("ALL");
@@ -1091,6 +1091,16 @@ export default function FinalPortalPage() {
                   >
                     Team Rosters View
                   </button>
+                  <button
+                    onClick={() => setAdminView("submissions")}
+                    className={`px-4 py-2 rounded-lg transition-all ${
+                      adminView === "submissions"
+                        ? "bg-cyan-400 text-black shadow-[0_0_10px_rgba(0,229,255,0.4)]"
+                        : "text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    Project Submissions View
+                  </button>
                 </div>
 
                 {/* Search Bar */}
@@ -1163,6 +1173,73 @@ export default function FinalPortalPage() {
                           <tr>
                             <td colSpan={6} className="py-8 text-center text-gray-500 italic">
                               No team rosters match your filter criteria.
+                            </td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  ) : adminView === "submissions" ? (
+                    <table className="w-full text-left border-collapse font-mono text-xs">
+                      <thead>
+                        <tr className="border-b border-white/10 text-gray-400 uppercase text-[10px]">
+                          <th className="py-3 px-4">Team ID</th>
+                          <th className="py-3 px-4">Team Name</th>
+                          <th className="py-3 px-4">Assigned Track</th>
+                          <th className="py-3 px-4">Git Repo / Code Link</th>
+                          <th className="py-3 px-4">Presentation / Drive Link</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-white/5">
+                        {paginatedTeams.length > 0 ? (
+                          paginatedTeams.map((t) => (
+                            <tr key={t.id} className="hover:bg-white/5 transition-colors">
+                              <td className="py-3.5 px-4 font-bold text-cyan-400">{t.id}</td>
+                              <td className="py-3.5 px-4 font-sans font-semibold text-white">{t.name}</td>
+                              <td className="py-3.5 px-4">
+                                <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold border ${
+                                  t.track === "Cyber Security"
+                                    ? "bg-purple-950/80 border-purple-500/40 text-purple-300"
+                                    : "bg-emerald-950/80 border-emerald-500/40 text-emerald-300"
+                                }`}>
+                                  {t.track || "Unassigned"}
+                                </span>
+                              </td>
+                              <td className="py-3.5 px-4">
+                                {t.gitRepoUrl || t.submissionUrl ? (
+                                  <a
+                                    href={t.gitRepoUrl || t.submissionUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-cyan-400 underline hover:text-cyan-300 text-xs flex items-center gap-1"
+                                  >
+                                    <Github className="w-4 h-4" />
+                                    <span className="truncate max-w-[200px] block">{t.gitRepoUrl || t.submissionUrl}</span>
+                                  </a>
+                                ) : (
+                                  <span className="text-gray-500 italic text-[10px]">No Link Submitted</span>
+                                )}
+                              </td>
+                              <td className="py-3.5 px-4">
+                                {t.projectFileUrl ? (
+                                  <a
+                                    href={t.projectFileUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-emerald-400 underline hover:text-emerald-300 text-xs flex items-center gap-1"
+                                  >
+                                    <FileText className="w-4 h-4" />
+                                    <span className="truncate max-w-[200px] block">{t.projectFileUrl}</span>
+                                  </a>
+                                ) : (
+                                  <span className="text-gray-500 italic text-[10px]">No File Submitted</span>
+                                )}
+                              </td>
+                            </tr>
+                          ))
+                        ) : (
+                          <tr>
+                            <td colSpan={5} className="py-8 text-center text-gray-500 italic">
+                              No project submissions match your filter criteria.
                             </td>
                           </tr>
                         )}
