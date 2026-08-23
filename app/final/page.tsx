@@ -99,6 +99,7 @@ export default function FinalPortalPage() {
   const [memberList, setMemberList] = useState<TeamMember[]>([]);
 
   // Admin Data & Search/Filter
+  const [adminView, setAdminView] = useState<"database" | "rosters">("database");
   const [teamsList, setTeamsList] = useState<TeamRecord[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [filterStatus, setFilterStatus] = useState("ALL");
@@ -1067,6 +1068,31 @@ export default function FinalPortalPage() {
 
               {/* Team Database Search & Control Center */}
               <div className="glass-panel p-6 rounded-3xl border border-white/10 bg-black/40 space-y-6">
+                
+                {/* Admin View Toggle */}
+                <div className="flex bg-black/50 p-1 rounded-xl border border-white/10 w-fit font-display text-xs uppercase tracking-wider font-bold">
+                  <button
+                    onClick={() => setAdminView("database")}
+                    className={`px-4 py-2 rounded-lg transition-all ${
+                      adminView === "database"
+                        ? "bg-cyan-400 text-black shadow-[0_0_10px_rgba(0,229,255,0.4)]"
+                        : "text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    Main Database View
+                  </button>
+                  <button
+                    onClick={() => setAdminView("rosters")}
+                    className={`px-4 py-2 rounded-lg transition-all ${
+                      adminView === "rosters"
+                        ? "bg-cyan-400 text-black shadow-[0_0_10px_rgba(0,229,255,0.4)]"
+                        : "text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    Team Rosters View
+                  </button>
+                </div>
+
                 {/* Search Bar */}
                 <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 font-mono text-xs">
                   <div className="relative flex-grow max-w-md">
@@ -1103,8 +1129,48 @@ export default function FinalPortalPage() {
 
                 {/* Results Count & Table */}
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse font-mono text-xs">
-                    <thead>
+                  {adminView === "rosters" ? (
+                    <table className="w-full text-left border-collapse font-mono text-xs">
+                      <thead>
+                        <tr className="border-b border-white/10 text-gray-400 uppercase text-[10px]">
+                          <th className="py-3 px-4">Team ID</th>
+                          <th className="py-3 px-4">Team Name</th>
+                          <th className="py-3 px-4">Leader (Member 1)</th>
+                          <th className="py-3 px-4">Member 2</th>
+                          <th className="py-3 px-4">Member 3</th>
+                          <th className="py-3 px-4">Member 4</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-white/5">
+                        {paginatedTeams.length > 0 ? (
+                          paginatedTeams.map((t) => {
+                            const members = t.memberList || [{ name: t.leaderName, role: "Team Lead", phone: t.leaderPhone }];
+                            return (
+                              <tr key={t.id} className="hover:bg-white/5 transition-colors">
+                                <td className="py-3.5 px-4 font-bold text-cyan-400">{t.id}</td>
+                                <td className="py-3.5 px-4 font-sans font-semibold text-white">{t.name}</td>
+                                <td className="py-3.5 px-4">
+                                  <div className="font-sans font-semibold text-emerald-300">{members[0]?.name || t.leaderName || "-"}</div>
+                                  <div className="text-[10px] text-gray-400">{members[0]?.phone || t.leaderPhone || ""}</div>
+                                </td>
+                                <td className="py-3.5 px-4 text-white font-sans">{members[1]?.name || "-"}</td>
+                                <td className="py-3.5 px-4 text-white font-sans">{members[2]?.name || "-"}</td>
+                                <td className="py-3.5 px-4 text-white font-sans">{members[3]?.name || "-"}</td>
+                              </tr>
+                            );
+                          })
+                        ) : (
+                          <tr>
+                            <td colSpan={6} className="py-8 text-center text-gray-500 italic">
+                              No team rosters match your filter criteria.
+                            </td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  ) : (
+                    <table className="w-full text-left border-collapse font-mono text-xs">
+                      <thead>
                       <tr className="border-b border-white/10 text-gray-400 uppercase text-[10px]">
                         <th className="py-3 px-4">Team ID</th>
                         <th className="py-3 px-4">Team Name</th>
@@ -1244,6 +1310,7 @@ export default function FinalPortalPage() {
                       )}
                     </tbody>
                   </table>
+                  )}
                 </div>
 
                 {/* Pagination Controls */}
